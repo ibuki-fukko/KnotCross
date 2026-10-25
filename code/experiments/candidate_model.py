@@ -18,7 +18,7 @@ from code.geometry.nurbs import curve_points
 
 MAX_CANDIDATES = 12
 PATCH_RADIUS = 2
-GRID_SIZE = 32
+GRID_SIZE = 48
 
 
 def residual_field(curve_a: np.ndarray, curve_b: np.ndarray, grid_size: int = GRID_SIZE):
@@ -38,7 +38,8 @@ def candidate_indices(distance: np.ndarray, max_candidates: int = MAX_CANDIDATES
     for row in range(1, rows - 1):
         for column in range(1, columns - 1):
             neighborhood = distance[row - 1 : row + 2, column - 1 : column + 2]
-            if distance[row, column] <= float(np.min(neighborhood)):
+            local_minimum = float(np.min(neighborhood))
+            if distance[row, column] <= local_minimum + 0.015:
                 candidates.append((float(distance[row, column]), row, column))
     candidates.sort()
     selected = []
