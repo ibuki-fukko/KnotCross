@@ -1,0 +1,43 @@
+{
+  "dataset": {
+    "seed": 20261025,
+    "train_pairs": 400,
+    "validation_pairs": 100,
+    "test_pairs": 200,
+    "degree": 3,
+    "control_points_per_curve": 8,
+    "knot_vector": [0.0, 0.0, 0.0, 0.0, 0.2, 0.4, 0.6, 0.8, 1.0, 1.0, 1.0, 1.0],
+    "weights": "all_ones",
+    "intersection_count_classes": [0, 1, 2, 3],
+    "label_tolerance_geometry": 0.0002
+  },
+  "input": {
+    "curve_samples": 24,
+    "parameter_residual_grid": 12,
+    "residual_channels": ["x_difference", "y_difference", "euclidean_distance"]
+  },
+  "model": {
+    "shared_encoder_hidden_layers": [128, 128, 64],
+    "fusion_hidden_layers": [128, 64],
+    "head_hidden_layers": [64],
+    "max_intersection_slots": 3,
+    "heatmap_grid": 12
+  },
+  "training": {
+    "epochs": 40,
+    "batch_size": 16,
+    "learning_rate": 0.001,
+    "seed": 20261025,
+    "geometry_loss_weight": 0.7,
+    "map_loss_weight": 0.25,
+    "duplicate_loss_weight": 0.15,
+    "optimizer": "Adam implemented in numpy"
+  },
+  "evaluation": {
+    "parameter_pair_tolerance": 0.035,
+    "neural_slot_existence_threshold_initial": 0.5,
+    "heatmap_peak_threshold_initial": 0.35,
+    "numerical_reference_sample_count": 161,
+    "ablation_models": ["shared_full", "shared_no_geometry", "shared_no_residual", "direct"]
+  }
+}
