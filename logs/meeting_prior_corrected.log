@@ -1,0 +1,11 @@
+direct_raw_plus_grid_prior_corrected: reusing verified checkpoint 523a42f1e38ca35495764df8f882ca8714e160c0ab4c8bf358622590e4cf2f30
+{
+  "positive_query_fraction": 0.32451331967213115,
+  "positive_class_weight": 0.05,
+  "validation_f1": 0.04012179831631739,
+  "validation_precision": 0.02391629297458894,
+  "validation_recall": 0.12444444444444444,
+  "grid": "cosine_endpoints",
+  "threshold": 0.05,
+  "suppression_radius": 0.025
+}

@@ -1,0 +1,112 @@
+{
+  "evaluator_version": "maximum_cardinality_v2",
+  "tolerance": 0.035,
+  "true_positive": 146,
+  "false_positive": 2566,
+  "false_negative": 354,
+  "precision": 0.05383480825958702,
+  "recall": 0.292,
+  "f1": 0.09090909090909091,
+  "mean_parameter_error": 0.017812529473011266,
+  "max_parameter_error": 0.03485039212355595,
+  "count_accuracy": 0.0,
+  "empty_false_positive_rate": 1.0,
+  "duplicate_prediction_rate": 0.0,
+  "predicted_count": 7.748571428571428,
+  "per_intersection_count": {
+    "1": {
+      "pairs": 150,
+      "tp": 57,
+      "fp": 1056,
+      "fn": 93,
+      "f1": 0.09026128266033254
+    },
+    "3": {
+      "pairs": 50,
+      "tp": 29,
+      "fp": 371,
+      "fn": 121,
+      "f1": 0.10545454545454545
+    },
+    "2": {
+      "pairs": 100,
+      "tp": 60,
+      "fp": 739,
+      "fn": 140,
+      "f1": 0.12012012012012012
+    },
+    "0": {
+      "pairs": 50,
+      "tp": 0,
+      "fp": 400,
+      "fn": 0,
+      "f1": 0.0
+    }
+  },
+  "f1_by_parameter_tolerance": {
+    "0.035": 0.09090909090909091,
+    "0.02": 0.053549190535491904,
+    "0.01": 0.01805728518057285,
+    "0.005": 0.0062266500622665
+  },
+  "prediction_geometry_residual": {
+    "0.001": 0.0003687315634218289,
+    "0.0001": 0.0,
+    "1e-05": 0.0,
+    "1e-06": 0.0
+  },
+  "prediction_geometry_residual_median": 0.0878640930658176,
+  "prediction_geometry_residual_p95": 0.3770843317575951,
+  "per_category": {
+    "close_0p005": {
+      "precision": 0.06766917293233082,
+      "recall": 0.27,
+      "f1": 0.10821643286573146,
+      "count_accuracy": 0.0,
+      "empty_false_positive_rate": null
+    },
+    "close_0p02": {
+      "precision": 0.0825,
+      "recall": 0.33,
+      "f1": 0.132,
+      "count_accuracy": 0.0,
+      "empty_false_positive_rate": null
+    },
+    "endpoint": {
+      "precision": 0.06804733727810651,
+      "recall": 0.46,
+      "f1": 0.11855670103092783,
+      "count_accuracy": 0.0,
+      "empty_false_positive_rate": null
+    },
+    "multiple": {
+      "precision": 0.0725,
+      "recall": 0.19333333333333333,
+      "f1": 0.10545454545454545,
+      "count_accuracy": 0.0,
+      "empty_false_positive_rate": null
+    },
+    "near_disjoint": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "count_accuracy": 0.0,
+      "empty_false_positive_rate": 1.0
+    },
+    "single": {
+      "precision": 0.056,
+      "recall": 0.42,
+      "f1": 0.0988235294117647,
+      "count_accuracy": 0.0,
+      "empty_false_positive_rate": null
+    },
+    "tangent": {
+      "precision": 0.0325,
+      "recall": 0.26,
+      "f1": 0.057777777777777775,
+      "count_accuracy": 0.0,
+      "empty_false_positive_rate": null
+    }
+  },
+  "prediction_count_total": 2712
+}

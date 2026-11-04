@@ -1,0 +1,26 @@
+{
+  "name": "direct_raw",
+  "seed": 20261026,
+  "epochs": 35,
+  "batch_size": 512,
+  "learning_rate": 0.0005,
+  "input_dim": 34,
+  "hidden_layers": [
+    128,
+    128,
+    64
+  ],
+  "output": [
+    "u_final",
+    "v_final",
+    "existence_logit"
+  ],
+  "raw_control_points": true,
+  "residual_patch_in_first_layer": false,
+  "optimizer": "Adam",
+  "positive_query_radius": 0.055,
+  "best_epoch": 27,
+  "weights_sha256": "2c14ed0b3c0ef83b2c14fc8ce21eb0427a36e255d199fe006922a7aa8425fbfe",
+  "residual_input_mode": "none",
+  "maximum_predictions_per_pair": 8
+}

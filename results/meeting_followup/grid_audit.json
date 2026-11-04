@@ -1,0 +1,41 @@
+[
+  {
+    "grid": "uniform",
+    "nodes_per_axis": 48,
+    "queries_per_pair": 2304,
+    "mean_nearest_root_distance": 0.007796349201405719,
+    "p95_nearest_root_distance": 0.013456802599779187,
+    "coverage_by_parameter_radius": {
+      "0.035": 1.0,
+      "0.02": 1.0,
+      "0.01": 0.6914285714285714,
+      "0.005": 0.23142857142857143
+    }
+  },
+  {
+    "grid": "cosine_endpoints",
+    "nodes_per_axis": 48,
+    "queries_per_pair": 2304,
+    "mean_nearest_root_distance": 0.009900532809541075,
+    "p95_nearest_root_distance": 0.01858940887560404,
+    "coverage_by_parameter_radius": {
+      "0.035": 1.0,
+      "0.02": 0.9757142857142858,
+      "0.01": 0.5014285714285714,
+      "0.005": 0.20857142857142857
+    }
+  },
+  {
+    "grid": "knot_aligned",
+    "nodes_per_axis": 56,
+    "queries_per_pair": 3136,
+    "mean_nearest_root_distance": 0.006650254860455319,
+    "p95_nearest_root_distance": 0.011289245806132575,
+    "coverage_by_parameter_radius": {
+      "0.035": 1.0,
+      "0.02": 1.0,
+      "0.01": 0.8685714285714285,
+      "0.005": 0.2966666666666667
+    }
+  }
+]

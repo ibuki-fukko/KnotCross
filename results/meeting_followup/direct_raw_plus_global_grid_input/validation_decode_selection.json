@@ -1,0 +1,208 @@
+{
+  "grid": "uniform",
+  "suppression_radius": 0.025,
+  "threshold": 0.65,
+  "calibration_indices": [
+    0,
+    16,
+    20,
+    34,
+    40,
+    104,
+    106,
+    108,
+    112,
+    153,
+    187,
+    195,
+    266,
+    288,
+    362,
+    378,
+    403,
+    406,
+    408,
+    411,
+    413,
+    415,
+    421,
+    425,
+    431,
+    440,
+    441,
+    442,
+    444,
+    452,
+    456,
+    458,
+    460,
+    464,
+    469,
+    472,
+    474,
+    476,
+    478,
+    479,
+    490,
+    493,
+    497,
+    498,
+    499,
+    510,
+    513,
+    517,
+    527,
+    528,
+    530,
+    531,
+    534,
+    538,
+    539,
+    542,
+    551,
+    553,
+    557,
+    562,
+    566,
+    567,
+    568,
+    570,
+    580,
+    585,
+    590,
+    592,
+    596,
+    597,
+    599,
+    603
+  ],
+  "calibration_pairs": 72,
+  "validation_calibration_f1": 0.12571428571428572,
+  "validation_calibration_parameter_error": 0.023146804703191325,
+  "validation_full": {
+    "evaluator_version": "maximum_cardinality_v2",
+    "tolerance": 0.035,
+    "true_positive": 36,
+    "false_positive": 621,
+    "false_negative": 864,
+    "precision": 0.0547945205479452,
+    "recall": 0.04,
+    "f1": 0.046242774566473986,
+    "mean_parameter_error": 0.024124676340973636,
+    "max_parameter_error": 0.03382879577286318,
+    "count_accuracy": 0.34262295081967215,
+    "empty_false_positive_rate": 0.3076923076923077,
+    "duplicate_prediction_rate": 0.0,
+    "predicted_count": 1.0770491803278688,
+    "per_intersection_count": {
+      "0": {
+        "pairs": 130,
+        "tp": 0,
+        "fp": 86,
+        "fn": 0,
+        "f1": 0.0
+      },
+      "1": {
+        "pairs": 190,
+        "tp": 10,
+        "fp": 220,
+        "fn": 180,
+        "f1": 0.047619047619047616
+      },
+      "2": {
+        "pairs": 160,
+        "tp": 24,
+        "fp": 174,
+        "fn": 296,
+        "f1": 0.09266409266409266
+      },
+      "3": {
+        "pairs": 130,
+        "tp": 2,
+        "fp": 141,
+        "fn": 388,
+        "f1": 0.0075046904315197
+      }
+    },
+    "f1_by_parameter_tolerance": {
+      "0.035": 0.046242774566473986,
+      "0.02": 0.010276172125883108,
+      "0.01": 0.005138086062941554,
+      "0.005": 0.002569043031470777
+    },
+    "prediction_geometry_residual": {
+      "0.001": 0.0015220700152207,
+      "0.0001": 0.0,
+      "1e-05": 0.0,
+      "1e-06": 0.0
+    },
+    "prediction_geometry_residual_median": 0.24637932662766068,
+    "prediction_geometry_residual_p95": 0.8750327848878695,
+    "per_category": {
+      "close_0p005": {
+        "precision": 0.24324324324324326,
+        "recall": 0.15,
+        "f1": 0.18556701030927836,
+        "count_accuracy": 0.23333333333333334,
+        "empty_false_positive_rate": null
+      },
+      "close_0p02": {
+        "precision": 0.38461538461538464,
+        "recall": 0.25,
+        "f1": 0.30303030303030304,
+        "count_accuracy": 0.3333333333333333,
+        "empty_false_positive_rate": null
+      },
+      "disjoint": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "count_accuracy": 0.69,
+        "empty_false_positive_rate": 0.31
+      },
+      "endpoint": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "count_accuracy": 0.8333333333333334,
+        "empty_false_positive_rate": null
+      },
+      "interior": {
+        "precision": 0.008152173913043478,
+        "recall": 0.005,
+        "f1": 0.006198347107438017,
+        "count_accuracy": 0.19,
+        "empty_false_positive_rate": null
+      },
+      "multiple": {
+        "precision": 0.06896551724137931,
+        "recall": 0.022222222222222223,
+        "f1": 0.03361344537815126,
+        "count_accuracy": 0.1,
+        "empty_false_positive_rate": null
+      },
+      "near_disjoint": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "count_accuracy": 0.7,
+        "empty_false_positive_rate": 0.3
+      },
+      "single": {
+        "precision": 0.13157894736842105,
+        "recall": 0.16666666666666666,
+        "f1": 0.14705882352941177,
+        "count_accuracy": 0.3333333333333333,
+        "empty_false_positive_rate": null
+      },
+      "tangent": {
+        "precision": 0.06451612903225806,
+        "recall": 0.06666666666666667,
+        "f1": 0.06557377049180328,
+        "count_accuracy": 0.23333333333333334,
+        "empty_false_positive_rate": null
+      }
+    },
+    "prediction_count_total": 657
+  }
+}

@@ -1,0 +1,14 @@
+direct_raw: reusing verified checkpoint 2c14ed0b3c0ef83b2c14fc8ce21eb0427a36e255d199fe006922a7aa8425fbfe
+direct_raw selected {"grid": "knot_aligned", "suppression_radius": 0.025, "threshold": 0.55}
+direct_raw_plus_grid_input: reusing verified checkpoint 608257a79932a4de6739cad4dd47b600c98964eadfbb70834f21d1581c4530e2
+direct_raw_plus_grid_input selected {"grid": "uniform", "suppression_radius": 0.025, "threshold": 0.85}
+direct_raw_plus_global_grid_input: reusing verified checkpoint b0fa2f73885eef19c4628ce5c0bb683baf5542425127254ab1f7fb204a636179
+direct_raw_plus_global_grid_input selected {"grid": "uniform", "suppression_radius": 0.025, "threshold": 0.65}
+Traceback (most recent call last):
+  File "E:\study\ThreeUp\����\code\experiments\meeting_followup.py", line 665, in <module>
+    main()
+    ~~~~^^
+  File "E:\study\ThreeUp\����\code\experiments\meeting_followup.py", line 659, in main
+    print(json.dumps({k: {"val_f1":v["selection"]["validation_full"]["f1"], "test_f1":v["test"]["f1"],
+                                   ~^^^^^^^^^^^^^
+KeyError: 'selection'

@@ -1,0 +1,7 @@
+{
+  "checked_parameter": "first_dense.weight[0,0]",
+  "analytic_gradient": -0.003897121750780019,
+  "finite_difference_gradient": -0.003897121514384594,
+  "relative_error": 3.032949022685375e-08,
+  "passed": true
+}

@@ -1,0 +1,83 @@
+{
+  "seed": 20261026,
+  "data": "data\\experiment_large.npz",
+  "data_sha256": "74407d2a1bf2617745ab031ceb2530648c42350b11877a6579c1b4cbc1d67d93",
+  "split_sizes": {
+    "train": 2440,
+    "validation": 610,
+    "test": 810
+  },
+  "analytic_split_files": [
+    "data\\meeting_analytic_train.npz",
+    "data\\meeting_analytic_validation.npz",
+    "data\\meeting_analytic_test.npz"
+  ],
+  "grid_audit": [
+    {
+      "grid": "uniform",
+      "nodes_per_axis": 48,
+      "queries_per_pair": 2304,
+      "mean_nearest_root_distance": 0.007796349201405719,
+      "p95_nearest_root_distance": 0.013456802599779187,
+      "coverage_by_parameter_radius": {
+        "0.035": 1.0,
+        "0.02": 1.0,
+        "0.01": 0.6914285714285714,
+        "0.005": 0.23142857142857143
+      }
+    },
+    {
+      "grid": "cosine_endpoints",
+      "nodes_per_axis": 48,
+      "queries_per_pair": 2304,
+      "mean_nearest_root_distance": 0.009900532809541075,
+      "p95_nearest_root_distance": 0.01858940887560404,
+      "coverage_by_parameter_radius": {
+        "0.035": 1.0,
+        "0.02": 0.9757142857142858,
+        "0.01": 0.5014285714285714,
+        "0.005": 0.20857142857142857
+      }
+    },
+    {
+      "grid": "knot_aligned",
+      "nodes_per_axis": 56,
+      "queries_per_pair": 3136,
+      "mean_nearest_root_distance": 0.006650254860455319,
+      "p95_nearest_root_distance": 0.011289245806132575,
+      "coverage_by_parameter_radius": {
+        "0.035": 1.0,
+        "0.02": 1.0,
+        "0.01": 0.8685714285714285,
+        "0.005": 0.2966666666666667
+      }
+    }
+  ],
+  "geometric_tolerances": [
+    0.001,
+    0.0001,
+    1e-05,
+    1e-06
+  ],
+  "gradient_check": {
+    "checked_parameter": "first_dense.weight[0,0]",
+    "analytic_gradient": -0.003897121750780019,
+    "finite_difference_gradient": -0.003897121514384594,
+    "relative_error": 3.032949022685375e-08,
+    "passed": true
+  },
+  "parameter_metric_tolerances": [
+    0.035,
+    0.02,
+    0.01,
+    0.005
+  ],
+  "positive_query_radius": 0.055,
+  "inference": "direct MLP outputs (u,v), score; no Newton and no geometric-residual filtering",
+  "maximum_predictions_per_pair": 8,
+  "global_residual_grid": 12,
+  "validation_only_selection": true,
+  "test_access": "exploration test was read before training for grid coverage diagnostics; model selection used validation only; all test results are exploratory",
+  "existing_dataset_note": "procedurally generated random cubic B-spline pairs; labels were previously polyline crossings refined offline",
+  "new_data_note": "programmatically generated known-root cubic spline cases; not output from a learned generative model"
+}

@@ -1,0 +1,126 @@
+{
+  "evaluator_version": "maximum_cardinality_v2",
+  "tolerance": 0.035,
+  "true_positive": 137,
+  "false_positive": 6105,
+  "false_negative": 1063,
+  "precision": 0.02194809355975649,
+  "recall": 0.11416666666666667,
+  "f1": 0.036818059661381346,
+  "mean_parameter_error": 0.01906019221648928,
+  "max_parameter_error": 0.03472965822583636,
+  "count_accuracy": 0.003703703703703704,
+  "empty_false_positive_rate": 0.9833333333333333,
+  "duplicate_prediction_rate": 0.0,
+  "predicted_count": 7.706172839506173,
+  "per_intersection_count": {
+    "0": {
+      "pairs": 180,
+      "tp": 0,
+      "fp": 1307,
+      "fn": 0,
+      "f1": 0.0
+    },
+    "1": {
+      "pairs": 240,
+      "tp": 43,
+      "fp": 1793,
+      "fn": 197,
+      "f1": 0.041425818882466284
+    },
+    "2": {
+      "pairs": 210,
+      "tp": 60,
+      "fp": 1609,
+      "fn": 360,
+      "f1": 0.057443752991862135
+    },
+    "3": {
+      "pairs": 180,
+      "tp": 34,
+      "fp": 1396,
+      "fn": 506,
+      "f1": 0.03451776649746193
+    }
+  },
+  "f1_by_parameter_tolerance": {
+    "0.035": 0.036818059661381346,
+    "0.02": 0.01961838215533459,
+    "0.01": 0.0064498790647675355,
+    "0.005": 0.0018812147272238647
+  },
+  "prediction_geometry_residual": {
+    "0.001": 0.0003204101249599487,
+    "0.0001": 0.0,
+    "1e-05": 0.0,
+    "1e-06": 0.0
+  },
+  "prediction_geometry_residual_median": 0.30907151805257643,
+  "prediction_geometry_residual_p95": 0.9287037756325172,
+  "per_category": {
+    "close_0p005": {
+      "precision": 0.05416666666666667,
+      "recall": 0.21666666666666667,
+      "f1": 0.08666666666666667,
+      "count_accuracy": 0.0,
+      "empty_false_positive_rate": null
+    },
+    "close_0p02": {
+      "precision": 0.13389121338912133,
+      "recall": 0.5333333333333333,
+      "f1": 0.2140468227424749,
+      "count_accuracy": 0.0,
+      "empty_false_positive_rate": null
+    },
+    "disjoint": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "count_accuracy": 0.02,
+      "empty_false_positive_rate": 0.98
+    },
+    "endpoint": {
+      "precision": 0.07246376811594203,
+      "recall": 0.5,
+      "f1": 0.12658227848101267,
+      "count_accuracy": 0.0,
+      "empty_false_positive_rate": null
+    },
+    "interior": {
+      "precision": 0.009870276367738297,
+      "recall": 0.03888888888888889,
+      "f1": 0.015744489428699954,
+      "count_accuracy": 0.0,
+      "empty_false_positive_rate": null
+    },
+    "multiple": {
+      "precision": 0.08333333333333333,
+      "recall": 0.2222222222222222,
+      "f1": 0.12121212121212122,
+      "count_accuracy": 0.0,
+      "empty_false_positive_rate": null
+    },
+    "near_disjoint": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "count_accuracy": 0.0,
+      "empty_false_positive_rate": 1.0
+    },
+    "single": {
+      "precision": 0.053811659192825115,
+      "recall": 0.4,
+      "f1": 0.09486166007905138,
+      "count_accuracy": 0.0,
+      "empty_false_positive_rate": null
+    },
+    "tangent": {
+      "precision": 0.041666666666666664,
+      "recall": 0.3333333333333333,
+      "f1": 0.07407407407407407,
+      "count_accuracy": 0.0,
+      "empty_false_positive_rate": null
+    }
+  },
+  "prediction_count_total": 6242
+}

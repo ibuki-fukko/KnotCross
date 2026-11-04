@@ -1,0 +1,25 @@
+{
+  "name": "direct_raw_plus_global_grid_input",
+  "seed": 20261026,
+  "epochs": 35,
+  "batch_size": 512,
+  "learning_rate": 0.0005,
+  "input_dim": 466,
+  "hidden_layers": [
+    128,
+    128,
+    64
+  ],
+  "output": [
+    "u_final",
+    "v_final",
+    "existence_logit"
+  ],
+  "maximum_predictions_per_pair": 8,
+  "raw_control_points": true,
+  "residual_input_mode": "global",
+  "optimizer": "Adam",
+  "positive_query_radius": 0.055,
+  "best_epoch": 3,
+  "weights_sha256": "b0fa2f73885eef19c4628ce5c0bb683baf5542425127254ab1f7fb204a636179"
+}

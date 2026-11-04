@@ -1,0 +1,131 @@
+[
+  {
+    "split": "train",
+    "pairs": 2440,
+    "roots": 3600,
+    "category_counts": {
+      "disjoint": 400,
+      "interior": 1200,
+      "single": 120,
+      "multiple": 120,
+      "close_0p02": 120,
+      "close_0p005": 120,
+      "endpoint": 120,
+      "tangent": 120,
+      "near_disjoint": 120
+    },
+    "endpoint_roots_parameter_tol_1e-6": 120,
+    "label_residual_quantiles": [
+      0.0,
+      1.1102230246251565e-16,
+      3.3306690738754696e-16,
+      4.710277376051325e-16,
+      9.551471108022852e-05
+    ],
+    "label_quality_pass_rate": {
+      "0.001": 1.0,
+      "0.0001": 1.0,
+      "1e-05": 0.9997222222222222,
+      "1e-06": 0.9997222222222222
+    },
+    "near_disjoint_min_distance_quantiles": [
+      1.9277950006223894e-07,
+      6.385340305621604e-06,
+      6.529458790348165e-05,
+      0.0012324512789692798,
+      0.016503310668931043
+    ],
+    "near_disjoint_ambiguous_pairs_by_geometric_tolerance": {
+      "0.001": 88,
+      "0.0001": 66,
+      "1e-05": 36,
+      "1e-06": 10
+    }
+  },
+  {
+    "split": "validation",
+    "pairs": 610,
+    "roots": 900,
+    "category_counts": {
+      "disjoint": 100,
+      "interior": 300,
+      "single": 30,
+      "multiple": 30,
+      "close_0p02": 30,
+      "close_0p005": 30,
+      "endpoint": 30,
+      "tangent": 30,
+      "near_disjoint": 30
+    },
+    "endpoint_roots_parameter_tol_1e-6": 30,
+    "label_residual_quantiles": [
+      0.0,
+      1.1102230246251565e-16,
+      3.510833468576701e-16,
+      4.440978750136164e-16,
+      7.447602459741819e-16
+    ],
+    "label_quality_pass_rate": {
+      "0.001": 1.0,
+      "0.0001": 1.0,
+      "1e-05": 1.0,
+      "1e-06": 1.0
+    },
+    "near_disjoint_min_distance_quantiles": [
+      2.172606620580793e-07,
+      9.070117674585806e-07,
+      5.62687927511176e-06,
+      0.002824040722846242,
+      0.011734030326677407
+    ],
+    "near_disjoint_ambiguous_pairs_by_geometric_tolerance": {
+      "0.001": 22,
+      "0.0001": 19,
+      "1e-05": 16,
+      "1e-06": 9
+    }
+  },
+  {
+    "split": "test",
+    "pairs": 810,
+    "roots": 1200,
+    "category_counts": {
+      "disjoint": 150,
+      "interior": 450,
+      "single": 30,
+      "multiple": 30,
+      "close_0p02": 30,
+      "close_0p005": 30,
+      "endpoint": 30,
+      "tangent": 30,
+      "near_disjoint": 30
+    },
+    "endpoint_roots_parameter_tol_1e-6": 30,
+    "label_residual_quantiles": [
+      0.0,
+      1.1102230246251565e-16,
+      3.3772164453661363e-16,
+      4.965068306494546e-16,
+      8.95090418262362e-16
+    ],
+    "label_quality_pass_rate": {
+      "0.001": 1.0,
+      "0.0001": 1.0,
+      "1e-05": 1.0,
+      "1e-06": 1.0
+    },
+    "near_disjoint_min_distance_quantiles": [
+      2.0649498232804978e-07,
+      9.649544204651233e-07,
+      3.335727529148424e-05,
+      0.0003206194270359714,
+      0.01822437446345422
+    ],
+    "near_disjoint_ambiguous_pairs_by_geometric_tolerance": {
+      "0.001": 26,
+      "0.0001": 19,
+      "1e-05": 12,
+      "1e-06": 8
+    }
+  }
+]
