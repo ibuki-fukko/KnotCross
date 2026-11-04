@@ -1,0 +1,13 @@
+epoch=001 train=1.342778 val=1.043393 geo=0.012869
+epoch=005 train=0.435220 val=0.426179 geo=0.005667
+epoch=010 train=0.364885 val=0.384852 geo=0.003141
+epoch=015 train=0.330154 val=0.375315 geo=0.003156
+epoch=020 train=0.302097 val=0.352252 geo=0.003829
+{"output": "E:\\study\\ThreeUp\\\u8bba\u6587\\results\\learned_study\\depth_0p0", "validation_f1": 0.8668831168831169, "reference_final_loss": 0.3618941112861724, "threshold": 0.95}
+epoch=001 train=1.392614 val=1.110537 geo=0.021828
+epoch=005 train=0.454852 val=0.439704 geo=0.010164
+epoch=010 train=0.376598 val=0.391851 geo=0.005604
+epoch=015 train=0.343186 val=0.382694 geo=0.006692
+epoch=020 train=0.315472 val=0.359419 geo=0.007018
+{"output": "E:\\study\\ThreeUp\\\u8bba\u6587\\results\\learned_study\\depth_0p5", "validation_f1": 0.8647342995169082, "reference_final_loss": 0.36191816917403424, "threshold": 0.94}
+STAGE depth SELECTED E:\study\ThreeUp\����\results\learned_study\depth_0p0

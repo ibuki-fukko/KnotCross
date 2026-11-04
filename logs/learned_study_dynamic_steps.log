@@ -1,0 +1,13 @@
+epoch=001 train=1.091094 val=0.860709 geo=0.005768
+epoch=005 train=0.365603 val=0.358784 geo=0.003095
+epoch=010 train=0.310783 val=0.323066 geo=0.001792
+epoch=015 train=0.280926 val=0.314850 geo=0.001757
+epoch=020 train=0.256092 val=0.300650 geo=0.001531
+{"output": "E:\\study\\ThreeUp\\\u8bba\u6587\\results\\learned_study\\dynamic_steps_2", "validation_f1": 0.8691437802907916, "reference_final_loss": 0.36068099971830886, "threshold": 0.94}
+epoch=001 train=1.175266 val=0.975924 geo=0.020421
+epoch=005 train=0.397314 val=0.380717 geo=0.008258
+epoch=010 train=0.322637 val=0.332747 geo=0.004211
+epoch=015 train=0.291715 val=0.322573 geo=0.003552
+epoch=020 train=0.269844 val=0.302640 geo=0.004377
+{"output": "E:\\study\\ThreeUp\\\u8bba\u6587\\results\\learned_study\\dynamic_steps_6", "validation_f1": 0.8576051779935275, "reference_final_loss": 0.3707930065876957, "threshold": 0.92}
+STAGE dynamic_steps SELECTED E:\study\ThreeUp\����\results\learned_study\positive_5p0

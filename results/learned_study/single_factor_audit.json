@@ -1,0 +1,353 @@
+{
+  "all_stages_one_factor": true,
+  "records": [
+    {
+      "stage": "depth",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\depth_0p0",
+      "changed_fields": [],
+      "selected": true
+    },
+    {
+      "stage": "depth",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\depth_0p5",
+      "changed_fields": [
+        "deep_supervision"
+      ],
+      "selected": false
+    },
+    {
+      "stage": "steps",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\depth_0p0",
+      "changed_fields": [],
+      "selected": true
+    },
+    {
+      "stage": "steps",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\steps_6",
+      "changed_fields": [
+        "steps"
+      ],
+      "selected": false
+    },
+    {
+      "stage": "steps",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\steps_8",
+      "changed_fields": [
+        "steps"
+      ],
+      "selected": false
+    },
+    {
+      "stage": "scale",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\scale_0p04",
+      "changed_fields": [
+        "step_scale"
+      ],
+      "selected": false
+    },
+    {
+      "stage": "scale",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\depth_0p0",
+      "changed_fields": [],
+      "selected": true
+    },
+    {
+      "stage": "scale",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\scale_0p12",
+      "changed_fields": [
+        "step_scale"
+      ],
+      "selected": false
+    },
+    {
+      "stage": "scale",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\scale_0p2",
+      "changed_fields": [
+        "step_scale"
+      ],
+      "selected": false
+    },
+    {
+      "stage": "positive",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_3p0",
+      "changed_fields": [
+        "positive_weight"
+      ],
+      "selected": false
+    },
+    {
+      "stage": "positive",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_5p0",
+      "changed_fields": [
+        "positive_weight"
+      ],
+      "selected": true
+    },
+    {
+      "stage": "positive",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\depth_0p0",
+      "changed_fields": [],
+      "selected": false
+    },
+    {
+      "stage": "geometry",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\geometry_0p0",
+      "changed_fields": [
+        "geometry_weight"
+      ],
+      "selected": false
+    },
+    {
+      "stage": "geometry",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_5p0",
+      "changed_fields": [],
+      "selected": true
+    },
+    {
+      "stage": "duration",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_5p0",
+      "changed_fields": [],
+      "selected": true
+    },
+    {
+      "stage": "duration",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\duration_40",
+      "changed_fields": [
+        "epochs"
+      ],
+      "selected": false
+    },
+    {
+      "stage": "regression",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_5p0",
+      "changed_fields": [],
+      "selected": true
+    },
+    {
+      "stage": "regression",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\regression_40p0",
+      "changed_fields": [
+        "regression_weight"
+      ],
+      "selected": false
+    },
+    {
+      "stage": "regression",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\regression_200p0",
+      "changed_fields": [
+        "regression_weight"
+      ],
+      "selected": false
+    },
+    {
+      "stage": "reference",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_5p0",
+      "changed_fields": [],
+      "selected": true
+    },
+    {
+      "stage": "reference",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\reference_True",
+      "changed_fields": [
+        "reference_coordinates"
+      ],
+      "selected": false
+    },
+    {
+      "stage": "depth_revisit",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_5p0",
+      "changed_fields": [],
+      "selected": true
+    },
+    {
+      "stage": "depth_revisit",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\depth_revisit_0p5",
+      "changed_fields": [
+        "deep_supervision"
+      ],
+      "selected": false
+    },
+    {
+      "stage": "dynamic",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_5p0",
+      "changed_fields": [],
+      "selected": true
+    },
+    {
+      "stage": "dynamic",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\dynamic_True",
+      "changed_fields": [
+        "dynamic_patches"
+      ],
+      "selected": false
+    },
+    {
+      "stage": "dynamic_depth",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_5p0",
+      "changed_fields": [],
+      "selected": true
+    },
+    {
+      "stage": "dynamic_depth",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\dynamic_depth_0p5",
+      "changed_fields": [
+        "deep_supervision"
+      ],
+      "selected": false
+    },
+    {
+      "stage": "dynamic_steps",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\dynamic_steps_2",
+      "changed_fields": [
+        "steps"
+      ],
+      "selected": false
+    },
+    {
+      "stage": "dynamic_steps",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_5p0",
+      "changed_fields": [],
+      "selected": true
+    },
+    {
+      "stage": "dynamic_steps",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\dynamic_steps_6",
+      "changed_fields": [
+        "steps"
+      ],
+      "selected": false
+    },
+    {
+      "stage": "refresh_duration",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\dynamic_True",
+      "changed_fields": [],
+      "selected": false
+    },
+    {
+      "stage": "refresh_duration",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_duration_40",
+      "changed_fields": [
+        "epochs"
+      ],
+      "selected": false
+    },
+    {
+      "stage": "refresh_duration",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_duration_80",
+      "changed_fields": [
+        "epochs"
+      ],
+      "selected": true
+    },
+    {
+      "stage": "refresh_depth",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_duration_80",
+      "changed_fields": [],
+      "selected": true
+    },
+    {
+      "stage": "refresh_depth",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_depth_0p5",
+      "changed_fields": [
+        "deep_supervision"
+      ],
+      "selected": false
+    },
+    {
+      "stage": "refresh_steps",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_duration_80",
+      "changed_fields": [],
+      "selected": true
+    },
+    {
+      "stage": "refresh_steps",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_steps_2",
+      "changed_fields": [
+        "steps"
+      ],
+      "selected": false
+    },
+    {
+      "stage": "refresh_steps",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_steps_6",
+      "changed_fields": [
+        "steps"
+      ],
+      "selected": false
+    },
+    {
+      "stage": "refresh_scale",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_duration_80",
+      "changed_fields": [],
+      "selected": false
+    },
+    {
+      "stage": "refresh_scale",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_scale_0p01",
+      "changed_fields": [
+        "step_scale"
+      ],
+      "selected": false
+    },
+    {
+      "stage": "refresh_scale",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_scale_0p02",
+      "changed_fields": [
+        "step_scale"
+      ],
+      "selected": false
+    },
+    {
+      "stage": "refresh_scale",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_scale_0p04",
+      "changed_fields": [
+        "step_scale"
+      ],
+      "selected": true
+    },
+    {
+      "stage": "refresh_scale",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_scale_0p12",
+      "changed_fields": [
+        "step_scale"
+      ],
+      "selected": false
+    },
+    {
+      "stage": "refresh_rate",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_scale_0p04",
+      "changed_fields": [],
+      "selected": true
+    },
+    {
+      "stage": "refresh_rate",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_rate_0p0001",
+      "changed_fields": [
+        "learning_rate"
+      ],
+      "selected": false
+    },
+    {
+      "stage": "refresh_rate",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_rate_0p00025",
+      "changed_fields": [
+        "learning_rate"
+      ],
+      "selected": false
+    },
+    {
+      "stage": "refresh_regression",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_scale_0p04",
+      "changed_fields": [],
+      "selected": true
+    },
+    {
+      "stage": "refresh_regression",
+      "path": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_regression_40p0",
+      "changed_fields": [
+        "regression_weight"
+      ],
+      "selected": false
+    }
+  ]
+}

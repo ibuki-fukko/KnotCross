@@ -1,0 +1,54 @@
+{
+  "data": "data/experiment_large.npz",
+  "weights": "results/autoresearch/seeds/seed_19/weights.npz",
+  "grid_size": 48,
+  "max_candidates": 8,
+  "local_slack": 0.015,
+  "refine_steps": 8,
+  "selected_probability_threshold": 0.25,
+  "selected_geometry_threshold": 0.0005,
+  "validation_threshold_search_seconds": 235.09382680000272,
+  "validation_metrics_filtered": {
+    "precision": 1.0,
+    "recall": 0.9683333333333334,
+    "f1": 0.9839119390347164,
+    "mean_parameter_error": 8.447314861890088e-07,
+    "duplicate_prediction_rate": 0.0,
+    "predicted_count": 1.4525,
+    "mean_geometry_residual": 5.539173079145174e-07,
+    "max_geometry_residual": 0.00032182595582911223
+  },
+  "test_metrics_raw": {
+    "precision": 0.5804140127388535,
+    "recall": 0.81,
+    "f1": 0.6762523191094619,
+    "mean_parameter_error": 0.015693685566011847,
+    "duplicate_prediction_rate": 0.0,
+    "predicted_count": 2.0933333333333333,
+    "mean_geometry_residual": 0.08157086066991887,
+    "max_geometry_residual": 1.1949587460959776
+  },
+  "test_metrics_refined": {
+    "precision": 0.8535606820461384,
+    "recall": 0.9455555555555556,
+    "f1": 0.8972061149182922,
+    "mean_parameter_error": 3.588335652351127e-05,
+    "duplicate_prediction_rate": 0.0,
+    "predicted_count": 1.6616666666666666,
+    "mean_geometry_residual": 0.033785156302560584,
+    "max_geometry_residual": 2.1747027914597723
+  },
+  "test_metrics_filtered": {
+    "precision": 1.0,
+    "recall": 0.9588888888888889,
+    "f1": 0.979013045944413,
+    "mean_parameter_error": 4.229579986763013e-17,
+    "duplicate_prediction_rate": 0.0,
+    "predicted_count": 1.4383333333333332,
+    "mean_geometry_residual": 1.1966388240501676e-16,
+    "max_geometry_residual": 8.455206652451151e-16
+  },
+  "test_inference_seconds_raw": 11.85623759997543,
+  "test_inference_seconds_refined": 17.652514600020368,
+  "test_inference_seconds_per_pair_refined": 0.029420857666700613
+}

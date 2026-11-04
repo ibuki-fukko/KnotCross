@@ -1,0 +1,11 @@
+epoch=001 train=1.132482 val=0.913858 geo=0.012277
+epoch=005 train=0.380549 val=0.368571 geo=0.006362
+epoch=010 train=0.316293 val=0.329146 geo=0.002734
+epoch=015 train=0.286471 val=0.319472 geo=0.002943
+epoch=020 train=0.262710 val=0.300774 geo=0.002493
+epoch=025 train=0.245673 val=0.300119 geo=0.002357
+epoch=030 train=0.225465 val=0.299357 geo=0.001939
+epoch=035 train=0.209333 val=0.306557 geo=0.002056
+epoch=040 train=0.196025 val=0.310031 geo=0.001915
+{"output": "E:\\study\\ThreeUp\\\u8bba\u6587\\results\\learned_study\\duration_40", "validation_f1": 0.8715083798882681, "reference_final_loss": 0.35630965676974347, "threshold": 0.95}
+STAGE duration SELECTED E:\study\ThreeUp\����\results\learned_study\positive_5p0

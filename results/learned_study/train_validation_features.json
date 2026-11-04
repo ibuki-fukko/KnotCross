@@ -1,0 +1,7 @@
+{
+  "data_sha256": "74407d2a1bf2617745ab031ceb2530648c42350b11877a6579c1b4cbc1d67d93",
+  "grid_size": 48,
+  "max_candidates": 8,
+  "local_slack": 0.015,
+  "positive_assignment_radius": 0.085
+}

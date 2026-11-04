@@ -1,5 +1,21 @@
 # 2D NURBS 曲线求交实验
 
+## 当前入口：MLP学习参数修正（2026-10-26）
+
+当前研究由共享MLP逐步预测参数修正量。推理不使用Newton更新，也不根据最终几何残差阈值筛除预测；参数网格候选和0.025参数半径去重仍然存在。训练通过解析曲线导数和手工反向传播连接几何损失。这是NumPy实现，不是NURBS-Diff原论文软件的复刻。
+
+阶段报告见 `reports/阶段研究报告_学习修正_20261026.docx`，操作说明见 `reports/学习修正实验_复现说明.md`。最终配置在 `configs/learned_study/`；结果、失败对照、权重和源码快照在 `results/learned_study/`。只用训练和验证选择方案，锁定后评估测试。
+
+```powershell
+& .\code\experiments\reproduce_learned_study.ps1 -OutputDirectory 'results/learned_study_reproduction'
+```
+
+最终评测另加 `-FinalEvaluation`。已有同名结果会跳过，真正重训请用新目录。实际环境为Python 3.13.5、NumPy 2.3.2，训练解释器 `E:\study\python\python.exe`。单模型重训命令见复现说明。
+
+当前数据仅为三次、8控制点、固定节点、单位权重的B样条特例。历史600对测试已被较早实验观察，另有锁定后生成的新留出400对和解析210对；尚未验证任意NURBS或全部相切、极近交点。下面保留历史实验入口，高F1几何细化方案不属于本轮学习修正成绩。
+
+---
+
 本目录保存一套可重复运行的二维 NURBS 曲线求交实验代码、合成数据、结果和阶段报告。当前实现固定三次曲线、每条曲线 8 个控制点、开放节点向量和单位权重，学习预测 0 到 3 个普通孤立交点。该范围不包括相切、重合、尖点及任意阶数/控制点数，因此报告中不会把当前结果外推到这些情形。
 
 ## 实验结构
@@ -40,3 +56,16 @@ python code/evaluation/plot_examples.py --data data/experiment_large.npz --model
 数据由程序随机生成，不是从论文图像数字化，也不是“覆盖所有可能曲线”。数值标签生成过程与传统求交基线共享部分几何求解思想，指标不能解释为对独立 CAD 内核的全面比较。当前实现把 NURBS 计算写成 NumPy 函数，训练损失中用中心差分近似曲线参数导数；这是一种可微几何残差训练的原型，不等同于复现 NURBS-Diff 论文的 PyTorch/CUDA 模块。正式论文前还需用独立高精度求交程序核验标签，并增加近距离交点、未见控制点数、不同权重/节点向量及多随机种子实验。
 
 如果代码由 AI 辅助生成，汇报前请逐个运行脚本、理解输入输出与损失项，并按学校或导师的要求说明辅助方式；不要把未亲自检查的实现称为完全独立编写。
+
+## Historical result with classical refinement (not the current learned method)
+
+The retained configuration is a local candidate-proposal MLP followed by 8 deterministic geometric correction steps and a validation-selected geometric residual filter. The fixed main dataset contains 1600 training, 400 validation, and 600 test curve pairs. The curves are cubic, have 8 control points, use the fixed open knot vector, and use unit weights.
+
+Reproduce the retained training and evaluation with:
+
+```powershell
+python code/experiments/candidate_model.py --data data/experiment_large.npz --output results/autoresearch/reproduce_candidate --epochs 20 --batch-size 256 --learning-rate 0.001 --seed 20261025 --grid-size 48 --max-candidates 8 --local-slack 0.015
+python code/experiments/evaluate_refined.py --weights results/autoresearch/reproduce_candidate/weights.npz --output results/autoresearch/reproduce_refined --refine-steps 8
+```
+
+On the fixed test set, the three recorded seeds produced filtered F1 values of 0.9755, 0.9767, and 0.9790, with mean 0.9771 and sample standard deviation 0.0018. Thresholds are selected from validation data only. Boundary results are exploratory and are recorded in `results/autoresearch/boundary_refined_metrics.json`.

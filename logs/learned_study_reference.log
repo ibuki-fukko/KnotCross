@@ -1,0 +1,7 @@
+epoch=001 train=1.097203 val=0.893679 geo=0.010450
+epoch=005 train=0.399431 val=0.381080 geo=0.008290
+epoch=010 train=0.328140 val=0.336908 geo=0.005254
+epoch=015 train=0.296555 val=0.335635 geo=0.006156
+epoch=020 train=0.264547 val=0.319480 geo=0.004496
+{"output": "E:\\study\\ThreeUp\\\u8bba\u6587\\results\\learned_study\\reference_True", "validation_f1": 0.8373590982286635, "reference_final_loss": 0.3858240631070254, "threshold": 0.93}
+STAGE reference SELECTED E:\study\ThreeUp\����\results\learned_study\positive_5p0

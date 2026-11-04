@@ -1,0 +1,20 @@
+[
+  {
+    "name": "baseline_steps4",
+    "old_f1": 0.8214285714285714,
+    "corrected_f1_same_threshold": 0.8668831168831169,
+    "recalibrated_f1": 0.8668831168831169
+  },
+  {
+    "name": "deep_supervision05_steps4",
+    "old_f1": 0.8247758761206194,
+    "corrected_f1_same_threshold": 0.8606356968215159,
+    "recalibrated_f1": 0.8647342995169082
+  },
+  {
+    "name": "deep05_steps6",
+    "old_f1": 0.7973311092577148,
+    "corrected_f1_same_threshold": 0.8523769808173478,
+    "recalibrated_f1": 0.8597063621533442
+  }
+]

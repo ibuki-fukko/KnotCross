@@ -1,0 +1,8 @@
+{
+  "exact_pair_overlap": {
+    "train_validation": 0,
+    "train_test": 0,
+    "validation_test": 0
+  },
+  "limitation": "exact hashes do not prove disjoint shape families or distributions"
+}

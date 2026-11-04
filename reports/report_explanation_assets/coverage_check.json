@@ -1,0 +1,13 @@
+{
+  "source": "E:\\study\\ThreeUp\\论文\\正式提交\\第一阶段研究报告.docx",
+  "source_sha256": "89a1e2b9cc84f2bf72be7e91981be645af5eae673feae24098f995e6f7c65c74",
+  "output": "E:\\study\\ThreeUp\\论文\\reports\\第一阶段研究报告_逐段讲解.md",
+  "nonempty_blocks": 66,
+  "explained_blocks": 66,
+  "images": 5,
+  "tables": 8,
+  "all_source_links_verified": true,
+  "source_unchanged": true,
+  "training_started": false,
+  "experimental_code_modified": false
+}

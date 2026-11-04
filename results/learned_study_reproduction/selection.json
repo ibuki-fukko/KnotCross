@@ -1,0 +1,9 @@
+{
+  "selected": "E:\\study\\ThreeUp\\论文\\results\\learned_study_reproduction\\refresh_scale_0p04",
+  "compared": [
+    "E:\\study\\ThreeUp\\论文\\results\\learned_study_reproduction\\positive_5p0",
+    "E:\\study\\ThreeUp\\论文\\results\\learned_study_reproduction\\refresh_scale_0p04"
+  ],
+  "criterion": "validation F1 at tolerance 0.035, then reference final loss",
+  "selection_before_test": true
+}

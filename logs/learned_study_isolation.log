@@ -1,0 +1,16 @@
+[
+  {
+    "model": "depth_0p0",
+    "newton_and_linear_solve_disabled": true,
+    "training_geometry_function_disabled": true,
+    "predictions_unchanged": true,
+    "final_acceptance": "network probability and parameter-domain duplicate suppression only"
+  },
+  {
+    "model": "dynamic_True",
+    "newton_and_linear_solve_disabled": true,
+    "training_geometry_function_disabled": true,
+    "predictions_unchanged": true,
+    "final_acceptance": "network probability and parameter-domain duplicate suppression only"
+  }
+]

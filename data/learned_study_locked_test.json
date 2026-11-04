@@ -1,0 +1,11 @@
+{
+  "seed": 98711351,
+  "count": 400,
+  "attempts": 2098,
+  "created_after_configuration_lock": true,
+  "sampling_checks": [
+    121,
+    241
+  ],
+  "limitation": "numerical labels for ordinary isolated crossings; no completeness proof"
+}

@@ -1,0 +1,37 @@
+{
+  "base": {
+    "data": "E:\\study\\ThreeUp\\论文\\data\\experiment_large.npz",
+    "epochs": 20,
+    "batch_size": 256,
+    "learning_rate": 0.0005,
+    "seed": 20261026,
+    "grid_size": 48,
+    "max_candidates": 8,
+    "local_slack": 0.015,
+    "steps": 4,
+    "step_scale": 0.08,
+    "geometry_weight": 1.0,
+    "regression_weight": 4.0,
+    "positive_weight": 7.0,
+    "deep_supervision": 0.0,
+    "evaluate_test": false,
+    "reference_coordinates": false,
+    "dynamic_patches": false
+  },
+  "python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+  "numpy": "2.3.2",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "executable": "E:\\study\\python\\python.exe",
+  "cpu_threads": 1,
+  "parameter_matching_tolerance": 0.035,
+  "suppression_radius": 0.025,
+  "threshold_search": [
+    0.05,
+    0.99,
+    0.01
+  ],
+  "checkpoint_selection": "minimum own validation objective",
+  "between_configuration_selection": "maximum corrected validation F1, then reference final loss",
+  "test": "read only during final stage; already exposed by historical runs",
+  "controller": "project runner; skill controller absent from sparse installation; no fabricated controller history"
+}

@@ -1,0 +1,13 @@
+epoch=001 train=1.185458 val=0.983725 geo=0.011065
+epoch=005 train=0.400343 val=0.389975 geo=0.004406
+epoch=010 train=0.332861 val=0.344584 geo=0.002477
+epoch=015 train=0.303014 val=0.334081 geo=0.002405
+epoch=020 train=0.280796 val=0.313836 geo=0.002335
+{"output": "E:\\study\\ThreeUp\\\u8bba\u6587\\results\\learned_study\\regression_40p0", "validation_f1": 0.8716323296354992, "reference_final_loss": 0.36792520552321534, "threshold": 0.9}
+epoch=001 train=1.345858 val=1.169862 geo=0.010383
+epoch=005 train=0.504457 val=0.487966 geo=0.003607
+epoch=010 train=0.402870 val=0.418691 geo=0.002769
+epoch=015 train=0.366154 val=0.400840 geo=0.002412
+epoch=020 train=0.340096 val=0.382604 geo=0.002376
+{"output": "E:\\study\\ThreeUp\\\u8bba\u6587\\results\\learned_study\\regression_200p0", "validation_f1": 0.8578313253012049, "reference_final_loss": 0.3863446611445812, "threshold": 0.9}
+STAGE regression SELECTED E:\study\ThreeUp\����\results\learned_study\positive_5p0

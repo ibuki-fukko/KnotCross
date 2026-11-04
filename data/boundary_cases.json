@@ -1,0 +1,485 @@
+{
+  "seed": 20261025,
+  "metadata": [
+    {
+      "case_type": "near",
+      "index": 0
+    },
+    {
+      "case_type": "near",
+      "index": 1
+    },
+    {
+      "case_type": "near",
+      "index": 2
+    },
+    {
+      "case_type": "near",
+      "index": 3
+    },
+    {
+      "case_type": "near",
+      "index": 4
+    },
+    {
+      "case_type": "near",
+      "index": 5
+    },
+    {
+      "case_type": "near",
+      "index": 6
+    },
+    {
+      "case_type": "near",
+      "index": 7
+    },
+    {
+      "case_type": "near",
+      "index": 8
+    },
+    {
+      "case_type": "near",
+      "index": 9
+    },
+    {
+      "case_type": "near",
+      "index": 10
+    },
+    {
+      "case_type": "near",
+      "index": 11
+    },
+    {
+      "case_type": "near",
+      "index": 12
+    },
+    {
+      "case_type": "near",
+      "index": 13
+    },
+    {
+      "case_type": "near",
+      "index": 14
+    },
+    {
+      "case_type": "near",
+      "index": 15
+    },
+    {
+      "case_type": "near",
+      "index": 16
+    },
+    {
+      "case_type": "near",
+      "index": 17
+    },
+    {
+      "case_type": "near",
+      "index": 18
+    },
+    {
+      "case_type": "near",
+      "index": 19
+    },
+    {
+      "case_type": "near",
+      "index": 20
+    },
+    {
+      "case_type": "near",
+      "index": 21
+    },
+    {
+      "case_type": "near",
+      "index": 22
+    },
+    {
+      "case_type": "near",
+      "index": 23
+    },
+    {
+      "case_type": "near",
+      "index": 24
+    },
+    {
+      "case_type": "near",
+      "index": 25
+    },
+    {
+      "case_type": "near",
+      "index": 26
+    },
+    {
+      "case_type": "near",
+      "index": 27
+    },
+    {
+      "case_type": "near",
+      "index": 28
+    },
+    {
+      "case_type": "near",
+      "index": 29
+    },
+    {
+      "case_type": "near",
+      "index": 30
+    },
+    {
+      "case_type": "near",
+      "index": 31
+    },
+    {
+      "case_type": "near",
+      "index": 32
+    },
+    {
+      "case_type": "near",
+      "index": 33
+    },
+    {
+      "case_type": "near",
+      "index": 34
+    },
+    {
+      "case_type": "near",
+      "index": 35
+    },
+    {
+      "case_type": "near",
+      "index": 36
+    },
+    {
+      "case_type": "near",
+      "index": 37
+    },
+    {
+      "case_type": "near",
+      "index": 38
+    },
+    {
+      "case_type": "near",
+      "index": 39
+    },
+    {
+      "case_type": "endpoint",
+      "index": 0
+    },
+    {
+      "case_type": "endpoint",
+      "index": 1
+    },
+    {
+      "case_type": "endpoint",
+      "index": 2
+    },
+    {
+      "case_type": "endpoint",
+      "index": 3
+    },
+    {
+      "case_type": "endpoint",
+      "index": 4
+    },
+    {
+      "case_type": "endpoint",
+      "index": 5
+    },
+    {
+      "case_type": "endpoint",
+      "index": 6
+    },
+    {
+      "case_type": "endpoint",
+      "index": 7
+    },
+    {
+      "case_type": "endpoint",
+      "index": 8
+    },
+    {
+      "case_type": "endpoint",
+      "index": 9
+    },
+    {
+      "case_type": "endpoint",
+      "index": 10
+    },
+    {
+      "case_type": "endpoint",
+      "index": 11
+    },
+    {
+      "case_type": "endpoint",
+      "index": 12
+    },
+    {
+      "case_type": "endpoint",
+      "index": 13
+    },
+    {
+      "case_type": "endpoint",
+      "index": 14
+    },
+    {
+      "case_type": "endpoint",
+      "index": 15
+    },
+    {
+      "case_type": "endpoint",
+      "index": 16
+    },
+    {
+      "case_type": "endpoint",
+      "index": 17
+    },
+    {
+      "case_type": "endpoint",
+      "index": 18
+    },
+    {
+      "case_type": "endpoint",
+      "index": 19
+    },
+    {
+      "case_type": "endpoint",
+      "index": 20
+    },
+    {
+      "case_type": "endpoint",
+      "index": 21
+    },
+    {
+      "case_type": "endpoint",
+      "index": 22
+    },
+    {
+      "case_type": "endpoint",
+      "index": 23
+    },
+    {
+      "case_type": "endpoint",
+      "index": 24
+    },
+    {
+      "case_type": "endpoint",
+      "index": 25
+    },
+    {
+      "case_type": "endpoint",
+      "index": 26
+    },
+    {
+      "case_type": "endpoint",
+      "index": 27
+    },
+    {
+      "case_type": "endpoint",
+      "index": 28
+    },
+    {
+      "case_type": "endpoint",
+      "index": 29
+    },
+    {
+      "case_type": "endpoint",
+      "index": 30
+    },
+    {
+      "case_type": "endpoint",
+      "index": 31
+    },
+    {
+      "case_type": "endpoint",
+      "index": 32
+    },
+    {
+      "case_type": "endpoint",
+      "index": 33
+    },
+    {
+      "case_type": "endpoint",
+      "index": 34
+    },
+    {
+      "case_type": "endpoint",
+      "index": 35
+    },
+    {
+      "case_type": "endpoint",
+      "index": 36
+    },
+    {
+      "case_type": "endpoint",
+      "index": 37
+    },
+    {
+      "case_type": "endpoint",
+      "index": 38
+    },
+    {
+      "case_type": "endpoint",
+      "index": 39
+    },
+    {
+      "case_type": "tangent",
+      "index": 0
+    },
+    {
+      "case_type": "tangent",
+      "index": 1
+    },
+    {
+      "case_type": "tangent",
+      "index": 2
+    },
+    {
+      "case_type": "tangent",
+      "index": 3
+    },
+    {
+      "case_type": "tangent",
+      "index": 4
+    },
+    {
+      "case_type": "tangent",
+      "index": 5
+    },
+    {
+      "case_type": "tangent",
+      "index": 6
+    },
+    {
+      "case_type": "tangent",
+      "index": 7
+    },
+    {
+      "case_type": "tangent",
+      "index": 8
+    },
+    {
+      "case_type": "tangent",
+      "index": 9
+    },
+    {
+      "case_type": "tangent",
+      "index": 10
+    },
+    {
+      "case_type": "tangent",
+      "index": 11
+    },
+    {
+      "case_type": "tangent",
+      "index": 12
+    },
+    {
+      "case_type": "tangent",
+      "index": 13
+    },
+    {
+      "case_type": "tangent",
+      "index": 14
+    },
+    {
+      "case_type": "tangent",
+      "index": 15
+    },
+    {
+      "case_type": "tangent",
+      "index": 16
+    },
+    {
+      "case_type": "tangent",
+      "index": 17
+    },
+    {
+      "case_type": "tangent",
+      "index": 18
+    },
+    {
+      "case_type": "tangent",
+      "index": 19
+    },
+    {
+      "case_type": "tangent",
+      "index": 20
+    },
+    {
+      "case_type": "tangent",
+      "index": 21
+    },
+    {
+      "case_type": "tangent",
+      "index": 22
+    },
+    {
+      "case_type": "tangent",
+      "index": 23
+    },
+    {
+      "case_type": "tangent",
+      "index": 24
+    },
+    {
+      "case_type": "tangent",
+      "index": 25
+    },
+    {
+      "case_type": "tangent",
+      "index": 26
+    },
+    {
+      "case_type": "tangent",
+      "index": 27
+    },
+    {
+      "case_type": "tangent",
+      "index": 28
+    },
+    {
+      "case_type": "tangent",
+      "index": 29
+    },
+    {
+      "case_type": "tangent",
+      "index": 30
+    },
+    {
+      "case_type": "tangent",
+      "index": 31
+    },
+    {
+      "case_type": "tangent",
+      "index": 32
+    },
+    {
+      "case_type": "tangent",
+      "index": 33
+    },
+    {
+      "case_type": "tangent",
+      "index": 34
+    },
+    {
+      "case_type": "tangent",
+      "index": 35
+    },
+    {
+      "case_type": "tangent",
+      "index": 36
+    },
+    {
+      "case_type": "tangent",
+      "index": 37
+    },
+    {
+      "case_type": "tangent",
+      "index": 38
+    },
+    {
+      "case_type": "tangent",
+      "index": 39
+    }
+  ]
+}

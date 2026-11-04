@@ -1,0 +1,386 @@
+[
+  {
+    "method": "dense_sampling_newton_refinement",
+    "samples": 4,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "exact_count_accuracy": 1.0,
+    "mean_parameter_error_matched": 5.281096708684975e-17,
+    "mean_geometry_residual_predicted_matched": 1.2143081128840144e-16,
+    "no_intersection_false_positive_rate": 0.0,
+    "mean_predicted_count": 1.5,
+    "by_true_count": {
+      "0": {
+        "samples": 1,
+        "true_positive": 0,
+        "false_negative": 0,
+        "recall": 0.0
+      },
+      "1": {
+        "samples": 1,
+        "true_positive": 1,
+        "false_negative": 0,
+        "recall": 1.0
+      },
+      "2": {
+        "samples": 1,
+        "true_positive": 2,
+        "false_negative": 0,
+        "recall": 1.0
+      },
+      "3": {
+        "samples": 1,
+        "true_positive": 3,
+        "false_negative": 0,
+        "recall": 1.0
+      }
+    }
+  },
+  {
+    "method": "parameter_grid_only",
+    "samples": 4,
+    "precision": 0.5,
+    "recall": 0.3333333333333333,
+    "f1": 0.4,
+    "exact_count_accuracy": 0.75,
+    "mean_parameter_error_matched": 0.07284157596909224,
+    "mean_geometry_residual_predicted_matched": 0.06815879230737994,
+    "no_intersection_false_positive_rate": 0.0,
+    "mean_predicted_count": 1.0,
+    "by_true_count": {
+      "0": {
+        "samples": 1,
+        "true_positive": 0,
+        "false_negative": 0,
+        "recall": 0.0
+      },
+      "1": {
+        "samples": 1,
+        "true_positive": 1,
+        "false_negative": 0,
+        "recall": 1.0
+      },
+      "2": {
+        "samples": 1,
+        "true_positive": 0,
+        "false_negative": 2,
+        "recall": 0.0
+      },
+      "3": {
+        "samples": 1,
+        "true_positive": 1,
+        "false_negative": 2,
+        "recall": 0.3333333333333333
+      }
+    }
+  },
+  {
+    "method": "shared_full_slots",
+    "samples": 4,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "exact_count_accuracy": 0.25,
+    "mean_parameter_error_matched": 0.46847828276917225,
+    "mean_geometry_residual_predicted_matched": 0.628694934446747,
+    "no_intersection_false_positive_rate": 1.0,
+    "mean_predicted_count": 1.25,
+    "by_true_count": {
+      "0": {
+        "samples": 1,
+        "true_positive": 0,
+        "false_negative": 0,
+        "recall": 0.0
+      },
+      "1": {
+        "samples": 1,
+        "true_positive": 0,
+        "false_negative": 1,
+        "recall": 0.0
+      },
+      "2": {
+        "samples": 1,
+        "true_positive": 0,
+        "false_negative": 2,
+        "recall": 0.0
+      },
+      "3": {
+        "samples": 1,
+        "true_positive": 0,
+        "false_negative": 3,
+        "recall": 0.0
+      }
+    },
+    "mean_slot_existence_probability": 0.4502348273807695,
+    "heatmap_peak_metrics": {
+      "method": "shared_full_heatmap_peaks",
+      "samples": 4,
+      "precision": 0.08333333333333333,
+      "recall": 0.16666666666666666,
+      "f1": 0.1111111111111111,
+      "exact_count_accuracy": 0.25,
+      "mean_parameter_error_matched": 0.28111297528457924,
+      "mean_geometry_residual_predicted_matched": 0.6211354041524444,
+      "no_intersection_false_positive_rate": 1.0,
+      "mean_predicted_count": 3.0,
+      "by_true_count": {
+        "0": {
+          "samples": 1,
+          "true_positive": 0,
+          "false_negative": 0,
+          "recall": 0.0
+        },
+        "1": {
+          "samples": 1,
+          "true_positive": 0,
+          "false_negative": 1,
+          "recall": 0.0
+        },
+        "2": {
+          "samples": 1,
+          "true_positive": 0,
+          "false_negative": 2,
+          "recall": 0.0
+        },
+        "3": {
+          "samples": 1,
+          "true_positive": 1,
+          "false_negative": 2,
+          "recall": 0.3333333333333333
+        }
+      }
+    }
+  },
+  {
+    "method": "shared_no_geometry_slots",
+    "samples": 4,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "exact_count_accuracy": 0.0,
+    "mean_parameter_error_matched": 0.22110499085851185,
+    "mean_geometry_residual_predicted_matched": 0.6312324212326021,
+    "no_intersection_false_positive_rate": 1.0,
+    "mean_predicted_count": 0.5,
+    "by_true_count": {
+      "0": {
+        "samples": 1,
+        "true_positive": 0,
+        "false_negative": 0,
+        "recall": 0.0
+      },
+      "1": {
+        "samples": 1,
+        "true_positive": 0,
+        "false_negative": 1,
+        "recall": 0.0
+      },
+      "2": {
+        "samples": 1,
+        "true_positive": 0,
+        "false_negative": 2,
+        "recall": 0.0
+      },
+      "3": {
+        "samples": 1,
+        "true_positive": 0,
+        "false_negative": 3,
+        "recall": 0.0
+      }
+    },
+    "mean_slot_existence_probability": 0.3665694045589487,
+    "heatmap_peak_metrics": {
+      "method": "shared_no_geometry_heatmap_peaks",
+      "samples": 4,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "exact_count_accuracy": 0.25,
+      "mean_parameter_error_matched": 0.4828111972044106,
+      "mean_geometry_residual_predicted_matched": 0.9648715585251106,
+      "no_intersection_false_positive_rate": 1.0,
+      "mean_predicted_count": 3.0,
+      "by_true_count": {
+        "0": {
+          "samples": 1,
+          "true_positive": 0,
+          "false_negative": 0,
+          "recall": 0.0
+        },
+        "1": {
+          "samples": 1,
+          "true_positive": 0,
+          "false_negative": 1,
+          "recall": 0.0
+        },
+        "2": {
+          "samples": 1,
+          "true_positive": 0,
+          "false_negative": 2,
+          "recall": 0.0
+        },
+        "3": {
+          "samples": 1,
+          "true_positive": 0,
+          "false_negative": 3,
+          "recall": 0.0
+        }
+      }
+    }
+  },
+  {
+    "method": "shared_no_residual_slots",
+    "samples": 4,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "exact_count_accuracy": 0.0,
+    "mean_parameter_error_matched": 0.313488139151205,
+    "mean_geometry_residual_predicted_matched": 0.42435920086147155,
+    "no_intersection_false_positive_rate": 1.0,
+    "mean_predicted_count": 1.75,
+    "by_true_count": {
+      "0": {
+        "samples": 1,
+        "true_positive": 0,
+        "false_negative": 0,
+        "recall": 0.0
+      },
+      "1": {
+        "samples": 1,
+        "true_positive": 0,
+        "false_negative": 1,
+        "recall": 0.0
+      },
+      "2": {
+        "samples": 1,
+        "true_positive": 0,
+        "false_negative": 2,
+        "recall": 0.0
+      },
+      "3": {
+        "samples": 1,
+        "true_positive": 0,
+        "false_negative": 3,
+        "recall": 0.0
+      }
+    },
+    "mean_slot_existence_probability": 0.4962633155785629,
+    "heatmap_peak_metrics": {
+      "method": "shared_no_residual_heatmap_peaks",
+      "samples": 4,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "exact_count_accuracy": 0.25,
+      "mean_parameter_error_matched": 0.4785608768800195,
+      "mean_geometry_residual_predicted_matched": 0.7391569745543148,
+      "no_intersection_false_positive_rate": 1.0,
+      "mean_predicted_count": 3.0,
+      "by_true_count": {
+        "0": {
+          "samples": 1,
+          "true_positive": 0,
+          "false_negative": 0,
+          "recall": 0.0
+        },
+        "1": {
+          "samples": 1,
+          "true_positive": 0,
+          "false_negative": 1,
+          "recall": 0.0
+        },
+        "2": {
+          "samples": 1,
+          "true_positive": 0,
+          "false_negative": 2,
+          "recall": 0.0
+        },
+        "3": {
+          "samples": 1,
+          "true_positive": 0,
+          "false_negative": 3,
+          "recall": 0.0
+        }
+      }
+    }
+  },
+  {
+    "method": "direct_slots",
+    "samples": 4,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "exact_count_accuracy": 0.25,
+    "mean_parameter_error_matched": 0.3728580884588521,
+    "mean_geometry_residual_predicted_matched": 0.3571935208869141,
+    "no_intersection_false_positive_rate": 1.0,
+    "mean_predicted_count": 2.5,
+    "by_true_count": {
+      "0": {
+        "samples": 1,
+        "true_positive": 0,
+        "false_negative": 0,
+        "recall": 0.0
+      },
+      "1": {
+        "samples": 1,
+        "true_positive": 0,
+        "false_negative": 1,
+        "recall": 0.0
+      },
+      "2": {
+        "samples": 1,
+        "true_positive": 0,
+        "false_negative": 2,
+        "recall": 0.0
+      },
+      "3": {
+        "samples": 1,
+        "true_positive": 0,
+        "false_negative": 3,
+        "recall": 0.0
+      }
+    },
+    "mean_slot_existence_probability": 0.633409958472713,
+    "heatmap_peak_metrics": {
+      "method": "direct_heatmap_peaks",
+      "samples": 4,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "exact_count_accuracy": 0.25,
+      "mean_parameter_error_matched": 0.5249705576171073,
+      "mean_geometry_residual_predicted_matched": 0.8356459942645067,
+      "no_intersection_false_positive_rate": 1.0,
+      "mean_predicted_count": 3.0,
+      "by_true_count": {
+        "0": {
+          "samples": 1,
+          "true_positive": 0,
+          "false_negative": 0,
+          "recall": 0.0
+        },
+        "1": {
+          "samples": 1,
+          "true_positive": 0,
+          "false_negative": 1,
+          "recall": 0.0
+        },
+        "2": {
+          "samples": 1,
+          "true_positive": 0,
+          "false_negative": 2,
+          "recall": 0.0
+        },
+        "3": {
+          "samples": 1,
+          "true_positive": 0,
+          "false_negative": 3,
+          "recall": 0.0
+        }
+      }
+    }
+  }
+]

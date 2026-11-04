@@ -1,0 +1,27 @@
+{
+  "validation_loss": 0.11663944310039367,
+  "selected_threshold": 0.85,
+  "validation_metrics": {
+    "precision": 0.7431506849315068,
+    "recall": 0.7233333333333334,
+    "f1": 0.7331081081081081,
+    "mean_parameter_error": 0.01865335025913891,
+    "duplicate_prediction_rate": 0.0,
+    "predicted_count": 1.46
+  },
+  "test_metrics": {
+    "precision": 0.7126948775055679,
+    "recall": 0.7111111111111111,
+    "f1": 0.7119021134593994,
+    "mean_parameter_error": 0.018507717104230582,
+    "duplicate_prediction_rate": 0.0,
+    "predicted_count": 1.4966666666666666,
+    "mean_geometry_residual": 0.08637967502589738,
+    "max_geometry_residual": 0.9770050028500363,
+    "inference_seconds_total": 9.730550200038124,
+    "inference_seconds_per_pair": 0.016217583666730206
+  },
+  "validation_inference_seconds_for_threshold_sweep": 123.35515519999899,
+  "train_candidates": 19200,
+  "validation_candidates": 4800
+}

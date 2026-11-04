@@ -1,0 +1,119 @@
+{
+  "seed": 42,
+  "degree": 3,
+  "control_points": 8,
+  "knot_vector": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "weights": "all ones",
+  "label_method": "dense polyline segment crossings followed by Newton refinement and deduplication",
+  "metadata": [
+    {
+      "split": "train",
+      "sample_index": 0,
+      "intersection_count": 0,
+      "hard_negative": true
+    },
+    {
+      "split": "train",
+      "sample_index": 1,
+      "intersection_count": 1,
+      "hard_negative": false
+    },
+    {
+      "split": "train",
+      "sample_index": 2,
+      "intersection_count": 2,
+      "hard_negative": false
+    },
+    {
+      "split": "train",
+      "sample_index": 3,
+      "intersection_count": 3,
+      "hard_negative": false
+    },
+    {
+      "split": "train",
+      "sample_index": 4,
+      "intersection_count": 0,
+      "hard_negative": true
+    },
+    {
+      "split": "train",
+      "sample_index": 5,
+      "intersection_count": 1,
+      "hard_negative": false
+    },
+    {
+      "split": "train",
+      "sample_index": 6,
+      "intersection_count": 2,
+      "hard_negative": false
+    },
+    {
+      "split": "train",
+      "sample_index": 7,
+      "intersection_count": 3,
+      "hard_negative": false
+    },
+    {
+      "split": "validation",
+      "sample_index": 0,
+      "intersection_count": 0,
+      "hard_negative": true
+    },
+    {
+      "split": "validation",
+      "sample_index": 1,
+      "intersection_count": 1,
+      "hard_negative": false
+    },
+    {
+      "split": "validation",
+      "sample_index": 2,
+      "intersection_count": 2,
+      "hard_negative": false
+    },
+    {
+      "split": "validation",
+      "sample_index": 3,
+      "intersection_count": 3,
+      "hard_negative": false
+    },
+    {
+      "split": "test",
+      "sample_index": 0,
+      "intersection_count": 0,
+      "hard_negative": false
+    },
+    {
+      "split": "test",
+      "sample_index": 1,
+      "intersection_count": 1,
+      "hard_negative": false
+    },
+    {
+      "split": "test",
+      "sample_index": 2,
+      "intersection_count": 2,
+      "hard_negative": false
+    },
+    {
+      "split": "test",
+      "sample_index": 3,
+      "intersection_count": 3,
+      "hard_negative": false
+    }
+  ]
+}

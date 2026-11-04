@@ -1,0 +1,7 @@
+epoch=001 train=1.151009 val=0.940012 geo=0.011274
+epoch=005 train=0.414981 val=0.430657 geo=0.005229
+epoch=010 train=0.290064 val=0.337232 geo=0.002712
+epoch=015 train=0.237927 val=0.283403 geo=0.002173
+epoch=020 train=0.231576 val=0.281502 geo=0.002066
+{"output": "E:\\study\\ThreeUp\\\u8bba\u6587\\results\\learned_study\\dynamic_True", "validation_f1": 0.8701809598741149, "reference_final_loss": 0.34725338130198474, "threshold": 0.9}
+STAGE dynamic SELECTED E:\study\ThreeUp\����\results\learned_study\positive_5p0

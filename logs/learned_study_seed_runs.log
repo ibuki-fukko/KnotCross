@@ -1,0 +1,60 @@
+epoch=001 train=1.277111 val=0.971888 geo=0.014857
+epoch=005 train=0.426291 val=0.416023 geo=0.005321
+epoch=010 train=0.356017 val=0.405070 geo=0.003162
+epoch=015 train=0.323206 val=0.389494 geo=0.002781
+epoch=020 train=0.297804 val=0.374880 geo=0.002265
+{"output": "E:\\study\\ThreeUp\\\u8bba\u6587\\results\\learned_study\\seeds\\baseline_7", "validation_f1": 0.8528481012658228, "reference_final_loss": 0.36393950931682395, "threshold": 0.93}
+epoch=001 train=1.292636 val=0.977760 geo=0.017332
+epoch=005 train=0.430725 val=0.427852 geo=0.009248
+epoch=010 train=0.361104 val=0.382789 geo=0.003250
+epoch=015 train=0.323123 val=0.368954 geo=0.003023
+epoch=020 train=0.296266 val=0.358225 geo=0.002744
+{"output": "E:\\study\\ThreeUp\\\u8bba\u6587\\results\\learned_study\\seeds\\baseline_19", "validation_f1": 0.8585131894484412, "reference_final_loss": 0.3649114593936247, "threshold": 0.9}
+epoch=001 train=1.041560 val=0.790547 geo=0.005730
+epoch=005 train=0.349749 val=0.379751 geo=0.002381
+epoch=010 train=0.249586 val=0.306058 geo=0.001688
+epoch=015 train=0.217991 val=0.281161 geo=0.001373
+epoch=020 train=0.202281 val=0.284803 geo=0.001412
+epoch=025 train=0.194838 val=0.305169 geo=0.001364
+epoch=030 train=0.170319 val=0.287353 geo=0.001333
+epoch=035 train=0.172744 val=0.311378 geo=0.001420
+epoch=040 train=0.181076 val=0.283050 geo=0.001426
+epoch=045 train=0.140976 val=0.310692 geo=0.001178
+epoch=050 train=0.132770 val=0.307351 geo=0.001186
+epoch=055 train=0.141298 val=0.325281 geo=0.001319
+epoch=060 train=0.147921 val=0.273820 geo=0.001354
+epoch=065 train=0.126327 val=0.320693 geo=0.001270
+epoch=070 train=0.104200 val=0.347510 geo=0.001143
+epoch=075 train=0.127475 val=0.292976 geo=0.001062
+epoch=080 train=0.098199 val=0.343599 geo=0.001085
+{"output": "E:\\study\\ThreeUp\\\u8bba\u6587\\results\\learned_study\\seeds\\selected_7", "validation_f1": 0.9016129032258065, "reference_final_loss": 0.3331260706371522, "threshold": 0.95}
+epoch=001 train=1.088446 val=0.840079 geo=0.007605
+epoch=005 train=0.362311 val=0.337693 geo=0.005646
+epoch=010 train=0.278530 val=0.296983 geo=0.003274
+epoch=015 train=0.234674 val=0.272948 geo=0.002436
+epoch=020 train=0.209901 val=0.324572 geo=0.001952
+epoch=025 train=0.196045 val=0.301499 geo=0.001738
+epoch=030 train=0.188043 val=0.271346 geo=0.001880
+epoch=035 train=0.161906 val=0.290861 geo=0.001524
+epoch=040 train=0.190278 val=0.281489 geo=0.001758
+epoch=045 train=0.146417 val=0.279790 geo=0.001560
+epoch=050 train=0.199629 val=0.308577 geo=0.001893
+epoch=055 train=0.146479 val=0.297956 geo=0.001675
+epoch=060 train=0.175690 val=0.243259 geo=0.001818
+epoch=065 train=0.123098 val=0.277323 geo=0.001397
+epoch=070 train=0.107508 val=0.265164 geo=0.001356
+epoch=075 train=0.103600 val=0.300003 geo=0.001315
+epoch=080 train=0.106045 val=0.300083 geo=0.001399
+{"output": "E:\\study\\ThreeUp\\\u8bba\u6587\\results\\learned_study\\seeds\\selected_19", "validation_f1": 0.9008863819500403, "reference_final_loss": 0.3083646982761406, "threshold": 0.94}
+{
+  "baseline": [
+    "E:\\study\\ThreeUp\\\u8bba\u6587\\results\\learned_study\\depth_0p0",
+    "E:\\study\\ThreeUp\\\u8bba\u6587\\results\\learned_study\\seeds\\baseline_7",
+    "E:\\study\\ThreeUp\\\u8bba\u6587\\results\\learned_study\\seeds\\baseline_19"
+  ],
+  "selected": [
+    "E:\\study\\ThreeUp\\\u8bba\u6587\\results\\learned_study\\refresh_scale_0p04",
+    "E:\\study\\ThreeUp\\\u8bba\u6587\\results\\learned_study\\seeds\\selected_7",
+    "E:\\study\\ThreeUp\\\u8bba\u6587\\results\\learned_study\\seeds\\selected_19"
+  ]
+}

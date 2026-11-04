@@ -1,0 +1,19 @@
+{
+  "data": "E:\\study\\ThreeUp\\论文\\data\\experiment_large.npz",
+  "epochs": 80,
+  "batch_size": 256,
+  "learning_rate": 0.0005,
+  "seed": 20261026,
+  "grid_size": 48,
+  "max_candidates": 8,
+  "local_slack": 0.015,
+  "steps": 4,
+  "step_scale": 0.08,
+  "geometry_weight": 1.0,
+  "regression_weight": 4.0,
+  "positive_weight": 5.0,
+  "deep_supervision": 0.0,
+  "evaluate_test": false,
+  "reference_coordinates": false,
+  "dynamic_patches": true
+}

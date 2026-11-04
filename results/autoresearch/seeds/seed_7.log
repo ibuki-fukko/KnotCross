@@ -1,0 +1,32 @@
+candidate epoch=001 train=0.33607 validation=0.24240
+candidate epoch=005 train=0.11638 validation=0.13193
+candidate epoch=010 train=0.09384 validation=0.11367
+candidate epoch=015 train=0.07886 validation=0.11888
+candidate epoch=020 train=0.06859 validation=0.11998
+{
+  "validation_loss": 0.11366819633047653,
+  "selected_threshold": 0.7999999999999999,
+  "validation_metrics": {
+    "precision": 0.7702702702702703,
+    "recall": 0.76,
+    "f1": 0.7651006711409396,
+    "mean_parameter_error": 0.01569849037861499,
+    "duplicate_prediction_rate": 0.0,
+    "predicted_count": 1.48
+  },
+  "test_metrics": {
+    "precision": 0.7824639289678136,
+    "recall": 0.7833333333333333,
+    "f1": 0.7828983897834536,
+    "mean_parameter_error": 0.015468618514984527,
+    "duplicate_prediction_rate": 0.0,
+    "predicted_count": 1.5016666666666667,
+    "mean_geometry_residual": 0.06346794759588541,
+    "max_geometry_residual": 0.7791926976513595,
+    "inference_seconds_total": 9.53985310002463,
+    "inference_seconds_per_pair": 0.015899755166707715
+  },
+  "validation_inference_seconds_for_threshold_sweep": 121.70735690003494,
+  "train_candidates": 19200,
+  "validation_candidates": 4800
+}

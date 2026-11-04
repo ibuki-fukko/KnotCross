@@ -1,0 +1,7 @@
+method,precision,recall,f1,exact_count_accuracy,mean_parameter_error_matched,mean_geometry_residual_predicted_matched,no_intersection_false_positive_rate,mean_predicted_count
+dense_sampling_newton_refinement,1.0,1.0,1.0,1.0,5.281096708684975e-17,1.2143081128840144e-16,0.0,1.5
+parameter_grid_only,0.5,0.3333333333333333,0.4,0.75,0.07284157596909224,0.06815879230737994,0.0,1.0
+shared_full_slots,0.0,0.0,0.0,0.25,0.46847828276917225,0.628694934446747,1.0,1.25
+shared_no_geometry_slots,0.0,0.0,0.0,0.0,0.22110499085851185,0.6312324212326021,1.0,0.5
+shared_no_residual_slots,0.0,0.0,0.0,0.0,0.313488139151205,0.42435920086147155,1.0,1.75
+direct_slots,0.0,0.0,0.0,0.25,0.3728580884588521,0.3571935208869141,1.0,2.5

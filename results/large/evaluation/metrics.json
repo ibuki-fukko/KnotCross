@@ -1,0 +1,394 @@
+[
+  {
+    "method": "dense_sampling_newton_refinement",
+    "samples": 600,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "exact_count_accuracy": 1.0,
+    "mean_parameter_error_matched": 5.2164652724201406e-17,
+    "mean_geometry_residual_predicted_matched": 1.4282404668854704e-16,
+    "no_intersection_false_positive_rate": 0.0,
+    "mean_predicted_count": 1.5,
+    "by_true_count": {
+      "0": {
+        "samples": 150,
+        "true_positive": 0,
+        "false_negative": 0,
+        "recall": 0.0
+      },
+      "1": {
+        "samples": 150,
+        "true_positive": 150,
+        "false_negative": 0,
+        "recall": 1.0
+      },
+      "2": {
+        "samples": 150,
+        "true_positive": 300,
+        "false_negative": 0,
+        "recall": 1.0
+      },
+      "3": {
+        "samples": 150,
+        "true_positive": 450,
+        "false_negative": 0,
+        "recall": 1.0
+      }
+    }
+  },
+  {
+    "method": "parameter_grid_only",
+    "samples": 600,
+    "precision": 0.34281650071123754,
+    "recall": 0.2677777777777778,
+    "f1": 0.3006862133499688,
+    "exact_count_accuracy": 0.41333333333333333,
+    "mean_parameter_error_matched": 0.09278584471482172,
+    "mean_geometry_residual_predicted_matched": 0.07157213691509796,
+    "no_intersection_false_positive_rate": 0.6,
+    "mean_predicted_count": 1.1716666666666666,
+    "by_true_count": {
+      "0": {
+        "samples": 150,
+        "true_positive": 0,
+        "false_negative": 0,
+        "recall": 0.0
+      },
+      "1": {
+        "samples": 150,
+        "true_positive": 61,
+        "false_negative": 89,
+        "recall": 0.4066666666666667
+      },
+      "2": {
+        "samples": 150,
+        "true_positive": 83,
+        "false_negative": 217,
+        "recall": 0.27666666666666667
+      },
+      "3": {
+        "samples": 150,
+        "true_positive": 97,
+        "false_negative": 353,
+        "recall": 0.21555555555555556
+      }
+    }
+  },
+  {
+    "method": "shared_full_slots",
+    "samples": 600,
+    "precision": 0.018461538461538463,
+    "recall": 0.02666666666666667,
+    "f1": 0.02181818181818182,
+    "exact_count_accuracy": 0.4533333333333333,
+    "mean_parameter_error_matched": 0.22015729730367486,
+    "mean_geometry_residual_predicted_matched": 0.4186625053390079,
+    "no_intersection_false_positive_rate": 0.19333333333333333,
+    "mean_predicted_count": 2.1666666666666665,
+    "by_true_count": {
+      "0": {
+        "samples": 150,
+        "true_positive": 0,
+        "false_negative": 0,
+        "recall": 0.0
+      },
+      "1": {
+        "samples": 150,
+        "true_positive": 7,
+        "false_negative": 143,
+        "recall": 0.04666666666666667
+      },
+      "2": {
+        "samples": 150,
+        "true_positive": 10,
+        "false_negative": 290,
+        "recall": 0.03333333333333333
+      },
+      "3": {
+        "samples": 150,
+        "true_positive": 7,
+        "false_negative": 443,
+        "recall": 0.015555555555555555
+      }
+    },
+    "selected_validation_existence_threshold": 0.2,
+    "mean_slot_existence_probability": 0.47309342222844925,
+    "heatmap_peak_metrics": {
+      "method": "shared_full_heatmap_peaks",
+      "samples": 600,
+      "precision": 0.01904761904761905,
+      "recall": 0.0022222222222222222,
+      "f1": 0.003980099502487562,
+      "exact_count_accuracy": 0.2816666666666667,
+      "mean_parameter_error_matched": 0.27836812206811745,
+      "mean_geometry_residual_predicted_matched": 0.4546290782836621,
+      "no_intersection_false_positive_rate": 0.006666666666666667,
+      "mean_predicted_count": 0.175,
+      "by_true_count": {
+        "0": {
+          "samples": 150,
+          "true_positive": 0,
+          "false_negative": 0,
+          "recall": 0.0
+        },
+        "1": {
+          "samples": 150,
+          "true_positive": 0,
+          "false_negative": 150,
+          "recall": 0.0
+        },
+        "2": {
+          "samples": 150,
+          "true_positive": 0,
+          "false_negative": 300,
+          "recall": 0.0
+        },
+        "3": {
+          "samples": 150,
+          "true_positive": 2,
+          "false_negative": 448,
+          "recall": 0.0044444444444444444
+        }
+      }
+    },
+    "selected_validation_heatmap_threshold": 0.2
+  },
+  {
+    "method": "shared_no_geometry_slots",
+    "samples": 600,
+    "precision": 0.02313624678663239,
+    "recall": 0.01,
+    "f1": 0.013964313421256787,
+    "exact_count_accuracy": 0.36333333333333334,
+    "mean_parameter_error_matched": 0.22012730284887788,
+    "mean_geometry_residual_predicted_matched": 0.4855329274031236,
+    "no_intersection_false_positive_rate": 0.04666666666666667,
+    "mean_predicted_count": 0.6483333333333333,
+    "by_true_count": {
+      "0": {
+        "samples": 150,
+        "true_positive": 0,
+        "false_negative": 0,
+        "recall": 0.0
+      },
+      "1": {
+        "samples": 150,
+        "true_positive": 0,
+        "false_negative": 150,
+        "recall": 0.0
+      },
+      "2": {
+        "samples": 150,
+        "true_positive": 6,
+        "false_negative": 294,
+        "recall": 0.02
+      },
+      "3": {
+        "samples": 150,
+        "true_positive": 3,
+        "false_negative": 447,
+        "recall": 0.006666666666666667
+      }
+    },
+    "selected_validation_existence_threshold": 0.75,
+    "mean_slot_existence_probability": 0.45699088872947286,
+    "heatmap_peak_metrics": {
+      "method": "shared_no_geometry_heatmap_peaks",
+      "samples": 600,
+      "precision": 0.015267175572519083,
+      "recall": 0.0022222222222222222,
+      "f1": 0.0038797284190106693,
+      "exact_count_accuracy": 0.2733333333333333,
+      "mean_parameter_error_matched": 0.3022811545327148,
+      "mean_geometry_residual_predicted_matched": 0.5037818945989732,
+      "no_intersection_false_positive_rate": 0.06,
+      "mean_predicted_count": 0.21833333333333332,
+      "by_true_count": {
+        "0": {
+          "samples": 150,
+          "true_positive": 0,
+          "false_negative": 0,
+          "recall": 0.0
+        },
+        "1": {
+          "samples": 150,
+          "true_positive": 1,
+          "false_negative": 149,
+          "recall": 0.006666666666666667
+        },
+        "2": {
+          "samples": 150,
+          "true_positive": 1,
+          "false_negative": 299,
+          "recall": 0.0033333333333333335
+        },
+        "3": {
+          "samples": 150,
+          "true_positive": 0,
+          "false_negative": 450,
+          "recall": 0.0
+        }
+      }
+    },
+    "selected_validation_heatmap_threshold": 0.2
+  },
+  {
+    "method": "shared_no_residual_slots",
+    "samples": 600,
+    "precision": 0.01193058568329718,
+    "recall": 0.012222222222222223,
+    "f1": 0.01207464324917673,
+    "exact_count_accuracy": 0.41833333333333333,
+    "mean_parameter_error_matched": 0.24508119942911064,
+    "mean_geometry_residual_predicted_matched": 0.449283018891705,
+    "no_intersection_false_positive_rate": 0.20666666666666667,
+    "mean_predicted_count": 1.5366666666666666,
+    "by_true_count": {
+      "0": {
+        "samples": 150,
+        "true_positive": 0,
+        "false_negative": 0,
+        "recall": 0.0
+      },
+      "1": {
+        "samples": 150,
+        "true_positive": 2,
+        "false_negative": 148,
+        "recall": 0.013333333333333334
+      },
+      "2": {
+        "samples": 150,
+        "true_positive": 3,
+        "false_negative": 297,
+        "recall": 0.01
+      },
+      "3": {
+        "samples": 150,
+        "true_positive": 6,
+        "false_negative": 444,
+        "recall": 0.013333333333333334
+      }
+    },
+    "selected_validation_existence_threshold": 0.65,
+    "mean_slot_existence_probability": 0.5702627313994791,
+    "heatmap_peak_metrics": {
+      "method": "shared_no_residual_heatmap_peaks",
+      "samples": 600,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "exact_count_accuracy": 0.25833333333333336,
+      "mean_parameter_error_matched": 0.38958624727262464,
+      "mean_geometry_residual_predicted_matched": 0.6032731983573654,
+      "no_intersection_false_positive_rate": 0.02,
+      "mean_predicted_count": 0.085,
+      "by_true_count": {
+        "0": {
+          "samples": 150,
+          "true_positive": 0,
+          "false_negative": 0,
+          "recall": 0.0
+        },
+        "1": {
+          "samples": 150,
+          "true_positive": 0,
+          "false_negative": 150,
+          "recall": 0.0
+        },
+        "2": {
+          "samples": 150,
+          "true_positive": 0,
+          "false_negative": 300,
+          "recall": 0.0
+        },
+        "3": {
+          "samples": 150,
+          "true_positive": 0,
+          "false_negative": 450,
+          "recall": 0.0
+        }
+      }
+    },
+    "selected_validation_heatmap_threshold": 0.2
+  },
+  {
+    "method": "direct_slots",
+    "samples": 600,
+    "precision": 0.014297729184188394,
+    "recall": 0.01888888888888889,
+    "f1": 0.01627573001436094,
+    "exact_count_accuracy": 0.49166666666666664,
+    "mean_parameter_error_matched": 0.21919000954468884,
+    "mean_geometry_residual_predicted_matched": 0.4145510601377876,
+    "no_intersection_false_positive_rate": 0.14,
+    "mean_predicted_count": 1.9816666666666667,
+    "by_true_count": {
+      "0": {
+        "samples": 150,
+        "true_positive": 0,
+        "false_negative": 0,
+        "recall": 0.0
+      },
+      "1": {
+        "samples": 150,
+        "true_positive": 3,
+        "false_negative": 147,
+        "recall": 0.02
+      },
+      "2": {
+        "samples": 150,
+        "true_positive": 5,
+        "false_negative": 295,
+        "recall": 0.016666666666666666
+      },
+      "3": {
+        "samples": 150,
+        "true_positive": 9,
+        "false_negative": 441,
+        "recall": 0.02
+      }
+    },
+    "selected_validation_existence_threshold": 0.4,
+    "mean_slot_existence_probability": 0.4771312217400743,
+    "heatmap_peak_metrics": {
+      "method": "direct_heatmap_peaks",
+      "samples": 600,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "exact_count_accuracy": 0.255,
+      "mean_parameter_error_matched": 0.35919758735881446,
+      "mean_geometry_residual_predicted_matched": 0.5376189062857968,
+      "no_intersection_false_positive_rate": 0.02666666666666667,
+      "mean_predicted_count": 0.06833333333333333,
+      "by_true_count": {
+        "0": {
+          "samples": 150,
+          "true_positive": 0,
+          "false_negative": 0,
+          "recall": 0.0
+        },
+        "1": {
+          "samples": 150,
+          "true_positive": 0,
+          "false_negative": 150,
+          "recall": 0.0
+        },
+        "2": {
+          "samples": 150,
+          "true_positive": 0,
+          "false_negative": 300,
+          "recall": 0.0
+        },
+        "3": {
+          "samples": 150,
+          "true_positive": 0,
+          "false_negative": 450,
+          "recall": 0.0
+        }
+      }
+    },
+    "selected_validation_heatmap_threshold": 0.2
+  }
+]

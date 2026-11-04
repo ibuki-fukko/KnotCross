@@ -1,0 +1,467 @@
+{
+  "data": "E:\\study\\ThreeUp\\论文\\data\\experiment_large.npz",
+  "seed": 20261026,
+  "epochs": 20,
+  "batch_size": 256,
+  "learning_rate": 0.0005,
+  "grid_size": 48,
+  "max_candidates": 8,
+  "local_slack": 0.015,
+  "steps": 4,
+  "step_scale": 0.2,
+  "geometry_weight": 1.0,
+  "regression_weight": 4.0,
+  "positive_weight": 7.0,
+  "deep_supervision": 0.0,
+  "train_candidate_truth_coverage": 0.9741666666666666,
+  "validation_candidate_truth_coverage": 0.9783333333333334,
+  "best_validation_loss": 0.36603874332359515,
+  "best_epoch": 20,
+  "evaluate_test": false,
+  "state_loss_weight_sum": 1.0,
+  "autodiff": "manual reverse-mode BPTT through shared MLP correction steps and NURBS geometric residual",
+  "selected_probability_threshold": 0.93,
+  "validation_metrics": {
+    "evaluator_version": "maximum_cardinality_v2",
+    "tolerance": 0.035,
+    "true_positive": 522,
+    "false_positive": 118,
+    "false_negative": 78,
+    "precision": 0.815625,
+    "recall": 0.87,
+    "f1": 0.8419354838709677,
+    "mean_parameter_error": 0.012177386794054173,
+    "max_parameter_error": 0.034778822175341235,
+    "count_accuracy": 0.7325,
+    "empty_false_positive_rate": 0.07,
+    "duplicate_prediction_rate": 0.0,
+    "predicted_count": 1.6,
+    "per_intersection_count": {
+      "0": {
+        "pairs": 100,
+        "tp": 0,
+        "fp": 9,
+        "fn": 0,
+        "f1": 0.0
+      },
+      "1": {
+        "pairs": 100,
+        "tp": 97,
+        "fp": 31,
+        "fn": 3,
+        "f1": 0.8508771929824561
+      },
+      "2": {
+        "pairs": 100,
+        "tp": 166,
+        "fp": 25,
+        "fn": 34,
+        "f1": 0.8491048593350383
+      },
+      "3": {
+        "pairs": 100,
+        "tp": 259,
+        "fp": 53,
+        "fn": 41,
+        "f1": 0.8464052287581699
+      }
+    }
+  },
+  "test_metrics": null,
+  "validation_threshold_results": [
+    {
+      "threshold": 0.05,
+      "f1": 0.5446559297218155
+    },
+    {
+      "threshold": 0.06,
+      "f1": 0.5602409638554217
+    },
+    {
+      "threshold": 0.07,
+      "f1": 0.5717213114754098
+    },
+    {
+      "threshold": 0.08,
+      "f1": 0.58125
+    },
+    {
+      "threshold": 0.09,
+      "f1": 0.5936170212765958
+    },
+    {
+      "threshold": 0.1,
+      "f1": 0.6032432432432432
+    },
+    {
+      "threshold": 0.11,
+      "f1": 0.6138613861386139
+    },
+    {
+      "threshold": 0.12,
+      "f1": 0.6175982291090205
+    },
+    {
+      "threshold": 0.13,
+      "f1": 0.621380846325167
+    },
+    {
+      "threshold": 0.14,
+      "f1": 0.6280247608328644
+    },
+    {
+      "threshold": 0.15,
+      "f1": 0.6322946175637394
+    },
+    {
+      "threshold": 0.16,
+      "f1": 0.6377142857142857
+    },
+    {
+      "threshold": 0.17,
+      "f1": 0.643598615916955
+    },
+    {
+      "threshold": 0.18,
+      "f1": 0.6480836236933798
+    },
+    {
+      "threshold": 0.19,
+      "f1": 0.6541617819460727
+    },
+    {
+      "threshold": 0.2,
+      "f1": 0.6568569746909947
+    },
+    {
+      "threshold": 0.21,
+      "f1": 0.6619217081850534
+    },
+    {
+      "threshold": 0.22,
+      "f1": 0.6666666666666666
+    },
+    {
+      "threshold": 0.23,
+      "f1": 0.6706730769230769
+    },
+    {
+      "threshold": 0.24,
+      "f1": 0.6747279322853688
+    },
+    {
+      "threshold": 0.25,
+      "f1": 0.6792452830188679
+    },
+    {
+      "threshold": 0.26,
+      "f1": 0.6821515892420538
+    },
+    {
+      "threshold": 0.27,
+      "f1": 0.6850828729281768
+    },
+    {
+      "threshold": 0.28,
+      "f1": 0.6888888888888889
+    },
+    {
+      "threshold": 0.29,
+      "f1": 0.6918784872907625
+    },
+    {
+      "threshold": 0.3,
+      "f1": 0.6948941469489415
+    },
+    {
+      "threshold": 0.31,
+      "f1": 0.6992481203007519
+    },
+    {
+      "threshold": 0.32,
+      "f1": 0.7032136105860114
+    },
+    {
+      "threshold": 0.33,
+      "f1": 0.7063291139240506
+    },
+    {
+      "threshold": 0.34,
+      "f1": 0.7117346938775511
+    },
+    {
+      "threshold": 0.35,
+      "f1": 0.7144686299615877
+    },
+    {
+      "threshold": 0.36,
+      "f1": 0.7167630057803468
+    },
+    {
+      "threshold": 0.37,
+      "f1": 0.72
+    },
+    {
+      "threshold": 0.38,
+      "f1": 0.7227979274611399
+    },
+    {
+      "threshold": 0.39,
+      "f1": 0.7246753246753247
+    },
+    {
+      "threshold": 0.4,
+      "f1": 0.7284595300261096
+    },
+    {
+      "threshold": 0.41,
+      "f1": 0.7318032786885246
+    },
+    {
+      "threshold": 0.42,
+      "f1": 0.7332457293035479
+    },
+    {
+      "threshold": 0.43,
+      "f1": 0.7366336633663366
+    },
+    {
+      "threshold": 0.44,
+      "f1": 0.7385837193911317
+    },
+    {
+      "threshold": 0.45,
+      "f1": 0.7400530503978779
+    },
+    {
+      "threshold": 0.46,
+      "f1": 0.7410358565737052
+    },
+    {
+      "threshold": 0.47,
+      "f1": 0.7430093209054593
+    },
+    {
+      "threshold": 0.48,
+      "f1": 0.744
+    },
+    {
+      "threshold": 0.49,
+      "f1": 0.7459893048128342
+    },
+    {
+      "threshold": 0.5,
+      "f1": 0.7479892761394102
+    },
+    {
+      "threshold": 0.51,
+      "f1": 0.748993288590604
+    },
+    {
+      "threshold": 0.52,
+      "f1": 0.7525286581254215
+    },
+    {
+      "threshold": 0.53,
+      "f1": 0.7535449020931803
+    },
+    {
+      "threshold": 0.54,
+      "f1": 0.7560975609756098
+    },
+    {
+      "threshold": 0.55,
+      "f1": 0.757123473541384
+    },
+    {
+      "threshold": 0.56,
+      "f1": 0.7591836734693878
+    },
+    {
+      "threshold": 0.57,
+      "f1": 0.7622950819672131
+    },
+    {
+      "threshold": 0.58,
+      "f1": 0.7633378932968536
+    },
+    {
+      "threshold": 0.59,
+      "f1": 0.7654320987654321
+    },
+    {
+      "threshold": 0.6,
+      "f1": 0.768595041322314
+    },
+    {
+      "threshold": 0.61,
+      "f1": 0.7698686938493434
+    },
+    {
+      "threshold": 0.62,
+      "f1": 0.775766016713092
+    },
+    {
+      "threshold": 0.63,
+      "f1": 0.7776223776223776
+    },
+    {
+      "threshold": 0.64,
+      "f1": 0.7792571829011913
+    },
+    {
+      "threshold": 0.65,
+      "f1": 0.7825475017593244
+    },
+    {
+      "threshold": 0.66,
+      "f1": 0.7853107344632768
+    },
+    {
+      "threshold": 0.67,
+      "f1": 0.7875354107648725
+    },
+    {
+      "threshold": 0.68,
+      "f1": 0.7872340425531915
+    },
+    {
+      "threshold": 0.69,
+      "f1": 0.7900355871886121
+    },
+    {
+      "threshold": 0.7,
+      "f1": 0.7922912205567452
+    },
+    {
+      "threshold": 0.71,
+      "f1": 0.7962697274031564
+    },
+    {
+      "threshold": 0.72,
+      "f1": 0.7959770114942529
+    },
+    {
+      "threshold": 0.73,
+      "f1": 0.798846431146359
+    },
+    {
+      "threshold": 0.74,
+      "f1": 0.7994227994227994
+    },
+    {
+      "threshold": 0.75,
+      "f1": 0.8002894356005789
+    },
+    {
+      "threshold": 0.76,
+      "f1": 0.8026124818577649
+    },
+    {
+      "threshold": 0.77,
+      "f1": 0.8043636363636364
+    },
+    {
+      "threshold": 0.78,
+      "f1": 0.8064280496712929
+    },
+    {
+      "threshold": 0.79,
+      "f1": 0.8093841642228738
+    },
+    {
+      "threshold": 0.8,
+      "f1": 0.8111682586333578
+    },
+    {
+      "threshold": 0.81,
+      "f1": 0.8126843657817109
+    },
+    {
+      "threshold": 0.82,
+      "f1": 0.8175074183976261
+    },
+    {
+      "threshold": 0.83,
+      "f1": 0.8181818181818182
+    },
+    {
+      "threshold": 0.84,
+      "f1": 0.8213213213213213
+    },
+    {
+      "threshold": 0.85,
+      "f1": 0.8220211161387632
+    },
+    {
+      "threshold": 0.86,
+      "f1": 0.8270106221547799
+    },
+    {
+      "threshold": 0.87,
+      "f1": 0.8305343511450382
+    },
+    {
+      "threshold": 0.88,
+      "f1": 0.8310291858678955
+    },
+    {
+      "threshold": 0.89,
+      "f1": 0.834108527131783
+    },
+    {
+      "threshold": 0.9,
+      "f1": 0.8375
+    },
+    {
+      "threshold": 0.91,
+      "f1": 0.8359621451104101
+    },
+    {
+      "threshold": 0.92,
+      "f1": 0.8366533864541833
+    },
+    {
+      "threshold": 0.93,
+      "f1": 0.8419354838709677
+    },
+    {
+      "threshold": 0.94,
+      "f1": 0.8402948402948403
+    },
+    {
+      "threshold": 0.95,
+      "f1": 0.8343145500420521
+    },
+    {
+      "threshold": 0.96,
+      "f1": 0.808695652173913
+    },
+    {
+      "threshold": 0.97,
+      "f1": 0.781651376146789
+    },
+    {
+      "threshold": 0.98,
+      "f1": 0.7142857142857143
+    },
+    {
+      "threshold": 0.99,
+      "f1": 0.48166259168704156
+    }
+  ],
+  "validation_reference_final_loss": 0.37566242101946673,
+  "validation_reference_components": {
+    "bce_weight7": 0.3658433296237976,
+    "parameter_weight4": 0.0023784456635996096,
+    "geometry_weight1": 0.007440645732069497
+  },
+  "training_and_validation_seconds": 17.295062899996992,
+  "data_sha256": "74407d2a1bf2617745ab031ceb2530648c42350b11877a6579c1b4cbc1d67d93",
+  "code_sha256": {
+    "code\\experiments\\learned_correction.py": "b8120852218c691f7b46b0b9b0899640253f7de36ad9058181d622242c154645",
+    "code\\evaluation\\set_metrics.py": "e4a203635f809d220640d3d1af801af832bab14609d37476497f850964d614f8",
+    "code\\geometry\\vectorized_basis.py": "f32e650e436e60bcc7f65ecb429fec933a7fb7c931eb626ea72d6da4462b111a",
+    "code\\models\\mlp_numpy.py": "55bf4cbf652c614fb7c8267ce580cea7905b72daec182757cd799a5117ee4cf4"
+  }
+}

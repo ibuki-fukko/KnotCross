@@ -1,0 +1,9 @@
+{
+  "original": "E:\\study\\ThreeUp\\论文\\results\\learned_study_reproduction\\refresh_scale_0p04",
+  "repeat": "E:\\study\\ThreeUp\\论文\\results\\learned_study_reproduction\\reproducibility_repeat",
+  "weight_max_absolute_difference": 0.0,
+  "parameter_output_max_absolute_difference": 0.0,
+  "f1_original": 0.8894230769230769,
+  "f1_repeat": 0.8894230769230769,
+  "scope": "same machine, Python, NumPy, one BLAS thread and seed"
+}

@@ -5,6 +5,7 @@ from __future__ import annotations
 import itertools
 import json
 import sys
+import time
 from pathlib import Path
 
 import numpy as np
@@ -14,7 +15,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from code.models.mlp_numpy import make_mlp, sigmoid
-from code.geometry.nurbs import curve_points
+from code.geometry.nurbs import curve_derivative, curve_point, curve_points
 
 MAX_CANDIDATES = 12
 PATCH_RADIUS = 2
@@ -32,15 +33,14 @@ def residual_field(curve_a: np.ndarray, curve_b: np.ndarray, grid_size: int = GR
     return parameters, dx, dy, distance
 
 
-def candidate_indices(distance: np.ndarray, max_candidates: int = MAX_CANDIDATES):
+def candidate_indices(distance: np.ndarray, max_candidates: int | None = None, local_slack: float = 0.015):
+    if max_candidates is None:
+        max_candidates = MAX_CANDIDATES
     rows, columns = distance.shape
-    candidates = []
-    for row in range(1, rows - 1):
-        for column in range(1, columns - 1):
-            neighborhood = distance[row - 1 : row + 2, column - 1 : column + 2]
-            local_minimum = float(np.min(neighborhood))
-            if distance[row, column] <= local_minimum + 0.015:
-                candidates.append((float(distance[row, column]), row, column))
+    local_minimum = np.minimum.reduce([distance[row:row+rows-2, column:column+columns-2]
+                                      for row in range(3) for column in range(3)])
+    accepted = np.argwhere(distance[1:-1, 1:-1] <= local_minimum + local_slack) + 1
+    candidates = [(float(distance[row, column]), int(row), int(column)) for row, column in accepted]
     candidates.sort()
     selected = []
     minimum_grid_distance = max(1, int(round(0.04 * rows)))
@@ -54,9 +54,11 @@ def candidate_indices(distance: np.ndarray, max_candidates: int = MAX_CANDIDATES
     return selected
 
 
-def candidate_features(curve_a: np.ndarray, curve_b: np.ndarray, grid_size: int = GRID_SIZE):
+def candidate_features(curve_a: np.ndarray, curve_b: np.ndarray, grid_size: int | None = None, local_slack: float = 0.015, max_candidates: int | None = None):
+    if grid_size is None:
+        grid_size = GRID_SIZE
     parameters, dx, dy, distance = residual_field(curve_a, curve_b, grid_size)
-    selected = candidate_indices(distance)
+    selected = candidate_indices(distance, max_candidates=max_candidates, local_slack=local_slack)
     features = []
     centers = []
     for _, row, column in selected:
@@ -73,13 +75,13 @@ def candidate_features(curve_a: np.ndarray, curve_b: np.ndarray, grid_size: int 
     return np.asarray(features, dtype=np.float64), np.asarray(centers, dtype=np.float64)
 
 
-def build_candidate_dataset(curves_a, curves_b, labels, counts):
+def build_candidate_dataset(curves_a, curves_b, labels, counts, local_slack=0.015):
     all_features = []
     all_targets = []
     all_groups = []
     tolerance = 0.085
     for pair_index, (curve_a, curve_b, label, count) in enumerate(zip(curves_a, curves_b, labels, counts)):
-        features, centers = candidate_features(curve_a, curve_b)
+        features, centers = candidate_features(curve_a, curve_b, local_slack=local_slack)
         targets = np.zeros((len(features), 3), dtype=np.float64)
         for candidate_index, center in enumerate(centers):
             if int(count) == 0:
@@ -119,11 +121,12 @@ class CandidateModel:
         self.network.load_state(state, "network")
 
 
-def candidate_loss(logits, targets):
+def candidate_loss(logits, targets, positive_weight: float = 1.0):
     probability = sigmoid(logits[:, 2])
     target_probability = targets[:, 2]
     probability = np.clip(probability, 1e-7, 1.0 - 1e-7)
-    classification = -np.mean(target_probability * np.log(probability) + (1.0 - target_probability) * np.log(1.0 - probability))
+    weights = 1.0 + (positive_weight - 1.0) * target_probability
+    classification = -np.mean(weights * (target_probability * np.log(probability) + (1.0 - target_probability) * np.log(1.0 - probability)))
     positive = target_probability > 0.5
     regression = 0.0
     gradient = np.zeros_like(logits)
@@ -135,8 +138,8 @@ def candidate_loss(logits, targets):
     return classification + regression, classification, regression, gradient
 
 
-def infer_candidates(model, curve_a, curve_b, threshold=0.5):
-    features, centers = candidate_features(curve_a, curve_b)
+def infer_candidates(model, curve_a, curve_b, threshold=0.5, local_slack=0.015, geometric_refine=False, refine_steps=3):
+    features, centers = candidate_features(curve_a, curve_b, local_slack=local_slack)
     logits = model.forward(features)
     probability = sigmoid(logits[:, 2])
     predictions = []
@@ -144,16 +147,39 @@ def infer_candidates(model, curve_a, curve_b, threshold=0.5):
         if probability[index] < threshold:
             continue
         point = np.clip(centers[index] + logits[index, :2], 0.0, 1.0)
+        if geometric_refine:
+            for _ in range(refine_steps):
+                residual = curve_point(curve_a, point[0]) - curve_point(curve_b, point[1])
+                jacobian = np.column_stack((curve_derivative(curve_a, point[0]), -curve_derivative(curve_b, point[1])))
+                if abs(float(np.linalg.det(jacobian))) < 1e-8:
+                    break
+                point = np.clip(point + np.linalg.solve(jacobian, -residual), 0.0, 1.0)
         if all(np.linalg.norm(point - np.asarray(previous)) > 0.025 for previous in predictions):
             predictions.append((float(point[0]), float(point[1])))
     return predictions
 
 
+def geometric_residuals(predicted_sets, curves_a, curves_b):
+    residuals = []
+    for predicted, curve_a, curve_b in zip(predicted_sets, curves_a, curves_b):
+        for parameter_a, parameter_b in predicted:
+            point_a = curve_point(curve_a, parameter_a)
+            point_b = curve_point(curve_b, parameter_b)
+            residuals.append(float(np.linalg.norm(point_a - point_b)))
+    return {
+        "mean_geometry_residual": float(np.mean(residuals)) if residuals else None,
+        "max_geometry_residual": float(np.max(residuals)) if residuals else None,
+    }
+
+
 def match_metrics(predicted_sets, labels, counts, tolerance=0.035):
     true_positive = false_positive = false_negative = 0
     parameter_errors = []
+    duplicate_count = 0
+    geometry_errors = []
     for predicted, label, count in zip(predicted_sets, labels, counts):
         truth = label[: int(count)]
+        duplicate_count += max(0, len(predicted) - len({(round(p[0], 3), round(p[1], 3)) for p in predicted}))
         best_pairs = []
         best_cost = float("inf")
         for number in range(min(len(predicted), len(truth)), -1, -1):
@@ -187,14 +213,18 @@ def match_metrics(predicted_sets, labels, counts, tolerance=0.035):
         "recall": recall,
         "f1": f1,
         "mean_parameter_error": float(np.mean(parameter_errors)) if parameter_errors else None,
+        "duplicate_prediction_rate": duplicate_count / max(sum(len(item) for item in predicted_sets), 1),
         "predicted_count": float(np.mean([len(item) for item in predicted_sets])),
     }
 
 
-def train_candidate_model(data_path: str, output_dir: str, epochs: int = 30, batch_size: int = 256, learning_rate: float = 0.001, seed: int = 20261025):
+def train_candidate_model(data_path: str, output_dir: str, epochs: int = 30, batch_size: int = 256, learning_rate: float = 0.001, seed: int = 20261025, grid_size: int = 48, max_candidates: int = 12, positive_weight: float = 1.0, local_slack: float = 0.015):
+    global GRID_SIZE, MAX_CANDIDATES
+    GRID_SIZE = int(grid_size)
+    MAX_CANDIDATES = int(max_candidates)
     archive = np.load(data_path)
-    train_features, train_targets, _ = build_candidate_dataset(archive["train_curve_a"], archive["train_curve_b"], archive["train_labels"], archive["train_counts"])
-    validation_features, validation_targets, _ = build_candidate_dataset(archive["validation_curve_a"], archive["validation_curve_b"], archive["validation_labels"], archive["validation_counts"])
+    train_features, train_targets, _ = build_candidate_dataset(archive["train_curve_a"], archive["train_curve_b"], archive["train_labels"], archive["train_counts"], local_slack)
+    validation_features, validation_targets, _ = build_candidate_dataset(archive["validation_curve_a"], archive["validation_curve_b"], archive["validation_labels"], archive["validation_counts"], local_slack)
     model = CandidateModel(train_features.shape[1], seed)
     rng = np.random.default_rng(seed)
     step_index = 0
@@ -208,13 +238,13 @@ def train_candidate_model(data_path: str, output_dir: str, epochs: int = 30, bat
             indices = order[start : start + batch_size]
             model.zero_grad()
             logits = model.forward(train_features[indices])
-            total, classification, regression, gradient = candidate_loss(logits, train_targets[indices])
+            total, classification, regression, gradient = candidate_loss(logits, train_targets[indices], positive_weight)
             model.backward(gradient)
             step_index += 1
             model.step(learning_rate, step_index)
             losses.append((total, classification, regression))
         validation_logits = model.forward(validation_features)
-        validation_loss = candidate_loss(validation_logits, validation_targets)[0]
+        validation_loss = candidate_loss(validation_logits, validation_targets, positive_weight)[0]
         record = {"epoch": epoch, "train_loss": float(np.mean([item[0] for item in losses])), "validation_loss": float(validation_loss)}
         history.append(record)
         if validation_loss < best_validation:
@@ -228,17 +258,36 @@ def train_candidate_model(data_path: str, output_dir: str, epochs: int = 30, bat
     np.savez_compressed(output / "weights.npz", **model.state())
     (output / "history.json").write_text(json.dumps(history, indent=2), encoding="utf-8")
     validation_threshold_results = []
+    validation_started = time.perf_counter()
     for threshold in np.linspace(0.05, 0.95, 19):
-        predictions = [infer_candidates(model, a, b, float(threshold)) for a, b in zip(archive["validation_curve_a"], archive["validation_curve_b"])]
+        predictions = [infer_candidates(model, a, b, float(threshold), local_slack, False) for a, b in zip(archive["validation_curve_a"], archive["validation_curve_b"])]
         validation_threshold_results.append((match_metrics(predictions, archive["validation_labels"], archive["validation_counts"])["f1"], float(threshold)))
     selected_threshold = max(validation_threshold_results)[1]
-    validation_predictions = [infer_candidates(model, a, b, selected_threshold) for a, b in zip(archive["validation_curve_a"], archive["validation_curve_b"])]
-    test_predictions = [infer_candidates(model, a, b, selected_threshold) for a, b in zip(archive["test_curve_a"], archive["test_curve_b"])]
+    validation_inference_seconds = time.perf_counter() - validation_started
+    validation_predictions = [infer_candidates(model, a, b, selected_threshold, local_slack, False) for a, b in zip(archive["validation_curve_a"], archive["validation_curve_b"])]
+    test_started = time.perf_counter()
+    test_predictions = [infer_candidates(model, a, b, selected_threshold, local_slack, False) for a, b in zip(archive["test_curve_a"], archive["test_curve_b"])]
+    test_predictions_refined = [infer_candidates(model, a, b, selected_threshold, local_slack, True) for a, b in zip(archive["test_curve_a"], archive["test_curve_b"])]
+    test_inference_seconds = time.perf_counter() - test_started
     report = {
         "validation_loss": best_validation,
         "selected_threshold": selected_threshold,
         "validation_metrics": match_metrics(validation_predictions, archive["validation_labels"], archive["validation_counts"]),
-        "test_metrics": match_metrics(test_predictions, archive["test_labels"], archive["test_counts"]),
+        "test_metrics": {
+            **match_metrics(test_predictions, archive["test_labels"], archive["test_counts"]),
+            **geometric_residuals(test_predictions, archive["test_curve_a"], archive["test_curve_b"]),
+            "inference_seconds_total": test_inference_seconds,
+            "inference_seconds_per_pair": test_inference_seconds / max(len(test_predictions), 1),
+        },
+        "test_metrics_with_geometric_refinement": {
+            **match_metrics(test_predictions_refined, archive["test_labels"], archive["test_counts"]),
+            **geometric_residuals(test_predictions_refined, archive["test_curve_a"], archive["test_curve_b"]),
+        },
+        "validation_inference_seconds_for_threshold_sweep": validation_inference_seconds,
+        "grid_size": grid_size,
+        "max_candidates": max_candidates,
+        "positive_weight": positive_weight,
+        "local_slack": local_slack,
         "train_candidates": len(train_features),
         "validation_candidates": len(validation_features),
     }
@@ -255,5 +304,9 @@ if __name__ == "__main__":
     parser.add_argument("--batch-size", type=int, default=256)
     parser.add_argument("--learning-rate", type=float, default=0.001)
     parser.add_argument("--seed", type=int, default=20261025)
+    parser.add_argument("--grid-size", type=int, default=48)
+    parser.add_argument("--max-candidates", type=int, default=8)
+    parser.add_argument("--positive-weight", type=float, default=1.0)
+    parser.add_argument("--local-slack", type=float, default=0.015)
     arguments = parser.parse_args()
-    train_candidate_model(arguments.data, arguments.output, arguments.epochs, arguments.batch_size, arguments.learning_rate, arguments.seed)
+    train_candidate_model(arguments.data, arguments.output, arguments.epochs, arguments.batch_size, arguments.learning_rate, arguments.seed, arguments.grid_size, arguments.max_candidates, arguments.positive_weight, arguments.local_slack)

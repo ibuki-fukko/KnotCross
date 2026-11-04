@@ -1,0 +1,7 @@
+epoch=001 train=1.078167 val=0.839536 geo=0.000000
+epoch=005 train=0.359701 val=0.354590 geo=0.000000
+epoch=010 train=0.304505 val=0.317521 geo=0.000000
+epoch=015 train=0.273784 val=0.309973 geo=0.000000
+epoch=020 train=0.248123 val=0.299137 geo=0.000000
+{"output": "E:\\study\\ThreeUp\\\u8bba\u6587\\results\\learned_study\\geometry_0p0", "validation_f1": 0.7836065573770492, "reference_final_loss": 0.3881643009809399, "threshold": 0.92}
+STAGE geometry SELECTED E:\study\ThreeUp\����\results\learned_study\positive_5p0

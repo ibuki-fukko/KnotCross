@@ -1,0 +1,86 @@
+[
+  {
+    "model": "shared_full",
+    "best_validation_loss": 1.9790370472123209,
+    "history": [
+      {
+        "epoch": 1,
+        "train_total": 1.5107966995068816,
+        "train_map": 0.25620430506426334,
+        "train_parameter": 0.21945681740882353,
+        "train_existence": 1.997558183009645,
+        "train_geometry": 0.32644239871027586,
+        "train_duplicate": 2.3486651038825357e-07,
+        "validation_total": 1.9790370472123209,
+        "validation_map": 0.25203103341190325,
+        "validation_parameter": 0.30264274441607053,
+        "validation_existence": 2.078329821344911,
+        "validation_geometry": 0.820316619672599,
+        "validation_duplicate": 0.0
+      }
+    ]
+  },
+  {
+    "model": "shared_no_geometry",
+    "best_validation_loss": 1.4104606359109093,
+    "history": [
+      {
+        "epoch": 1,
+        "train_total": 1.470744629806344,
+        "train_map": 0.25974285287297605,
+        "train_parameter": 0.1588940663209275,
+        "train_existence": 2.4938278252745247,
+        "train_geometry": 0.37636092529082926,
+        "train_duplicate": 6.25086606705866e-06,
+        "validation_total": 1.4104606359109093,
+        "validation_map": 0.25615176700858056,
+        "validation_parameter": 0.19780588322092868,
+        "validation_existence": 2.297233621875671,
+        "validation_geometry": 0.6878364002411117,
+        "validation_duplicate": 0.0
+      }
+    ]
+  },
+  {
+    "model": "shared_no_residual",
+    "best_validation_loss": 1.6126029153432353,
+    "history": [
+      {
+        "epoch": 1,
+        "train_total": 1.7534700869754551,
+        "train_map": 0.24244921799962615,
+        "train_parameter": 0.2997217959055356,
+        "train_existence": 2.269289305643954,
+        "train_geometry": 0.3692583323145051,
+        "train_duplicate": 7.000751921651056e-05,
+        "validation_total": 1.6126029153432353,
+        "validation_map": 0.24267963995815686,
+        "validation_parameter": 0.34850937710698116,
+        "validation_existence": 1.9585255050668708,
+        "validation_geometry": 0.32022508435887925,
+        "validation_duplicate": 2.211108042803433e-05
+      }
+    ]
+  },
+  {
+    "model": "direct",
+    "best_validation_loss": 1.671974225541296,
+    "history": [
+      {
+        "epoch": 1,
+        "train_total": 1.7854514480638743,
+        "train_map": 0.26230352970860304,
+        "train_parameter": 0.21119703328499184,
+        "train_existence": 2.2975025243361076,
+        "train_geometry": 0.5141744571246255,
+        "train_duplicate": 3.433464293617216e-05,
+        "validation_total": 1.671974225541296,
+        "validation_map": 0.2541018499959713,
+        "validation_parameter": 0.21578634975449446,
+        "validation_existence": 2.3426432426191734,
+        "validation_geometry": 0.31618190644265715,
+        "validation_duplicate": 8.971645574581525e-05
+      }
+    ]
+  }
+]

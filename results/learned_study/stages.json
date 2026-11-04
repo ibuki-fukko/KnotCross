@@ -1,0 +1,194 @@
+{
+  "depth": {
+    "factor": "deep_supervision",
+    "parent": null,
+    "candidates": [
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\depth_0p0",
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\depth_0p5"
+    ],
+    "selected": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\depth_0p0",
+    "selection": "validation F1 first, reference final loss breaks ties; no test access"
+  },
+  "steps": {
+    "factor": "steps",
+    "parent": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\depth_0p0",
+    "candidates": [
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\depth_0p0",
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\steps_6",
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\steps_8"
+    ],
+    "selected": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\depth_0p0",
+    "selection": "validation F1 first, reference final loss breaks ties; no test access"
+  },
+  "scale": {
+    "factor": "step_scale",
+    "parent": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\depth_0p0",
+    "candidates": [
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\scale_0p04",
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\depth_0p0",
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\scale_0p12",
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\scale_0p2"
+    ],
+    "selected": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\depth_0p0",
+    "selection": "validation F1 first, reference final loss breaks ties; no test access"
+  },
+  "positive": {
+    "factor": "positive_weight",
+    "parent": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\depth_0p0",
+    "candidates": [
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_3p0",
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_5p0",
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\depth_0p0"
+    ],
+    "selected": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_5p0",
+    "selection": "validation F1 first, reference final loss breaks ties; no test access"
+  },
+  "geometry": {
+    "factor": "geometry_weight",
+    "parent": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_5p0",
+    "candidates": [
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\geometry_0p0",
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_5p0"
+    ],
+    "selected": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_5p0",
+    "selection": "validation F1 first, reference final loss breaks ties; no test access"
+  },
+  "duration": {
+    "factor": "epochs",
+    "parent": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_5p0",
+    "candidates": [
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_5p0",
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\duration_40"
+    ],
+    "selected": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_5p0",
+    "selection": "validation F1 first, reference final loss breaks ties; no test access"
+  },
+  "regression": {
+    "factor": "regression_weight",
+    "parent": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_5p0",
+    "candidates": [
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_5p0",
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\regression_40p0",
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\regression_200p0"
+    ],
+    "selected": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_5p0",
+    "selection": "validation F1 first, reference final loss breaks ties; no test access"
+  },
+  "reference": {
+    "factor": "reference_coordinates",
+    "parent": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_5p0",
+    "candidates": [
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_5p0",
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\reference_True"
+    ],
+    "selected": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_5p0",
+    "selection": "validation F1 first, reference final loss breaks ties; no test access"
+  },
+  "depth_revisit": {
+    "factor": "deep_supervision",
+    "parent": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_5p0",
+    "candidates": [
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_5p0",
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\depth_revisit_0p5"
+    ],
+    "selected": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_5p0",
+    "selection": "validation F1 first, reference final loss breaks ties; no test access"
+  },
+  "dynamic": {
+    "factor": "dynamic_patches",
+    "parent": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_5p0",
+    "candidates": [
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_5p0",
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\dynamic_True"
+    ],
+    "selected": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_5p0",
+    "selection": "validation F1 first, reference final loss breaks ties; no test access"
+  },
+  "dynamic_depth": {
+    "factor": "deep_supervision",
+    "parent": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_5p0",
+    "candidates": [
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_5p0",
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\dynamic_depth_0p5"
+    ],
+    "selected": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_5p0",
+    "selection": "validation F1 first, reference final loss breaks ties; no test access"
+  },
+  "dynamic_steps": {
+    "factor": "steps",
+    "parent": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_5p0",
+    "candidates": [
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\dynamic_steps_2",
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_5p0",
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\dynamic_steps_6"
+    ],
+    "selected": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\positive_5p0",
+    "selection": "validation F1 first, reference final loss breaks ties; no test access"
+  },
+  "refresh_duration": {
+    "factor": "epochs",
+    "parent": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\dynamic_True",
+    "candidates": [
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\dynamic_True",
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_duration_40",
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_duration_80"
+    ],
+    "selected": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_duration_80",
+    "selection": "validation F1 first, reference final loss breaks ties; no test access"
+  },
+  "refresh_depth": {
+    "factor": "deep_supervision",
+    "parent": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_duration_80",
+    "candidates": [
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_duration_80",
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_depth_0p5"
+    ],
+    "selected": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_duration_80",
+    "selection": "validation F1 first, reference final loss breaks ties; no test access"
+  },
+  "refresh_steps": {
+    "factor": "steps",
+    "parent": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_duration_80",
+    "candidates": [
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_duration_80",
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_steps_2",
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_steps_6"
+    ],
+    "selected": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_duration_80",
+    "selection": "validation F1 first, reference final loss breaks ties; no test access"
+  },
+  "refresh_scale": {
+    "factor": "step_scale",
+    "parent": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_duration_80",
+    "candidates": [
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_duration_80",
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_scale_0p01",
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_scale_0p02",
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_scale_0p04",
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_scale_0p12"
+    ],
+    "selected": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_scale_0p04",
+    "selection": "validation F1 first, reference final loss breaks ties; no test access"
+  },
+  "refresh_rate": {
+    "factor": "learning_rate",
+    "parent": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_scale_0p04",
+    "candidates": [
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_scale_0p04",
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_rate_0p0001",
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_rate_0p00025"
+    ],
+    "selected": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_scale_0p04",
+    "selection": "validation F1 first, reference final loss breaks ties; no test access"
+  },
+  "refresh_regression": {
+    "factor": "regression_weight",
+    "parent": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_scale_0p04",
+    "candidates": [
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_scale_0p04",
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_regression_40p0"
+    ],
+    "selected": "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_scale_0p04",
+    "selection": "validation F1 first, reference final loss breaks ties; no test access"
+  }
+}

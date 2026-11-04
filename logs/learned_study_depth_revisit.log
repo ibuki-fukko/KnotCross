@@ -1,0 +1,7 @@
+epoch=001 train=1.173971 val=0.978125 geo=0.021580
+epoch=005 train=0.399137 val=0.384999 geo=0.009224
+epoch=010 train=0.327687 val=0.337728 geo=0.005216
+epoch=015 train=0.298458 val=0.327955 geo=0.005255
+epoch=020 train=0.277520 val=0.305556 geo=0.006840
+{"output": "E:\\study\\ThreeUp\\\u8bba\u6587\\results\\learned_study\\depth_revisit_0p5", "validation_f1": 0.8661800486618005, "reference_final_loss": 0.3665479165247974, "threshold": 0.92}
+STAGE depth_revisit SELECTED E:\study\ThreeUp\����\results\learned_study\positive_5p0

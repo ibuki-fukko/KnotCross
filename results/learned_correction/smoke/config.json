@@ -1,0 +1,19 @@
+{
+  "data": "data\\experiment.npz",
+  "seed": 20261026,
+  "epochs": 3,
+  "batch_size": 128,
+  "learning_rate": 0.001,
+  "grid_size": 48,
+  "max_candidates": 8,
+  "local_slack": 0.015,
+  "steps": 3,
+  "step_scale": 0.08,
+  "geometry_weight": 1.0,
+  "regression_weight": 4.0,
+  "positive_weight": 5.0,
+  "train_candidate_truth_coverage": 0.9791666666666666,
+  "validation_candidate_truth_coverage": 1.0,
+  "best_validation_loss": 0.8149943204660045,
+  "autodiff": "manual reverse-mode BPTT through shared MLP correction steps and NURBS geometric residual"
+}

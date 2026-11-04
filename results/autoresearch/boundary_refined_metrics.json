@@ -1,0 +1,81 @@
+{
+  "settings": {
+    "data": "data/boundary_cases.npz",
+    "weights": "results/autoresearch/candidate_v7_candidates8/weights.npz",
+    "output": "results/autoresearch/boundary_refined_metrics.json",
+    "probability_threshold": 0.35,
+    "geometry_threshold": 0.0005,
+    "refine_steps": 8,
+    "grid_size": 48,
+    "max_candidates": 8,
+    "local_slack": 0.015
+  },
+  "records": {
+    "near": {
+      "refined": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "mean_parameter_error": null,
+        "duplicate_prediction_rate": 0.0,
+        "predicted_count": 1.45,
+        "mean_geometry_residual": 0.025214854915132076,
+        "max_geometry_residual": 0.1403310144850465
+      },
+      "filtered": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "mean_parameter_error": null,
+        "duplicate_prediction_rate": 0.0,
+        "predicted_count": 0.6,
+        "mean_geometry_residual": 1.0395837907189701e-16,
+        "max_geometry_residual": 4.613190423717512e-16
+      }
+    },
+    "endpoint": {
+      "refined": {
+        "precision": 0.27631578947368424,
+        "recall": 0.525,
+        "f1": 0.36206896551724144,
+        "mean_parameter_error": 7.914463720265007e-17,
+        "duplicate_prediction_rate": 0.0,
+        "predicted_count": 1.9,
+        "mean_geometry_residual": 1.5118904193819397e-16,
+        "max_geometry_residual": 4.335559509131367e-16
+      },
+      "filtered": {
+        "precision": 0.27631578947368424,
+        "recall": 0.525,
+        "f1": 0.36206896551724144,
+        "mean_parameter_error": 7.914463720265007e-17,
+        "duplicate_prediction_rate": 0.0,
+        "predicted_count": 1.9,
+        "mean_geometry_residual": 1.5118904193819397e-16,
+        "max_geometry_residual": 4.335559509131367e-16
+      }
+    },
+    "tangent": {
+      "refined": {
+        "precision": 0.2235294117647059,
+        "recall": 0.475,
+        "f1": 0.304,
+        "mean_parameter_error": 0.0018051165186669853,
+        "duplicate_prediction_rate": 0.0,
+        "predicted_count": 2.125,
+        "mean_geometry_residual": 0.006574388906692642,
+        "max_geometry_residual": 0.2896835486910211
+      },
+      "filtered": {
+        "precision": 0.2345679012345679,
+        "recall": 0.475,
+        "f1": 0.31404958677685946,
+        "mean_parameter_error": 0.0018051165186669853,
+        "duplicate_prediction_rate": 0.0,
+        "predicted_count": 2.025,
+        "mean_geometry_residual": 9.444237798550426e-17,
+        "max_geometry_residual": 4.518280359883027e-16
+      }
+    }
+  }
+}

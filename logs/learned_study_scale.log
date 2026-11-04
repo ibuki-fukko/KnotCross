@@ -1,0 +1,19 @@
+epoch=001 train=1.298625 val=0.992268 geo=0.006156
+epoch=005 train=0.423048 val=0.414947 geo=0.003675
+epoch=010 train=0.358690 val=0.378920 geo=0.002209
+epoch=015 train=0.324699 val=0.368045 geo=0.001983
+epoch=020 train=0.295304 val=0.354749 geo=0.001796
+{"output": "E:\\study\\ThreeUp\\\u8bba\u6587\\results\\learned_study\\scale_0p04", "validation_f1": 0.86, "reference_final_loss": 0.36345081897426174, "threshold": 0.95}
+epoch=001 train=1.390448 val=1.105553 geo=0.021429
+epoch=005 train=0.452010 val=0.436488 geo=0.009695
+epoch=010 train=0.370216 val=0.391019 geo=0.003717
+epoch=015 train=0.336682 val=0.381809 geo=0.005313
+epoch=020 train=0.308741 val=0.357519 geo=0.005321
+{"output": "E:\\study\\ThreeUp\\\u8bba\u6587\\results\\learned_study\\scale_0p12", "validation_f1": 0.8529886914378029, "reference_final_loss": 0.3673316556266772, "threshold": 0.94}
+epoch=001 train=1.471865 val=1.212767 geo=0.041403
+epoch=005 train=0.501517 val=0.470289 geo=0.018606
+epoch=010 train=0.388845 val=0.409711 geo=0.007414
+epoch=015 train=0.353773 val=0.393898 geo=0.006775
+epoch=020 train=0.327311 val=0.366039 geo=0.004486
+{"output": "E:\\study\\ThreeUp\\\u8bba\u6587\\results\\learned_study\\scale_0p2", "validation_f1": 0.8419354838709677, "reference_final_loss": 0.37566242101946673, "threshold": 0.93}
+STAGE scale SELECTED E:\study\ThreeUp\����\results\learned_study\depth_0p0

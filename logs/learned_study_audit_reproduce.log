@@ -1,0 +1,27 @@
+epoch=001 train=1.091242 val=0.854622 geo=0.005939
+epoch=005 train=0.352450 val=0.324002 geo=0.003380
+epoch=010 train=0.258373 val=0.276939 geo=0.001877
+epoch=015 train=0.229336 val=0.270271 geo=0.001757
+epoch=020 train=0.206788 val=0.279116 geo=0.001569
+epoch=025 train=0.187771 val=0.260568 geo=0.001407
+epoch=030 train=0.180154 val=0.277855 geo=0.001451
+epoch=035 train=0.157645 val=0.290645 geo=0.001338
+epoch=040 train=0.171210 val=0.297201 geo=0.001308
+epoch=045 train=0.151049 val=0.301372 geo=0.001279
+epoch=050 train=0.133636 val=0.348205 geo=0.001273
+epoch=055 train=0.150773 val=0.327826 geo=0.001497
+epoch=060 train=0.121259 val=0.332865 geo=0.001330
+epoch=065 train=0.129008 val=0.357753 geo=0.001302
+epoch=070 train=0.113601 val=0.375583 geo=0.001386
+epoch=075 train=0.112789 val=0.344545 geo=0.001228
+epoch=080 train=0.126992 val=0.358142 geo=0.001368
+{"output": "E:\\study\\ThreeUp\\\u8bba\u6587\\results\\learned_study\\reproducibility_repeat", "validation_f1": 0.8894230769230769, "reference_final_loss": 0.3208407505641105, "threshold": 0.95}
+{
+  "original": "E:\\study\\ThreeUp\\\u8bba\u6587\\results\\learned_study\\refresh_scale_0p04",
+  "repeat": "E:\\study\\ThreeUp\\\u8bba\u6587\\results\\learned_study\\reproducibility_repeat",
+  "weight_max_absolute_difference": 0.0,
+  "parameter_output_max_absolute_difference": 0.0,
+  "f1_original": 0.8894230769230769,
+  "f1_repeat": 0.8894230769230769,
+  "scope": "same machine, Python, NumPy, one BLAS thread and seed"
+}

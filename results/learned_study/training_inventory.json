@@ -1,0 +1,221 @@
+{
+  "complete_training_runs": 36,
+  "runs": [
+    {
+      "directory": "results\\learned_study\\depth_0p0",
+      "seed": 20261026,
+      "epochs": 20,
+      "training_did_not_evaluate_test": true
+    },
+    {
+      "directory": "results\\learned_study\\depth_0p5",
+      "seed": 20261026,
+      "epochs": 20,
+      "training_did_not_evaluate_test": true
+    },
+    {
+      "directory": "results\\learned_study\\depth_revisit_0p5",
+      "seed": 20261026,
+      "epochs": 20,
+      "training_did_not_evaluate_test": true
+    },
+    {
+      "directory": "results\\learned_study\\duration_40",
+      "seed": 20261026,
+      "epochs": 40,
+      "training_did_not_evaluate_test": true
+    },
+    {
+      "directory": "results\\learned_study\\dynamic_depth_0p5",
+      "seed": 20261026,
+      "epochs": 20,
+      "training_did_not_evaluate_test": true
+    },
+    {
+      "directory": "results\\learned_study\\dynamic_steps_2",
+      "seed": 20261026,
+      "epochs": 20,
+      "training_did_not_evaluate_test": true
+    },
+    {
+      "directory": "results\\learned_study\\dynamic_steps_6",
+      "seed": 20261026,
+      "epochs": 20,
+      "training_did_not_evaluate_test": true
+    },
+    {
+      "directory": "results\\learned_study\\dynamic_True",
+      "seed": 20261026,
+      "epochs": 20,
+      "training_did_not_evaluate_test": true
+    },
+    {
+      "directory": "results\\learned_study\\geometry_0p0",
+      "seed": 20261026,
+      "epochs": 20,
+      "training_did_not_evaluate_test": true
+    },
+    {
+      "directory": "results\\learned_study\\positive_3p0",
+      "seed": 20261026,
+      "epochs": 20,
+      "training_did_not_evaluate_test": true
+    },
+    {
+      "directory": "results\\learned_study\\positive_5p0",
+      "seed": 20261026,
+      "epochs": 20,
+      "training_did_not_evaluate_test": true
+    },
+    {
+      "directory": "results\\learned_study\\reference_True",
+      "seed": 20261026,
+      "epochs": 20,
+      "training_did_not_evaluate_test": true
+    },
+    {
+      "directory": "results\\learned_study\\refresh_depth_0p5",
+      "seed": 20261026,
+      "epochs": 80,
+      "training_did_not_evaluate_test": true
+    },
+    {
+      "directory": "results\\learned_study\\refresh_duration_40",
+      "seed": 20261026,
+      "epochs": 40,
+      "training_did_not_evaluate_test": true
+    },
+    {
+      "directory": "results\\learned_study\\refresh_duration_80",
+      "seed": 20261026,
+      "epochs": 80,
+      "training_did_not_evaluate_test": true
+    },
+    {
+      "directory": "results\\learned_study\\refresh_rate_0p0001",
+      "seed": 20261026,
+      "epochs": 80,
+      "training_did_not_evaluate_test": true
+    },
+    {
+      "directory": "results\\learned_study\\refresh_rate_0p00025",
+      "seed": 20261026,
+      "epochs": 80,
+      "training_did_not_evaluate_test": true
+    },
+    {
+      "directory": "results\\learned_study\\refresh_regression_40p0",
+      "seed": 20261026,
+      "epochs": 80,
+      "training_did_not_evaluate_test": true
+    },
+    {
+      "directory": "results\\learned_study\\refresh_scale_0p01",
+      "seed": 20261026,
+      "epochs": 80,
+      "training_did_not_evaluate_test": true
+    },
+    {
+      "directory": "results\\learned_study\\refresh_scale_0p02",
+      "seed": 20261026,
+      "epochs": 80,
+      "training_did_not_evaluate_test": true
+    },
+    {
+      "directory": "results\\learned_study\\refresh_scale_0p04",
+      "seed": 20261026,
+      "epochs": 80,
+      "training_did_not_evaluate_test": true
+    },
+    {
+      "directory": "results\\learned_study\\refresh_scale_0p12",
+      "seed": 20261026,
+      "epochs": 80,
+      "training_did_not_evaluate_test": true
+    },
+    {
+      "directory": "results\\learned_study\\refresh_steps_2",
+      "seed": 20261026,
+      "epochs": 80,
+      "training_did_not_evaluate_test": true
+    },
+    {
+      "directory": "results\\learned_study\\refresh_steps_6",
+      "seed": 20261026,
+      "epochs": 80,
+      "training_did_not_evaluate_test": true
+    },
+    {
+      "directory": "results\\learned_study\\regression_200p0",
+      "seed": 20261026,
+      "epochs": 20,
+      "training_did_not_evaluate_test": true
+    },
+    {
+      "directory": "results\\learned_study\\regression_40p0",
+      "seed": 20261026,
+      "epochs": 20,
+      "training_did_not_evaluate_test": true
+    },
+    {
+      "directory": "results\\learned_study\\reproducibility_repeat",
+      "seed": 20261026,
+      "epochs": 80,
+      "training_did_not_evaluate_test": true
+    },
+    {
+      "directory": "results\\learned_study\\scale_0p04",
+      "seed": 20261026,
+      "epochs": 20,
+      "training_did_not_evaluate_test": true
+    },
+    {
+      "directory": "results\\learned_study\\scale_0p12",
+      "seed": 20261026,
+      "epochs": 20,
+      "training_did_not_evaluate_test": true
+    },
+    {
+      "directory": "results\\learned_study\\scale_0p2",
+      "seed": 20261026,
+      "epochs": 20,
+      "training_did_not_evaluate_test": true
+    },
+    {
+      "directory": "results\\learned_study\\seeds\\baseline_19",
+      "seed": 19,
+      "epochs": 20,
+      "training_did_not_evaluate_test": true
+    },
+    {
+      "directory": "results\\learned_study\\seeds\\baseline_7",
+      "seed": 7,
+      "epochs": 20,
+      "training_did_not_evaluate_test": true
+    },
+    {
+      "directory": "results\\learned_study\\seeds\\selected_19",
+      "seed": 19,
+      "epochs": 80,
+      "training_did_not_evaluate_test": true
+    },
+    {
+      "directory": "results\\learned_study\\seeds\\selected_7",
+      "seed": 7,
+      "epochs": 80,
+      "training_did_not_evaluate_test": true
+    },
+    {
+      "directory": "results\\learned_study\\steps_6",
+      "seed": 20261026,
+      "epochs": 20,
+      "training_did_not_evaluate_test": true
+    },
+    {
+      "directory": "results\\learned_study\\steps_8",
+      "seed": 20261026,
+      "epochs": 20,
+      "training_did_not_evaluate_test": true
+    }
+  ]
+}

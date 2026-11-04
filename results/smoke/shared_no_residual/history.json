@@ -1,0 +1,17 @@
+[
+  {
+    "epoch": 1,
+    "train_total": 1.7534700869754551,
+    "train_map": 0.24244921799962615,
+    "train_parameter": 0.2997217959055356,
+    "train_existence": 2.269289305643954,
+    "train_geometry": 0.3692583323145051,
+    "train_duplicate": 7.000751921651056e-05,
+    "validation_total": 1.6126029153432353,
+    "validation_map": 0.24267963995815686,
+    "validation_parameter": 0.34850937710698116,
+    "validation_existence": 1.9585255050668708,
+    "validation_geometry": 0.32022508435887925,
+    "validation_duplicate": 2.211108042803433e-05
+  }
+]

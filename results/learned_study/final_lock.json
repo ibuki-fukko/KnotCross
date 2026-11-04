@@ -1,0 +1,27 @@
+{
+  "families": {
+    "baseline": [
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\depth_0p0",
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\seeds\\baseline_7",
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\seeds\\baseline_19"
+    ],
+    "selected": [
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_scale_0p04",
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\seeds\\selected_7",
+      "E:\\study\\ThreeUp\\论文\\results\\learned_study\\seeds\\selected_19"
+    ]
+  },
+  "thresholds": {
+    "E:\\study\\ThreeUp\\论文\\results\\learned_study\\depth_0p0": 0.95,
+    "E:\\study\\ThreeUp\\论文\\results\\learned_study\\seeds\\baseline_7": 0.93,
+    "E:\\study\\ThreeUp\\论文\\results\\learned_study\\seeds\\baseline_19": 0.9,
+    "E:\\study\\ThreeUp\\论文\\results\\learned_study\\refresh_scale_0p04": 0.95,
+    "E:\\study\\ThreeUp\\论文\\results\\learned_study\\seeds\\selected_7": 0.95,
+    "E:\\study\\ThreeUp\\论文\\results\\learned_study\\seeds\\selected_19": 0.94
+  },
+  "test_policy": "historically observed fixed test; descriptive only",
+  "locked_at_unix": 1793000896.9425774,
+  "data_sha256": "74407d2a1bf2617745ab031ceb2530648c42350b11877a6579c1b4cbc1d67d93",
+  "exact_curve_pair_overlap_with_training": 0,
+  "fresh_holdout_sha256": "07d1b82d5e39d2e530509b28eae41c7eb5d57038aa1f7d1d9a85b846f6b96416"
+}

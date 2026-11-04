@@ -1,0 +1,386 @@
+[
+  {
+    "method": "dense_sampling_newton_refinement",
+    "samples": 80,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "exact_count_accuracy": 1.0,
+    "mean_parameter_error_matched": 4.7374350590336416e-17,
+    "mean_geometry_residual_predicted_matched": 1.4178036033702385e-16,
+    "no_intersection_false_positive_rate": 0.0,
+    "mean_predicted_count": 1.5,
+    "by_true_count": {
+      "0": {
+        "samples": 20,
+        "true_positive": 0,
+        "false_negative": 0,
+        "recall": 0.0
+      },
+      "1": {
+        "samples": 20,
+        "true_positive": 20,
+        "false_negative": 0,
+        "recall": 1.0
+      },
+      "2": {
+        "samples": 20,
+        "true_positive": 40,
+        "false_negative": 0,
+        "recall": 1.0
+      },
+      "3": {
+        "samples": 20,
+        "true_positive": 60,
+        "false_negative": 0,
+        "recall": 1.0
+      }
+    }
+  },
+  {
+    "method": "parameter_grid_only",
+    "samples": 80,
+    "precision": 0.46236559139784944,
+    "recall": 0.35833333333333334,
+    "f1": 0.40375586854460094,
+    "exact_count_accuracy": 0.4,
+    "mean_parameter_error_matched": 0.05602098797566146,
+    "mean_geometry_residual_predicted_matched": 0.06624841826805418,
+    "no_intersection_false_positive_rate": 0.55,
+    "mean_predicted_count": 1.1625,
+    "by_true_count": {
+      "0": {
+        "samples": 20,
+        "true_positive": 0,
+        "false_negative": 0,
+        "recall": 0.0
+      },
+      "1": {
+        "samples": 20,
+        "true_positive": 11,
+        "false_negative": 9,
+        "recall": 0.55
+      },
+      "2": {
+        "samples": 20,
+        "true_positive": 16,
+        "false_negative": 24,
+        "recall": 0.4
+      },
+      "3": {
+        "samples": 20,
+        "true_positive": 16,
+        "false_negative": 44,
+        "recall": 0.26666666666666666
+      }
+    }
+  },
+  {
+    "method": "shared_full_slots",
+    "samples": 80,
+    "precision": 0.019801980198019802,
+    "recall": 0.016666666666666666,
+    "f1": 0.01809954751131222,
+    "exact_count_accuracy": 0.3625,
+    "mean_parameter_error_matched": 0.2995594648490988,
+    "mean_geometry_residual_predicted_matched": 0.5512185882092161,
+    "no_intersection_false_positive_rate": 0.15,
+    "mean_predicted_count": 1.2625,
+    "by_true_count": {
+      "0": {
+        "samples": 20,
+        "true_positive": 0,
+        "false_negative": 0,
+        "recall": 0.0
+      },
+      "1": {
+        "samples": 20,
+        "true_positive": 1,
+        "false_negative": 19,
+        "recall": 0.05
+      },
+      "2": {
+        "samples": 20,
+        "true_positive": 1,
+        "false_negative": 39,
+        "recall": 0.025
+      },
+      "3": {
+        "samples": 20,
+        "true_positive": 0,
+        "false_negative": 60,
+        "recall": 0.0
+      }
+    },
+    "mean_slot_existence_probability": 0.4779596722380817,
+    "heatmap_peak_metrics": {
+      "method": "shared_full_heatmap_peaks",
+      "samples": 80,
+      "precision": 0.004166666666666667,
+      "recall": 0.008333333333333333,
+      "f1": 0.005555555555555555,
+      "exact_count_accuracy": 0.25,
+      "mean_parameter_error_matched": 0.33988584149178264,
+      "mean_geometry_residual_predicted_matched": 0.6570512021873661,
+      "no_intersection_false_positive_rate": 1.0,
+      "mean_predicted_count": 3.0,
+      "by_true_count": {
+        "0": {
+          "samples": 20,
+          "true_positive": 0,
+          "false_negative": 0,
+          "recall": 0.0
+        },
+        "1": {
+          "samples": 20,
+          "true_positive": 1,
+          "false_negative": 19,
+          "recall": 0.05
+        },
+        "2": {
+          "samples": 20,
+          "true_positive": 0,
+          "false_negative": 40,
+          "recall": 0.0
+        },
+        "3": {
+          "samples": 20,
+          "true_positive": 0,
+          "false_negative": 60,
+          "recall": 0.0
+        }
+      }
+    }
+  },
+  {
+    "method": "shared_no_geometry_slots",
+    "samples": 80,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "exact_count_accuracy": 0.325,
+    "mean_parameter_error_matched": 0.281117403160615,
+    "mean_geometry_residual_predicted_matched": 0.5723862216841532,
+    "no_intersection_false_positive_rate": 0.1,
+    "mean_predicted_count": 1.45,
+    "by_true_count": {
+      "0": {
+        "samples": 20,
+        "true_positive": 0,
+        "false_negative": 0,
+        "recall": 0.0
+      },
+      "1": {
+        "samples": 20,
+        "true_positive": 0,
+        "false_negative": 20,
+        "recall": 0.0
+      },
+      "2": {
+        "samples": 20,
+        "true_positive": 0,
+        "false_negative": 40,
+        "recall": 0.0
+      },
+      "3": {
+        "samples": 20,
+        "true_positive": 0,
+        "false_negative": 60,
+        "recall": 0.0
+      }
+    },
+    "mean_slot_existence_probability": 0.4580809175814838,
+    "heatmap_peak_metrics": {
+      "method": "shared_no_geometry_heatmap_peaks",
+      "samples": 80,
+      "precision": 0.008333333333333333,
+      "recall": 0.016666666666666666,
+      "f1": 0.01111111111111111,
+      "exact_count_accuracy": 0.25,
+      "mean_parameter_error_matched": 0.3829013841612898,
+      "mean_geometry_residual_predicted_matched": 0.7584868918487351,
+      "no_intersection_false_positive_rate": 1.0,
+      "mean_predicted_count": 3.0,
+      "by_true_count": {
+        "0": {
+          "samples": 20,
+          "true_positive": 0,
+          "false_negative": 0,
+          "recall": 0.0
+        },
+        "1": {
+          "samples": 20,
+          "true_positive": 0,
+          "false_negative": 20,
+          "recall": 0.0
+        },
+        "2": {
+          "samples": 20,
+          "true_positive": 0,
+          "false_negative": 40,
+          "recall": 0.0
+        },
+        "3": {
+          "samples": 20,
+          "true_positive": 2,
+          "false_negative": 58,
+          "recall": 0.03333333333333333
+        }
+      }
+    }
+  },
+  {
+    "method": "shared_no_residual_slots",
+    "samples": 80,
+    "precision": 0.0273972602739726,
+    "recall": 0.016666666666666666,
+    "f1": 0.02072538860103627,
+    "exact_count_accuracy": 0.35,
+    "mean_parameter_error_matched": 0.3215402098163516,
+    "mean_geometry_residual_predicted_matched": 0.5766339957405985,
+    "no_intersection_false_positive_rate": 0.35,
+    "mean_predicted_count": 0.9125,
+    "by_true_count": {
+      "0": {
+        "samples": 20,
+        "true_positive": 0,
+        "false_negative": 0,
+        "recall": 0.0
+      },
+      "1": {
+        "samples": 20,
+        "true_positive": 0,
+        "false_negative": 20,
+        "recall": 0.0
+      },
+      "2": {
+        "samples": 20,
+        "true_positive": 1,
+        "false_negative": 39,
+        "recall": 0.025
+      },
+      "3": {
+        "samples": 20,
+        "true_positive": 1,
+        "false_negative": 59,
+        "recall": 0.016666666666666666
+      }
+    },
+    "mean_slot_existence_probability": 0.4530042195378293,
+    "heatmap_peak_metrics": {
+      "method": "shared_no_residual_heatmap_peaks",
+      "samples": 80,
+      "precision": 0.008333333333333333,
+      "recall": 0.016666666666666666,
+      "f1": 0.01111111111111111,
+      "exact_count_accuracy": 0.25,
+      "mean_parameter_error_matched": 0.3574551912975806,
+      "mean_geometry_residual_predicted_matched": 0.7152647280694733,
+      "no_intersection_false_positive_rate": 1.0,
+      "mean_predicted_count": 3.0,
+      "by_true_count": {
+        "0": {
+          "samples": 20,
+          "true_positive": 0,
+          "false_negative": 0,
+          "recall": 0.0
+        },
+        "1": {
+          "samples": 20,
+          "true_positive": 1,
+          "false_negative": 19,
+          "recall": 0.05
+        },
+        "2": {
+          "samples": 20,
+          "true_positive": 0,
+          "false_negative": 40,
+          "recall": 0.0
+        },
+        "3": {
+          "samples": 20,
+          "true_positive": 1,
+          "false_negative": 59,
+          "recall": 0.016666666666666666
+        }
+      }
+    }
+  },
+  {
+    "method": "direct_slots",
+    "samples": 80,
+    "precision": 0.019801980198019802,
+    "recall": 0.016666666666666666,
+    "f1": 0.01809954751131222,
+    "exact_count_accuracy": 0.375,
+    "mean_parameter_error_matched": 0.2953322304428798,
+    "mean_geometry_residual_predicted_matched": 0.5310561477957951,
+    "no_intersection_false_positive_rate": 0.05,
+    "mean_predicted_count": 1.2625,
+    "by_true_count": {
+      "0": {
+        "samples": 20,
+        "true_positive": 0,
+        "false_negative": 0,
+        "recall": 0.0
+      },
+      "1": {
+        "samples": 20,
+        "true_positive": 2,
+        "false_negative": 18,
+        "recall": 0.1
+      },
+      "2": {
+        "samples": 20,
+        "true_positive": 0,
+        "false_negative": 40,
+        "recall": 0.0
+      },
+      "3": {
+        "samples": 20,
+        "true_positive": 0,
+        "false_negative": 60,
+        "recall": 0.0
+      }
+    },
+    "mean_slot_existence_probability": 0.48386587997639136,
+    "heatmap_peak_metrics": {
+      "method": "direct_heatmap_peaks",
+      "samples": 80,
+      "precision": 0.008333333333333333,
+      "recall": 0.016666666666666666,
+      "f1": 0.01111111111111111,
+      "exact_count_accuracy": 0.25,
+      "mean_parameter_error_matched": 0.3612825505400476,
+      "mean_geometry_residual_predicted_matched": 0.7034019539409113,
+      "no_intersection_false_positive_rate": 1.0,
+      "mean_predicted_count": 3.0,
+      "by_true_count": {
+        "0": {
+          "samples": 20,
+          "true_positive": 0,
+          "false_negative": 0,
+          "recall": 0.0
+        },
+        "1": {
+          "samples": 20,
+          "true_positive": 0,
+          "false_negative": 20,
+          "recall": 0.0
+        },
+        "2": {
+          "samples": 20,
+          "true_positive": 2,
+          "false_negative": 38,
+          "recall": 0.05
+        },
+        "3": {
+          "samples": 20,
+          "true_positive": 0,
+          "false_negative": 60,
+          "recall": 0.0
+        }
+      }
+    }
+  }
+]

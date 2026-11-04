@@ -1,0 +1,83 @@
+{
+  "basis_max_absolute_error": 1.6653345369377348e-15,
+  "derivative_max_absolute_error": 5.724345442104095e-10,
+  "one_sided_endpoint_derivative_error": 1.1274546455553036e-05,
+  "gradient_checks": [
+    {
+      "steps": 1,
+      "deep_supervision": 0.5,
+      "geometry_weight": 1,
+      "reference_coordinates": false,
+      "dynamic_patches": false,
+      "loss": 3.7974484894270306,
+      "max_absolute_gradient_error": 1.6435683369842025e-10
+    },
+    {
+      "steps": 4,
+      "deep_supervision": 0,
+      "geometry_weight": 1,
+      "reference_coordinates": false,
+      "dynamic_patches": false,
+      "loss": 3.802613937861616,
+      "max_absolute_gradient_error": 6.274612079915087e-10
+    },
+    {
+      "steps": 4,
+      "deep_supervision": 0.5,
+      "geometry_weight": 1,
+      "reference_coordinates": false,
+      "dynamic_patches": false,
+      "loss": 4.214229388786919,
+      "max_absolute_gradient_error": 3.578207452559212e-10
+    },
+    {
+      "steps": 6,
+      "deep_supervision": 0.5,
+      "geometry_weight": 1,
+      "reference_coordinates": false,
+      "dynamic_patches": false,
+      "loss": 4.532306606360556,
+      "max_absolute_gradient_error": 7.770278656615837e-10
+    },
+    {
+      "steps": 4,
+      "deep_supervision": 0.5,
+      "geometry_weight": 0,
+      "reference_coordinates": false,
+      "dynamic_patches": false,
+      "loss": 3.982863871888588,
+      "max_absolute_gradient_error": 4.411038895257846e-10
+    },
+    {
+      "steps": 4,
+      "deep_supervision": 0.5,
+      "geometry_weight": 1,
+      "reference_coordinates": true,
+      "dynamic_patches": false,
+      "loss": 3.5913865110411516,
+      "max_absolute_gradient_error": 4.953254750805769e-10
+    },
+    {
+      "steps": 4,
+      "deep_supervision": 0,
+      "geometry_weight": 1,
+      "reference_coordinates": false,
+      "dynamic_patches": true,
+      "loss": 3.644212063092914,
+      "max_absolute_gradient_error": 5.052835233554376e-10
+    },
+    {
+      "steps": 4,
+      "deep_supervision": 0.5,
+      "geometry_weight": 1,
+      "reference_coordinates": false,
+      "dynamic_patches": true,
+      "loss": 4.052678350983618,
+      "max_absolute_gradient_error": 4.672759956747541e-10
+    }
+  ],
+  "matching_counterexamples_passed": true,
+  "cache_bound_passed": true,
+  "vectorized_candidate_proposal_equivalence": true,
+  "matching_random_bruteforce_checks": 60
+}

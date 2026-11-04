@@ -1,0 +1,24 @@
+{
+  "baseline": {
+    "mean_f1": 0.8446920113031556,
+    "std_f1_population": 0.005600873800364887,
+    "mean_parameter_error": 0.011813209096116111
+  },
+  "selected": {
+    "mean_f1": 0.8843714972663698,
+    "std_f1_population": 0.0026449623226320914,
+    "mean_parameter_error": 0.009328134794051441
+  }
+}
+FRESH HOLDOUT {
+  "baseline": {
+    "mean_f1": 0.829984850540406,
+    "std_f1_population": 0.008115612993340888,
+    "mean_parameter_error": 0.011515618510702074
+  },
+  "selected": {
+    "mean_f1": 0.8789301853700212,
+    "std_f1_population": 0.007648370249235807,
+    "mean_parameter_error": 0.009439006673464707
+  }
+}

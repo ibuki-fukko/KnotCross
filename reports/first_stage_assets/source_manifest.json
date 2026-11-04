@@ -1,0 +1,61 @@
+{
+  "purpose": "Retrospective report only; no training, no experimental file mutation",
+  "results_cutoff": "2026-10-26",
+  "example_indices": [
+    0,
+    1,
+    2,
+    3,
+    205,
+    217
+  ],
+  "figure_data": {
+    "baseline": {
+      "f1_by_tolerance_mean": [
+        0.12305159860715416,
+        0.3795676751232307,
+        0.7456873784651562,
+        0.829984850540406
+      ],
+      "mean_geometry_residual": 0.03989998742470026
+    },
+    "selected": {
+      "f1_by_tolerance_mean": [
+        0.21388573846109613,
+        0.5470928509523164,
+        0.8193529423845494,
+        0.8789301853700212
+      ],
+      "mean_geometry_residual": 0.02760304678010306
+    }
+  },
+  "sources": {
+    "正式提交\\研究思路.docx": "410c9c085b785d027eb255e1510695f4c0e73815f0199dbc08e95d528e1aded7",
+    "reports\\阶段研究报告_学习修正_20261026.docx": "0e494cb839b8938db410676d6e59c93e8f54942e3c2c3f1ae68757c91e2ae628",
+    "results\\learned_study\\single_factor_results.csv": "2ba100e243c1b859baf945f508d0bde5cbdda0e4ed50842ab07d8e5981fa2489",
+    "results\\learned_study\\stages.json": "517ce478be3e4e7b0c2f16ac6c942ff0417f79d4f2f97e06a4dfbb2059c39b44",
+    "results\\learned_study\\final_evaluation.json": "5a5304e3b6440ecb126423ccacba2df9fc627fafa2bc832fb2247511ea98063d",
+    "results\\learned_study\\analytic_evaluation.json": "a45e4ba01bea168c217e6e8d007dfb742e625c5afe38246f85e63a901644627b",
+    "code\\experiments\\learned_correction.py": "9ebc9dca371148ee81f622d16d8ef3d06cd69b447c48bbc80f52b10e6d5db994",
+    "code\\experiments\\candidate_model.py": "1371ee564972ac3a21a5914a1ec668c8816fa043060567aaaf60d8ef3fa71fa5",
+    "results\\large\\evaluation\\metrics.csv": "12bc0f64952a1557e0e2727adceabc9ff4494857084a2abd53cb0106e5befaf2",
+    "results\\autoresearch\\experiment_history.json": "1d4a640949c04d335d3cb959edbf3dd486840144a6edb25f4dac2256f67f302b",
+    "results/evaluation/metrics.csv": "c9e2e7fc971de8c30a9e579d91ab6814d36476d39bbd694ebdc6292a2e16341e",
+    "results/full/evaluation/metrics.csv": "729025111dfae606dc8ab73b086ac8b61769089c0e9be7d69a509071215204c7",
+    "results/learned_study/historical_reassessment.json": "139b608e790a06552d5382b521faa2644277e55242d0f1c274ccb868ee64c8d3",
+    "results/autoresearch/candidate_v9_geometry_features/metrics.json": "782431059e97a3a218cf3b8250ada29b5b1159739cdc78ce0245788fa14323a8",
+    "results/autoresearch/known_candidate/metrics.json": "5691fea55fb8c7c1f67113936f30f94529f4b13f7ea70824c8834f93d49434e5",
+    "code/data/generate_dataset.py": "33cd895a463cfedc4cb0287ee3bd39412f3f6e4e0939c7d99977f89195342ef6",
+    "code/data/locked_reference.py": "f019e5cee583f17de59dcbd492780c2eff9bce3f4d23014670e6727a4c43da08",
+    "code/data/analytic_cases.py": "a7013166f8ec4136d8126b7f023d43849f1cc8dbb00ae16c47d57a356e156b89",
+    "code/geometry/nurbs.py": "e4927bbc1a8765cddc79332e4b14d3ac217d229488e888c41f08ab6000553c9f",
+    "data/experiment_large.metadata.json": "aa86962ff3034a87952a4f313c2cfdcaac51ae51c472a46242791829b394385b"
+  },
+  "revision_notes": [
+    "Only major research changes retained",
+    "Plain explanations for parameter pairs, residual fields, MLP correction, training losses, backpropagation and evaluation",
+    "One consistent explicitly illustrative numerical example",
+    "Fixed curve scope and initial-to-final comparison retained",
+    "No experimental source changed or new training run"
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "data": "data\\experiment_large.npz",
+  "seed": 20261026,
+  "epochs": 20,
+  "batch_size": 256,
+  "learning_rate": 0.0005,
+  "grid_size": 48,
+  "max_candidates": 8,
+  "local_slack": 0.015,
+  "steps": 4,
+  "step_scale": 0.08,
+  "geometry_weight": 1.0,
+  "regression_weight": 4.0,
+  "positive_weight": 7.0,
+  "train_candidate_truth_coverage": 0.9741666666666666,
+  "validation_candidate_truth_coverage": 0.9783333333333334,
+  "best_validation_loss": 0.3522517368781181,
+  "autodiff": "manual reverse-mode BPTT through shared MLP correction steps and NURBS geometric residual",
+  "selected_probability_threshold": 0.9500000000000003,
+  "validation_metrics": {
+    "precision": 0.8006329113924051,
+    "recall": 0.8433333333333334,
+    "f1": 0.8214285714285714,
+    "mean_parameter_error": 0.01121373922103054,
+    "duplicate_prediction_rate": 0.0,
+    "predicted_count": 1.58
+  },
+  "test_metrics": {
+    "precision": 0.7771966527196653,
+    "recall": 0.8255555555555556,
+    "f1": 0.800646551724138,
+    "mean_parameter_error": 0.011377842053910852,
+    "duplicate_prediction_rate": 0.0,
+    "predicted_count": 1.5933333333333333,
+    "prediction_count": 956,
+    "inference_seconds_total": 9.051018800004385,
+    "inference_seconds_per_pair": 0.015085031333340642
+  },
+  "validation_threshold_results": [
+    {
+      "threshold": 0.15,
+      "f1": 0.5868465430016864
+    },
+    {
+      "threshold": 0.2,
+      "f1": 0.6098130841121495
+    },
+    {
+      "threshold": 0.25,
+      "f1": 0.6240286909742977
+    },
+    {
+      "threshold": 0.30000000000000004,
+      "f1": 0.6412776412776412
+    },
+    {
+      "threshold": 0.3500000000000001,
+      "f1": 0.6599241466498104
+    },
+    {
+      "threshold": 0.40000000000000013,
+      "f1": 0.6705202312138727
+    },
+    {
+      "threshold": 0.45000000000000007,
+      "f1": 0.6827992151733159
+    },
+    {
+      "threshold": 0.5000000000000001,
+      "f1": 0.692767086927671
+    },
+    {
+      "threshold": 0.5500000000000002,
+      "f1": 0.7039784221173297
+    },
+    {
+      "threshold": 0.6000000000000002,
+      "f1": 0.7116564417177914
+    },
+    {
+      "threshold": 0.6500000000000002,
+      "f1": 0.7226074895977809
+    },
+    {
+      "threshold": 0.7000000000000002,
+      "f1": 0.7339449541284404
+    },
+    {
+      "threshold": 0.7500000000000002,
+      "f1": 0.7510791366906474
+    },
+    {
+      "threshold": 0.8000000000000003,
+      "f1": 0.7591240875912408
+    },
+    {
+      "threshold": 0.8500000000000002,
+      "f1": 0.7717472118959109
+    },
+    {
+      "threshold": 0.9000000000000002,
+      "f1": 0.790519877675841
+    },
+    {
+      "threshold": 0.9500000000000003,
+      "f1": 0.8214285714285714
+    }
+  ]
+}

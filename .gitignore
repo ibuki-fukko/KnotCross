@@ -1,0 +1,5 @@
+# Ignore generated caches and large transient outputs
+__pycache__/
+*.pyc
+.tmp/
+tmp/

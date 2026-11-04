@@ -1,0 +1,31 @@
+{
+  "validation_loss": 0.13899503076389216,
+  "selected_threshold": 0.7999999999999999,
+  "validation_metrics": {
+    "precision": 0.7726550079491256,
+    "recall": 0.81,
+    "f1": 0.7908868999186329,
+    "mean_parameter_error": 0.016060876506243122,
+    "duplicate_prediction_rate": 0.0,
+    "predicted_count": 1.5725
+  },
+  "test_metrics": {
+    "precision": 0.7566418703506907,
+    "recall": 0.7911111111111111,
+    "f1": 0.7734926670287886,
+    "mean_parameter_error": 0.016003753456041287,
+    "duplicate_prediction_rate": 0.0,
+    "predicted_count": 1.5683333333333334,
+    "mean_geometry_residual": 0.07462085162287921,
+    "max_geometry_residual": 1.0620948487397734,
+    "inference_seconds_total": 9.174799599975813,
+    "inference_seconds_per_pair": 0.015291332666626356
+  },
+  "validation_inference_seconds_for_threshold_sweep": 115.58569099998567,
+  "grid_size": 48,
+  "max_candidates": 8,
+  "positive_weight": 1.0,
+  "local_slack": 0.015,
+  "train_candidates": 12800,
+  "validation_candidates": 3200
+}

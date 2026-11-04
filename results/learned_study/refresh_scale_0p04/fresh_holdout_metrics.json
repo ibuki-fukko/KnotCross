@@ -1,0 +1,59 @@
+{
+  "evaluator_version": "maximum_cardinality_v2",
+  "tolerance": 0.035,
+  "true_positive": 552,
+  "false_positive": 118,
+  "false_negative": 48,
+  "precision": 0.8238805970149253,
+  "recall": 0.92,
+  "f1": 0.8692913385826772,
+  "mean_parameter_error": 0.008482803867132644,
+  "max_parameter_error": 0.03447232635596467,
+  "count_accuracy": 0.755,
+  "empty_false_positive_rate": 0.08,
+  "duplicate_prediction_rate": 0.0,
+  "predicted_count": 1.675,
+  "per_intersection_count": {
+    "0": {
+      "pairs": 100,
+      "tp": 0,
+      "fp": 12,
+      "fn": 0,
+      "f1": 0.0
+    },
+    "1": {
+      "pairs": 100,
+      "tp": 96,
+      "fp": 46,
+      "fn": 4,
+      "f1": 0.7933884297520661
+    },
+    "2": {
+      "pairs": 100,
+      "tp": 185,
+      "fp": 32,
+      "fn": 15,
+      "f1": 0.8872901678657075
+    },
+    "3": {
+      "pairs": 100,
+      "tp": 271,
+      "fp": 28,
+      "fn": 29,
+      "f1": 0.9048414023372288
+    }
+  },
+  "prediction_count": 670,
+  "inference_seconds_total": 3.5171616000006907,
+  "inference_seconds_per_pair": 0.008792904000001727,
+  "zero_update_f1_same_threshold": 0.8677165354330708,
+  "f1_by_parameter_tolerance": {
+    "0.005": 0.27874015748031494,
+    "0.01": 0.6094488188976378,
+    "0.02": 0.8188976377952756,
+    "0.035": 0.8692913385826772
+  },
+  "all_predictions_mean_geometry_residual": 0.024156512232793838,
+  "all_predictions_p95_geometry_residual": 0.06087046024516711,
+  "seed": 20261026
+}
