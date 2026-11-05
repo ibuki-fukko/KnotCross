@@ -10,7 +10,7 @@
   "geometry_weight": 1.0,
   "positive_weight": 5.0,
   "deep_supervision": 0.0,
-  "grid_kind": "knot_aligned",
+  "grid_kind": "uniform",
   "boundary_candidates": false,
   "analytic_training": false
 }
