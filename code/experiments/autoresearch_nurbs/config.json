@@ -1,6 +1,6 @@
 {
   "seed": 20261026,
-  "reuse_pretrained": false,
+  "reuse_pretrained": true,
   "epochs": 20,
   "batch_size": 256,
   "learning_rate": 0.0001,
