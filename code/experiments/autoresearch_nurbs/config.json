@@ -14,5 +14,6 @@
   "boundary_candidates": false,
   "analytic_training": false,
   "root_jitter": true,
-  "geometry_features": true
+  "geometry_features": true,
+  "residual_projections": true
 }

@@ -25,7 +25,11 @@ def encode(p):
     dot=np.sum(a*b,axis=1,keepdims=True)
     cross=(a[:,0]*b[:,1]-a[:,1]*b[:,0])[:,None]
     den=na*nb
-    out=np.c_[r/(H*s),a/s,b/s,dot/den,cross/den]
+    # Optional last two features are rotation-invariant residual projections.
+    # They are observations, not parameter updates or an inverse Jacobian.
+    out=np.c_[r/(H*s),a/s,b/s,dot/den,cross/den,
+              np.sum(r*a,axis=1,keepdims=True)/(H*na*na),
+              np.sum(r*b,axis=1,keepdims=True)/(H*nb*nb)]
     return out,(r,a,b,s,na,nb,dot,cross,den)
 
 
@@ -41,6 +45,12 @@ def backward(gradient,cache):
     gb+=gc*a/den+gd*np.c_[-a[:,1],a[:,0]]/den
     gden=-(gc*dot+gd*cross)/(den*den)
     ga+=gden*nb*a/na;gb+=gden*na*b/nb
+    if gradient.shape[1]>8:
+        gpa,gpb=gradient[:,8:9],gradient[:,9:10]
+        ra=np.sum(r*a,axis=1,keepdims=True);rb=np.sum(r*b,axis=1,keepdims=True)
+        gr+=gpa*a/(H*na*na)+gpb*b/(H*nb*nb)
+        ga+=gpa*(r/(H*na*na)-2*ra*a/(H*na**4))
+        gb+=gpb*(r/(H*nb*nb)-2*rb*b/(H*nb**4))
     gp=np.zeros((len(r),75))
     gp[:,[12,37]]+=gr
     gp[:,[17,42]]+=ga/(2*H);gp[:,[7,32]]-=ga/(2*H)
@@ -50,13 +60,14 @@ def backward(gradient,cache):
 
 class GeometryFeatureNetwork:
     """Expose77-dimensional interface to BPTT; internal MLP has85 inputs."""
-    def __init__(self,seed):
-        self.network=make_mlp(85,[128,128,64],3,np.random.default_rng(seed))
+    def __init__(self,seed,projections=False):
+        self.extra_dim=10 if projections else 8
+        self.network=make_mlp(77+self.extra_dim,[128,128,64],3,np.random.default_rng(seed))
         self.cache=[]
 
     def forward(self,inputs):
         extra,cache=encode(inputs[:,2:]);self.cache.append(cache)
-        return self.network.forward(np.c_[inputs,extra])
+        return self.network.forward(np.c_[inputs,extra[:,:self.extra_dim]])
 
     def backward(self,gradient):
         expanded=self.network.backward(gradient)
@@ -76,14 +87,14 @@ class GeometryFeatureNetwork:
         state={k:np.array(v,copy=True) for k,v in state.items()}
         key=prefix+'.dense0.weight'
         if state[key].shape[0]==77:
-            state[key]=np.pad(state[key],((0,8),(0,0)))
+            state[key]=np.pad(state[key],((0,self.extra_dim),(0,0)))
         self.network.load_state(state,prefix)
 
 
 def check():
     from code.experiments import learned_correction as lc
     rng=np.random.default_rng(20261026)
-    p=rng.normal(0,.03,(3,75));g=rng.normal(size=(3,8))
+    p=rng.normal(0,.03,(3,75));g=rng.normal(size=(3,10))
     out,cache=encode(p);analytic=backward(g,cache);error=0
     for col in [7,11,12,13,17,32,36,37,38,42]:
         plus=p.copy();minus=p.copy();plus[0,col]+=1e-6;minus[0,col]-=1e-6
@@ -92,7 +103,7 @@ def check():
     assert error<2e-6,error
     original=lc.LearnedCorrectionModel(seed=3,step_scale=.02,dynamic_patches=True)
     adapted=lc.LearnedCorrectionModel(seed=3,step_scale=.02,dynamic_patches=True)
-    adapted.network=GeometryFeatureNetwork(3);adapted.load_state(original.state())
+    adapted.network=GeometryFeatureNetwork(3,projections=True);adapted.load_state(original.state())
     x=rng.normal(0,.03,(4,77));x[:,:2]=rng.uniform(.3,.7,(4,2))
     a,b=rng.normal(0,.3,(2,4,8,2))
     target=np.c_[rng.uniform(.3,.7,(4,2)),[1,0,1,1]]
