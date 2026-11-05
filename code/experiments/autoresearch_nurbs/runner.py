@@ -13,6 +13,10 @@ ROOT = Path(__file__).resolve().parents[3]
 def config_and_key():
     directory = Path(__file__).parent
     config = json.loads((directory/'config.json').read_text(encoding='utf-8'))
+    initial_weights = Path(config.get('initial_weights',
+        ROOT/'results/learned_study/refresh_scale_0p04/weights.npz'))
+    if not initial_weights.is_absolute():
+        initial_weights = ROOT/initial_weights
     digest = hashlib.sha256()
     for path in sorted(directory.glob('*.py')) + [directory/'config.json']:
         digest.update(path.name.encode()); digest.update(path.read_bytes())
@@ -20,8 +24,10 @@ def config_and_key():
                  ROOT/'code/evaluation/autoresearch_nurbs_protocol.py',ROOT/'code/experiments/learned_correction.py',
                  ROOT/'code/experiments/candidate_model.py',ROOT/'data/meeting_analytic_validation.npz',
                  ROOT/'data/meeting_analytic_train.npz',ROOT/'code/evaluation/set_metrics.py',
-                 ROOT/'code/geometry/nurbs.py',ROOT/'code/geometry/vectorized_basis.py',ROOT/'code/models/mlp_numpy.py'):
+                 ROOT/'code/geometry/nurbs.py',ROOT/'code/geometry/vectorized_basis.py',ROOT/'code/models/mlp_numpy.py',
+                 initial_weights):
         digest.update(path.read_bytes())
+    config['_resolved_initial_weights'] = str(initial_weights)
     return config, digest.hexdigest()[:16]
 
 
@@ -35,7 +41,7 @@ def train_or_load():
             (out/'source'/path.name).write_bytes(path.read_bytes())
     if (out/'training_complete.json').exists():
         return config,key,out
-    state = dict(np.load(ROOT/'results/learned_study/refresh_scale_0p04/weights.npz'))
+    state = dict(np.load(config['_resolved_initial_weights']))
     model = IntegratedIntersectionMLP(config,state)
     if config['reuse_pretrained']:
         np.savez_compressed(out/'epoch_000.npz',**state)
