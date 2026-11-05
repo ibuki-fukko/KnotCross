@@ -13,5 +13,6 @@
   "grid_kind": "uniform",
   "boundary_candidates": false,
   "analytic_training": false,
-  "root_jitter": true
+  "root_jitter": true,
+  "geometry_features": true
 }

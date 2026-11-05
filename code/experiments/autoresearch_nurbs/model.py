@@ -56,6 +56,9 @@ class IntegratedIntersectionMLP:
     def __init__(self, config, state):
         self.config = config
         self.solver = lc.LearnedCorrectionModel(seed=config['seed'], step_scale=config['step_scale'], dynamic_patches=True)
+        if config.get('geometry_features',False):
+            from code.experiments.autoresearch_nurbs.geometry_features import GeometryFeatureNetwork
+            self.solver.network=GeometryFeatureNetwork(config['seed'])
         self.solver.load_state(state)
 
     def __call__(self, curve_a, curve_b):
