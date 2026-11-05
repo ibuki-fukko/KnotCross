@@ -18,7 +18,9 @@ def config_and_key():
         digest.update(path.name.encode()); digest.update(path.read_bytes())
     for path in (ROOT/'data/experiment_large.npz',ROOT/'results/learned_study/refresh_scale_0p04/weights.npz',
                  ROOT/'code/evaluation/autoresearch_nurbs_protocol.py',ROOT/'code/experiments/learned_correction.py',
-                 ROOT/'code/experiments/candidate_model.py',ROOT/'data/meeting_analytic_validation.npz'):
+                 ROOT/'code/experiments/candidate_model.py',ROOT/'data/meeting_analytic_validation.npz',
+                 ROOT/'data/meeting_analytic_train.npz',ROOT/'code/evaluation/set_metrics.py',
+                 ROOT/'code/geometry/nurbs.py',ROOT/'code/geometry/vectorized_basis.py',ROOT/'code/models/mlp_numpy.py'):
         digest.update(path.read_bytes())
     return config, digest.hexdigest()[:16]
 
@@ -47,12 +49,29 @@ def train_or_load():
             labels=np.concatenate([labels,analytic['labels']]); counts=np.concatenate([counts,analytic['counts']])
         data = prepare(a,b,labels,counts,config)
         rng = np.random.default_rng(config['seed'])
+        jitter_rng = np.random.default_rng(config['seed']+401)
         history=[]; iteration=0
         for epoch in range(1,config['epochs']+1):
             order=rng.permutation(len(data['target'])); sums=np.zeros(4); seen=0
             for start in range(0,len(order),config['batch_size']):
                 ids=order[start:start+config['batch_size']]
-                values=lc.batch_loss_and_gradient(model.solver,data['features'][ids],data['target'][ids],
+                features=data['features'][ids].copy()
+                if config.get('root_jitter',False):
+                    # Train-only curriculum, no inference access to root labels.
+                    # q0=q*+rho*[cos(theta),sin(theta)]; rho<half inter-root distance
+                    # preserves the original nearest-root identity under clipping.
+                    selected=np.flatnonzero((data['target'][ids,2]>.5) & (jitter_rng.random(len(ids))<.25))
+                    limit=.01 if epoch<=5 else (.03 if epoch<=10 else .06)
+                    for j in selected:
+                        row=ids[j]; group=int(data['groups'][row]); truth=labels[group,:int(counts[group])]
+                        center=data['target'][row,:2]
+                        distances=np.linalg.norm(truth-center,axis=1)
+                        other=distances[distances>1e-10]
+                        radius=min(limit,.49*float(other.min())) if len(other) else limit
+                        angle=jitter_rng.uniform(-np.pi,np.pi)
+                        offset=radius*np.sqrt(jitter_rng.random())*np.array([np.cos(angle),np.sin(angle)])
+                        features[j,:2]=np.clip(center+offset,0,1)
+                values=lc.batch_loss_and_gradient(model.solver,features,data['target'][ids],
                     data['curve_a'][ids],data['curve_b'][ids],config['steps'],config['geometry_weight'],
                     config['regression_weight'],config['positive_weight'],config['deep_supervision'])
                 iteration+=1

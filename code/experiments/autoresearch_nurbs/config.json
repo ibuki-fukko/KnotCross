@@ -12,5 +12,6 @@
   "deep_supervision": 0.0,
   "grid_kind": "uniform",
   "boundary_candidates": false,
-  "analytic_training": false
+  "analytic_training": false,
+  "root_jitter": true
 }
