@@ -6,7 +6,7 @@
   "learning_rate": 0.0001,
   "steps": 4,
   "step_scale": 0.04,
-  "regression_weight": 1000.0,
+  "regression_weight": 10000.0,
   "geometry_weight": 1.0,
   "positive_weight": 5.0,
   "deep_supervision": 0.0,
