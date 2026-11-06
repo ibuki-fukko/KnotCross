@@ -1,0 +1,933 @@
+{
+  "key": "00f98089867664a8",
+  "score": 0.7073791348600509,
+  "guard_pass": true,
+  "config": {
+    "seed": 20261026,
+    "reuse_pretrained": false,
+    "epochs": 20,
+    "batch_size": 256,
+    "learning_rate": 0.0001,
+    "steps": 8,
+    "step_scale": 0.04,
+    "regression_weight": 1000.0,
+    "geometry_weight": 1.0,
+    "positive_weight": 5.0,
+    "deep_supervision": 0.0,
+    "grid_kind": "uniform",
+    "boundary_candidates": false,
+    "analytic_training": false
+  },
+  "checkpoint": "epoch_020.npz",
+  "threshold": 0.95,
+  "metrics": {
+    "0.035": {
+      "evaluator_version": "maximum_cardinality_v2",
+      "tolerance": 0.035,
+      "true_positive": 521,
+      "false_positive": 58,
+      "false_negative": 79,
+      "precision": 0.8998272884283247,
+      "recall": 0.8683333333333333,
+      "f1": 0.8837998303647159,
+      "mean_parameter_error": 0.006964389610286942,
+      "max_parameter_error": 0.03455886341728081,
+      "count_accuracy": 0.7725,
+      "empty_false_positive_rate": 0.03,
+      "duplicate_prediction_rate": 0.0,
+      "predicted_count": 1.4475,
+      "per_intersection_count": {
+        "0": {
+          "pairs": 100,
+          "tp": 0,
+          "fp": 4,
+          "fn": 0,
+          "f1": 0.0
+        },
+        "1": {
+          "pairs": 100,
+          "tp": 94,
+          "fp": 15,
+          "fn": 6,
+          "f1": 0.8995215311004785
+        },
+        "2": {
+          "pairs": 100,
+          "tp": 171,
+          "fp": 14,
+          "fn": 29,
+          "f1": 0.8883116883116883
+        },
+        "3": {
+          "pairs": 100,
+          "tp": 256,
+          "fp": 25,
+          "fn": 44,
+          "f1": 0.8812392426850258
+        }
+      }
+    },
+    "0.01": {
+      "evaluator_version": "maximum_cardinality_v2",
+      "tolerance": 0.01,
+      "true_positive": 417,
+      "false_positive": 162,
+      "false_negative": 183,
+      "precision": 0.7202072538860104,
+      "recall": 0.695,
+      "f1": 0.7073791348600509,
+      "mean_parameter_error": 0.004637362990514546,
+      "max_parameter_error": 0.009819945117683478,
+      "count_accuracy": 0.7725,
+      "empty_false_positive_rate": 0.03,
+      "duplicate_prediction_rate": 0.0,
+      "predicted_count": 1.4475,
+      "per_intersection_count": {
+        "0": {
+          "pairs": 100,
+          "tp": 0,
+          "fp": 4,
+          "fn": 0,
+          "f1": 0.0
+        },
+        "1": {
+          "pairs": 100,
+          "tp": 83,
+          "fp": 26,
+          "fn": 17,
+          "f1": 0.7942583732057417
+        },
+        "2": {
+          "pairs": 100,
+          "tp": 145,
+          "fp": 40,
+          "fn": 55,
+          "f1": 0.7532467532467533
+        },
+        "3": {
+          "pairs": 100,
+          "tp": 189,
+          "fp": 92,
+          "fn": 111,
+          "f1": 0.6506024096385542
+        }
+      }
+    }
+  },
+  "validation_reference_loss": 0.37307735798956077,
+  "loss_components": {
+    "bce_weight7": 0.37085096644894067,
+    "parameter_weight4": 0.0010499728746879544,
+    "geometry_weight1": 0.001176418665932182
+  },
+  "candidate_one_to_one_coverage": {
+    "0.035": 0.9633333333333334,
+    "0.01": 0.5566666666666666
+  },
+  "geometry_pass": {
+    "0.035": 0.8842832469775475,
+    "0.01": 0.3540587219343696
+  },
+  "cpu_ms_per_pair": 11.83600150005077,
+  "special_validation": {
+    "close_0p005": {
+      "0.035": {
+        "evaluator_version": "maximum_cardinality_v2",
+        "tolerance": 0.035,
+        "true_positive": 0,
+        "false_positive": 4,
+        "false_negative": 60,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "mean_parameter_error": null,
+        "max_parameter_error": null,
+        "count_accuracy": 0.03333333333333333,
+        "empty_false_positive_rate": null,
+        "duplicate_prediction_rate": 0.0,
+        "predicted_count": 0.13333333333333333,
+        "per_intersection_count": {
+          "2": {
+            "pairs": 30,
+            "tp": 0,
+            "fp": 4,
+            "fn": 60,
+            "f1": 0.0
+          }
+        }
+      },
+      "0.01": {
+        "evaluator_version": "maximum_cardinality_v2",
+        "tolerance": 0.01,
+        "true_positive": 0,
+        "false_positive": 4,
+        "false_negative": 60,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "mean_parameter_error": null,
+        "max_parameter_error": null,
+        "count_accuracy": 0.03333333333333333,
+        "empty_false_positive_rate": null,
+        "duplicate_prediction_rate": 0.0,
+        "predicted_count": 0.13333333333333333,
+        "per_intersection_count": {
+          "2": {
+            "pairs": 30,
+            "tp": 0,
+            "fp": 4,
+            "fn": 60,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    "close_0p02": {
+      "0.035": {
+        "evaluator_version": "maximum_cardinality_v2",
+        "tolerance": 0.035,
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 60,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "mean_parameter_error": null,
+        "max_parameter_error": null,
+        "count_accuracy": 0.0,
+        "empty_false_positive_rate": null,
+        "duplicate_prediction_rate": 0.0,
+        "predicted_count": 0.0,
+        "per_intersection_count": {
+          "2": {
+            "pairs": 30,
+            "tp": 0,
+            "fp": 0,
+            "fn": 60,
+            "f1": 0.0
+          }
+        }
+      },
+      "0.01": {
+        "evaluator_version": "maximum_cardinality_v2",
+        "tolerance": 0.01,
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 60,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "mean_parameter_error": null,
+        "max_parameter_error": null,
+        "count_accuracy": 0.0,
+        "empty_false_positive_rate": null,
+        "duplicate_prediction_rate": 0.0,
+        "predicted_count": 0.0,
+        "per_intersection_count": {
+          "2": {
+            "pairs": 30,
+            "tp": 0,
+            "fp": 0,
+            "fn": 60,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    "endpoint": {
+      "0.035": {
+        "evaluator_version": "maximum_cardinality_v2",
+        "tolerance": 0.035,
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 30,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "mean_parameter_error": null,
+        "max_parameter_error": null,
+        "count_accuracy": 0.0,
+        "empty_false_positive_rate": null,
+        "duplicate_prediction_rate": 0.0,
+        "predicted_count": 0.0,
+        "per_intersection_count": {
+          "1": {
+            "pairs": 30,
+            "tp": 0,
+            "fp": 0,
+            "fn": 30,
+            "f1": 0.0
+          }
+        }
+      },
+      "0.01": {
+        "evaluator_version": "maximum_cardinality_v2",
+        "tolerance": 0.01,
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 30,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "mean_parameter_error": null,
+        "max_parameter_error": null,
+        "count_accuracy": 0.0,
+        "empty_false_positive_rate": null,
+        "duplicate_prediction_rate": 0.0,
+        "predicted_count": 0.0,
+        "per_intersection_count": {
+          "1": {
+            "pairs": 30,
+            "tp": 0,
+            "fp": 0,
+            "fn": 30,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    "multiple": {
+      "0.035": {
+        "evaluator_version": "maximum_cardinality_v2",
+        "tolerance": 0.035,
+        "true_positive": 0,
+        "false_positive": 1,
+        "false_negative": 90,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "mean_parameter_error": null,
+        "max_parameter_error": null,
+        "count_accuracy": 0.0,
+        "empty_false_positive_rate": null,
+        "duplicate_prediction_rate": 0.0,
+        "predicted_count": 0.03333333333333333,
+        "per_intersection_count": {
+          "3": {
+            "pairs": 30,
+            "tp": 0,
+            "fp": 1,
+            "fn": 90,
+            "f1": 0.0
+          }
+        }
+      },
+      "0.01": {
+        "evaluator_version": "maximum_cardinality_v2",
+        "tolerance": 0.01,
+        "true_positive": 0,
+        "false_positive": 1,
+        "false_negative": 90,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "mean_parameter_error": null,
+        "max_parameter_error": null,
+        "count_accuracy": 0.0,
+        "empty_false_positive_rate": null,
+        "duplicate_prediction_rate": 0.0,
+        "predicted_count": 0.03333333333333333,
+        "per_intersection_count": {
+          "3": {
+            "pairs": 30,
+            "tp": 0,
+            "fp": 1,
+            "fn": 90,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    "near_disjoint": {
+      "0.035": {
+        "evaluator_version": "maximum_cardinality_v2",
+        "tolerance": 0.035,
+        "true_positive": 0,
+        "false_positive": 2,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "mean_parameter_error": null,
+        "max_parameter_error": null,
+        "count_accuracy": 0.9333333333333333,
+        "empty_false_positive_rate": 0.06666666666666667,
+        "duplicate_prediction_rate": 0.0,
+        "predicted_count": 0.06666666666666667,
+        "per_intersection_count": {
+          "0": {
+            "pairs": 30,
+            "tp": 0,
+            "fp": 2,
+            "fn": 0,
+            "f1": 0.0
+          }
+        }
+      },
+      "0.01": {
+        "evaluator_version": "maximum_cardinality_v2",
+        "tolerance": 0.01,
+        "true_positive": 0,
+        "false_positive": 2,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "mean_parameter_error": null,
+        "max_parameter_error": null,
+        "count_accuracy": 0.9333333333333333,
+        "empty_false_positive_rate": 0.06666666666666667,
+        "duplicate_prediction_rate": 0.0,
+        "predicted_count": 0.06666666666666667,
+        "per_intersection_count": {
+          "0": {
+            "pairs": 30,
+            "tp": 0,
+            "fp": 2,
+            "fn": 0,
+            "f1": 0.0
+          }
+        }
+      },
+      "empty_false_positive_rate": 0.06666666666666667
+    },
+    "single": {
+      "0.035": {
+        "evaluator_version": "maximum_cardinality_v2",
+        "tolerance": 0.035,
+        "true_positive": 20,
+        "false_positive": 0,
+        "false_negative": 10,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "mean_parameter_error": 0.004686108726298778,
+        "max_parameter_error": 0.010540807692110372,
+        "count_accuracy": 0.6666666666666666,
+        "empty_false_positive_rate": null,
+        "duplicate_prediction_rate": 0.0,
+        "predicted_count": 0.6666666666666666,
+        "per_intersection_count": {
+          "1": {
+            "pairs": 30,
+            "tp": 20,
+            "fp": 0,
+            "fn": 10,
+            "f1": 0.8
+          }
+        }
+      },
+      "0.01": {
+        "evaluator_version": "maximum_cardinality_v2",
+        "tolerance": 0.01,
+        "true_positive": 19,
+        "false_positive": 1,
+        "false_negative": 11,
+        "precision": 0.95,
+        "recall": 0.6333333333333333,
+        "f1": 0.76,
+        "mean_parameter_error": 0.0043779666754665885,
+        "max_parameter_error": 0.008918641856940785,
+        "count_accuracy": 0.6666666666666666,
+        "empty_false_positive_rate": null,
+        "duplicate_prediction_rate": 0.0,
+        "predicted_count": 0.6666666666666666,
+        "per_intersection_count": {
+          "1": {
+            "pairs": 30,
+            "tp": 19,
+            "fp": 1,
+            "fn": 11,
+            "f1": 0.76
+          }
+        }
+      }
+    },
+    "tangent": {
+      "0.035": {
+        "evaluator_version": "maximum_cardinality_v2",
+        "tolerance": 0.035,
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 30,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "mean_parameter_error": null,
+        "max_parameter_error": null,
+        "count_accuracy": 0.0,
+        "empty_false_positive_rate": null,
+        "duplicate_prediction_rate": 0.0,
+        "predicted_count": 0.0,
+        "per_intersection_count": {
+          "1": {
+            "pairs": 30,
+            "tp": 0,
+            "fp": 0,
+            "fn": 30,
+            "f1": 0.0
+          }
+        }
+      },
+      "0.01": {
+        "evaluator_version": "maximum_cardinality_v2",
+        "tolerance": 0.01,
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 30,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "mean_parameter_error": null,
+        "max_parameter_error": null,
+        "count_accuracy": 0.0,
+        "empty_false_positive_rate": null,
+        "duplicate_prediction_rate": 0.0,
+        "predicted_count": 0.0,
+        "per_intersection_count": {
+          "1": {
+            "pairs": 30,
+            "tp": 0,
+            "fp": 0,
+            "fn": 30,
+            "f1": 0.0
+          }
+        }
+      }
+    }
+  },
+  "data_quality": {
+    "ordinary": {
+      "pairs": 400,
+      "roots": 600,
+      "endpoint_roots": 0,
+      "label_residual_max": 5.551115123125783e-16,
+      "label_geometric_pass": {
+        "0.035": 1.0,
+        "0.01": 1.0
+      },
+      "note": "Residual agreement checks given labels; does not certify completeness of legacy numerical labels."
+    },
+    "special": {
+      "pairs": 210,
+      "roots": 300,
+      "endpoint_roots": 30,
+      "label_residual_max": 4.440892098500626e-16,
+      "label_geometric_pass": {
+        "0.035": 1.0,
+        "0.01": 1.0
+      },
+      "note": "Residual agreement checks given labels; does not certify completeness of legacy numerical labels."
+    }
+  },
+  "epoch_selections": [
+    {
+      "checkpoint": "epoch_005.npz",
+      "selection": {
+        "score": 0.6540447504302926,
+        "threshold": 0.95,
+        "metrics": {
+          "0.035": {
+            "evaluator_version": "maximum_cardinality_v2",
+            "tolerance": 0.035,
+            "true_positive": 512,
+            "false_positive": 50,
+            "false_negative": 88,
+            "precision": 0.9110320284697508,
+            "recall": 0.8533333333333334,
+            "f1": 0.8812392426850258,
+            "mean_parameter_error": 0.007781938751319379,
+            "max_parameter_error": 0.0346918917217795,
+            "count_accuracy": 0.7575,
+            "empty_false_positive_rate": 0.03,
+            "duplicate_prediction_rate": 0.0,
+            "predicted_count": 1.405,
+            "per_intersection_count": {
+              "0": {
+                "pairs": 100,
+                "tp": 0,
+                "fp": 4,
+                "fn": 0,
+                "f1": 0.0
+              },
+              "1": {
+                "pairs": 100,
+                "tp": 92,
+                "fp": 9,
+                "fn": 8,
+                "f1": 0.9154228855721394
+              },
+              "2": {
+                "pairs": 100,
+                "tp": 167,
+                "fp": 12,
+                "fn": 33,
+                "f1": 0.8812664907651715
+              },
+              "3": {
+                "pairs": 100,
+                "tp": 253,
+                "fp": 25,
+                "fn": 47,
+                "f1": 0.8754325259515571
+              }
+            }
+          },
+          "0.01": {
+            "evaluator_version": "maximum_cardinality_v2",
+            "tolerance": 0.01,
+            "true_positive": 380,
+            "false_positive": 182,
+            "false_negative": 220,
+            "precision": 0.6761565836298933,
+            "recall": 0.6333333333333333,
+            "f1": 0.6540447504302926,
+            "mean_parameter_error": 0.0051013139965928635,
+            "max_parameter_error": 0.009953101319389607,
+            "count_accuracy": 0.7575,
+            "empty_false_positive_rate": 0.03,
+            "duplicate_prediction_rate": 0.0,
+            "predicted_count": 1.405,
+            "per_intersection_count": {
+              "0": {
+                "pairs": 100,
+                "tp": 0,
+                "fp": 4,
+                "fn": 0,
+                "f1": 0.0
+              },
+              "1": {
+                "pairs": 100,
+                "tp": 72,
+                "fp": 29,
+                "fn": 28,
+                "f1": 0.7164179104477612
+              },
+              "2": {
+                "pairs": 100,
+                "tp": 131,
+                "fp": 48,
+                "fn": 69,
+                "f1": 0.6912928759894459
+              },
+              "3": {
+                "pairs": 100,
+                "tp": 177,
+                "fp": 101,
+                "fn": 123,
+                "f1": 0.6124567474048442
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "checkpoint": "epoch_010.npz",
+      "selection": {
+        "score": 0.6814814814814815,
+        "threshold": 0.93,
+        "metrics": {
+          "0.035": {
+            "evaluator_version": "maximum_cardinality_v2",
+            "tolerance": 0.035,
+            "true_positive": 544,
+            "false_positive": 71,
+            "false_negative": 56,
+            "precision": 0.8845528455284553,
+            "recall": 0.9066666666666666,
+            "f1": 0.8954732510288066,
+            "mean_parameter_error": 0.00750564947321545,
+            "max_parameter_error": 0.03448753822434511,
+            "count_accuracy": 0.7875,
+            "empty_false_positive_rate": 0.03,
+            "duplicate_prediction_rate": 0.0,
+            "predicted_count": 1.5375,
+            "per_intersection_count": {
+              "0": {
+                "pairs": 100,
+                "tp": 0,
+                "fp": 4,
+                "fn": 0,
+                "f1": 0.0
+              },
+              "1": {
+                "pairs": 100,
+                "tp": 98,
+                "fp": 21,
+                "fn": 2,
+                "f1": 0.8949771689497716
+              },
+              "2": {
+                "pairs": 100,
+                "tp": 177,
+                "fp": 16,
+                "fn": 23,
+                "f1": 0.9007633587786259
+              },
+              "3": {
+                "pairs": 100,
+                "tp": 269,
+                "fp": 30,
+                "fn": 31,
+                "f1": 0.8981636060100167
+              }
+            }
+          },
+          "0.01": {
+            "evaluator_version": "maximum_cardinality_v2",
+            "tolerance": 0.01,
+            "true_positive": 414,
+            "false_positive": 201,
+            "false_negative": 186,
+            "precision": 0.6731707317073171,
+            "recall": 0.69,
+            "f1": 0.6814814814814815,
+            "mean_parameter_error": 0.005020402614657393,
+            "max_parameter_error": 0.009948042394969282,
+            "count_accuracy": 0.7875,
+            "empty_false_positive_rate": 0.03,
+            "duplicate_prediction_rate": 0.0,
+            "predicted_count": 1.5375,
+            "per_intersection_count": {
+              "0": {
+                "pairs": 100,
+                "tp": 0,
+                "fp": 4,
+                "fn": 0,
+                "f1": 0.0
+              },
+              "1": {
+                "pairs": 100,
+                "tp": 81,
+                "fp": 38,
+                "fn": 19,
+                "f1": 0.7397260273972602
+              },
+              "2": {
+                "pairs": 100,
+                "tp": 142,
+                "fp": 51,
+                "fn": 58,
+                "f1": 0.72264631043257
+              },
+              "3": {
+                "pairs": 100,
+                "tp": 191,
+                "fp": 108,
+                "fn": 109,
+                "f1": 0.6377295492487479
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "checkpoint": "epoch_015.npz",
+      "selection": {
+        "score": 0.7016949152542373,
+        "threshold": 0.95,
+        "metrics": {
+          "0.035": {
+            "evaluator_version": "maximum_cardinality_v2",
+            "tolerance": 0.035,
+            "true_positive": 523,
+            "false_positive": 57,
+            "false_negative": 77,
+            "precision": 0.9017241379310345,
+            "recall": 0.8716666666666667,
+            "f1": 0.8864406779661017,
+            "mean_parameter_error": 0.007081828779866797,
+            "max_parameter_error": 0.03480676484792184,
+            "count_accuracy": 0.76,
+            "empty_false_positive_rate": 0.03,
+            "duplicate_prediction_rate": 0.0,
+            "predicted_count": 1.45,
+            "per_intersection_count": {
+              "0": {
+                "pairs": 100,
+                "tp": 0,
+                "fp": 4,
+                "fn": 0,
+                "f1": 0.0
+              },
+              "1": {
+                "pairs": 100,
+                "tp": 94,
+                "fp": 15,
+                "fn": 6,
+                "f1": 0.8995215311004785
+              },
+              "2": {
+                "pairs": 100,
+                "tp": 172,
+                "fp": 14,
+                "fn": 28,
+                "f1": 0.8911917098445595
+              },
+              "3": {
+                "pairs": 100,
+                "tp": 257,
+                "fp": 24,
+                "fn": 43,
+                "f1": 0.8846815834767642
+              }
+            }
+          },
+          "0.01": {
+            "evaluator_version": "maximum_cardinality_v2",
+            "tolerance": 0.01,
+            "true_positive": 414,
+            "false_positive": 166,
+            "false_negative": 186,
+            "precision": 0.7137931034482758,
+            "recall": 0.69,
+            "f1": 0.7016949152542373,
+            "mean_parameter_error": 0.004758074726832968,
+            "max_parameter_error": 0.009973499242704478,
+            "count_accuracy": 0.76,
+            "empty_false_positive_rate": 0.03,
+            "duplicate_prediction_rate": 0.0,
+            "predicted_count": 1.45,
+            "per_intersection_count": {
+              "0": {
+                "pairs": 100,
+                "tp": 0,
+                "fp": 4,
+                "fn": 0,
+                "f1": 0.0
+              },
+              "1": {
+                "pairs": 100,
+                "tp": 83,
+                "fp": 26,
+                "fn": 17,
+                "f1": 0.7942583732057417
+              },
+              "2": {
+                "pairs": 100,
+                "tp": 142,
+                "fp": 44,
+                "fn": 58,
+                "f1": 0.7357512953367875
+              },
+              "3": {
+                "pairs": 100,
+                "tp": 189,
+                "fp": 92,
+                "fn": 111,
+                "f1": 0.6506024096385542
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "checkpoint": "epoch_020.npz",
+      "selection": {
+        "score": 0.7073791348600509,
+        "threshold": 0.95,
+        "metrics": {
+          "0.035": {
+            "evaluator_version": "maximum_cardinality_v2",
+            "tolerance": 0.035,
+            "true_positive": 521,
+            "false_positive": 58,
+            "false_negative": 79,
+            "precision": 0.8998272884283247,
+            "recall": 0.8683333333333333,
+            "f1": 0.8837998303647159,
+            "mean_parameter_error": 0.006964389610286942,
+            "max_parameter_error": 0.03455886341728081,
+            "count_accuracy": 0.7725,
+            "empty_false_positive_rate": 0.03,
+            "duplicate_prediction_rate": 0.0,
+            "predicted_count": 1.4475,
+            "per_intersection_count": {
+              "0": {
+                "pairs": 100,
+                "tp": 0,
+                "fp": 4,
+                "fn": 0,
+                "f1": 0.0
+              },
+              "1": {
+                "pairs": 100,
+                "tp": 94,
+                "fp": 15,
+                "fn": 6,
+                "f1": 0.8995215311004785
+              },
+              "2": {
+                "pairs": 100,
+                "tp": 171,
+                "fp": 14,
+                "fn": 29,
+                "f1": 0.8883116883116883
+              },
+              "3": {
+                "pairs": 100,
+                "tp": 256,
+                "fp": 25,
+                "fn": 44,
+                "f1": 0.8812392426850258
+              }
+            }
+          },
+          "0.01": {
+            "evaluator_version": "maximum_cardinality_v2",
+            "tolerance": 0.01,
+            "true_positive": 417,
+            "false_positive": 162,
+            "false_negative": 183,
+            "precision": 0.7202072538860104,
+            "recall": 0.695,
+            "f1": 0.7073791348600509,
+            "mean_parameter_error": 0.004637362990514546,
+            "max_parameter_error": 0.009819945117683478,
+            "count_accuracy": 0.7725,
+            "empty_false_positive_rate": 0.03,
+            "duplicate_prediction_rate": 0.0,
+            "predicted_count": 1.4475,
+            "per_intersection_count": {
+              "0": {
+                "pairs": 100,
+                "tp": 0,
+                "fp": 4,
+                "fn": 0,
+                "f1": 0.0
+              },
+              "1": {
+                "pairs": 100,
+                "tp": 83,
+                "fp": 26,
+                "fn": 17,
+                "f1": 0.7942583732057417
+              },
+              "2": {
+                "pairs": 100,
+                "tp": 145,
+                "fp": 40,
+                "fn": 55,
+                "f1": 0.7532467532467533
+              },
+              "3": {
+                "pairs": 100,
+                "tp": 189,
+                "fp": 92,
+                "fn": 111,
+                "f1": 0.6506024096385542
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "python": "3.13.9",
+  "numpy": "2.3.5",
+  "dataset_sha256": "74407d2a1bf2617745ab031ceb2530648c42350b11877a6579c1b4cbc1d67d93",
+  "protocol": "original 400-pair validation; special 210-pair validation reported separately; no test evaluation"
+}

@@ -1,0 +1,20 @@
+{
+  "seed": 20261026,
+  "reuse_pretrained": false,
+  "epochs": 40,
+  "batch_size": 256,
+  "learning_rate": 0.0005,
+  "steps": 4,
+  "step_scale": 0.02,
+  "regression_weight": 1000.0,
+  "geometry_weight": 1.0,
+  "positive_weight": 5.0,
+  "deep_supervision": 0.0,
+  "grid_kind": "uniform",
+  "boundary_candidates": false,
+  "analytic_training": false,
+  "root_jitter": true,
+  "geometry_features": true,
+  "residual_projections": true,
+  "initial_weights": ".tmp/autoresearch_nurbs/c2873ed424b50971/weights.npz"
+}

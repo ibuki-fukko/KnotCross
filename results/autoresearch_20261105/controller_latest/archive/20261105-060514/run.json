@@ -1,0 +1,23 @@
+{
+  "background": null,
+  "branch": "codex/nurbs-autoresearch-20261105",
+  "created_at": "2026-11-05T03:57:51Z",
+  "goal": "Continue integrated four-step MLP curve intersection improvement; validation F1@parameter tolerance0.01 >=0.88 while F1@0.035>=0.88, single seed20261026, no Newton or geometric-residual filtering, validation only",
+  "guard": "python -m code.evaluation.autoresearch_nurbs_protocol --guard",
+  "max_iterations": null,
+  "metric": {
+    "command": "python -m code.evaluation.autoresearch_nurbs_protocol",
+    "direction": "higher",
+    "json_key": "score",
+    "name": "validation_f1_tau_0p01"
+  },
+  "mode": "foreground",
+  "repo": "E:\\study\\ThreeUp\\\u8bba\u6587\\.tmp\\autoresearch_20261105",
+  "run_id": "c3cf13ae3df04555a95d12ea331941e4",
+  "schema_version": 1,
+  "scope": [
+    "code/experiments/autoresearch_nurbs"
+  ],
+  "target": 0.88,
+  "timeout_seconds": 7200
+}

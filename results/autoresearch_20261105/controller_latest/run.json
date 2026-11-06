@@ -1,0 +1,23 @@
+{
+  "background": null,
+  "branch": "codex/nurbs-autoresearch-20261105",
+  "created_at": "2026-11-05T06:07:07Z",
+  "goal": "Independently verify the retained single-seed integrated MLP checkpoint meets validation F1@0.01 >=0.88 and F1@0.035 >=0.88 with no Newton or geometric-residual filtering and no test-set tuning",
+  "guard": "python -m code.evaluation.autoresearch_nurbs_protocol --guard",
+  "max_iterations": null,
+  "metric": {
+    "command": "python -m code.evaluation.autoresearch_nurbs_protocol",
+    "direction": "higher",
+    "json_key": "score",
+    "name": "validation_f1_tau_0p01"
+  },
+  "mode": "foreground",
+  "repo": "E:\\study\\ThreeUp\\\u8bba\u6587\\.tmp\\autoresearch_20261105",
+  "run_id": "e2d9ced99dc748c3a66250ed141676f9",
+  "schema_version": 1,
+  "scope": [
+    "code/experiments/autoresearch_nurbs"
+  ],
+  "target": 0.88,
+  "timeout_seconds": 7200
+}

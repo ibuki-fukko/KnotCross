@@ -1,0 +1,13 @@
+{
+  "true_roots": 600,
+  "before_threshold_and_dedup_root_coverage": {
+    "0.085": 588,
+    "0.035": 586,
+    "0.01": 462
+  },
+  "initial_anchor_coverage": {
+    "0.085": 587,
+    "0.035": 578,
+    "0.01": 334
+  }
+}

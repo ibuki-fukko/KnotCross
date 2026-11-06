@@ -1,0 +1,9 @@
+{
+  "command": "python -m code.evaluation.autoresearch_nurbs_protocol",
+  "cwd": "E:\\study\\ThreeUp\\\u8bba\u6587\\.tmp\\autoresearch_20261105",
+  "duration_seconds": 0.594503,
+  "returncode": 0,
+  "stderr": "",
+  "stdout": "{\"score\": 0.8977072310405644, \"f1_035\": 0.9206349206349206, \"key\": \"6cf9fb8339190d8d\"}\r\n",
+  "timed_out": false
+}

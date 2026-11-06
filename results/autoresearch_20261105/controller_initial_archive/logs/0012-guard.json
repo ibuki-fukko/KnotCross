@@ -1,0 +1,9 @@
+{
+  "command": "python -m code.evaluation.autoresearch_nurbs_protocol --guard",
+  "cwd": "E:\\study\\ThreeUp\\\u8bba\u6587\\.tmp\\autoresearch_20261105",
+  "duration_seconds": 0.55093,
+  "returncode": 0,
+  "stderr": "",
+  "stdout": "guard_pass\r\n",
+  "timed_out": false
+}

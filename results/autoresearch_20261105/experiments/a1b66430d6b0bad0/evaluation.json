@@ -1,0 +1,23 @@
+{
+  "key": "a1b66430d6b0bad0",
+  "score": 0.0,
+  "guard_pass": false,
+  "epoch_selections": [
+    {
+      "checkpoint": "epoch_005.npz",
+      "selection": null
+    },
+    {
+      "checkpoint": "epoch_010.npz",
+      "selection": null
+    },
+    {
+      "checkpoint": "epoch_015.npz",
+      "selection": null
+    },
+    {
+      "checkpoint": "epoch_020.npz",
+      "selection": null
+    }
+  ]
+}
